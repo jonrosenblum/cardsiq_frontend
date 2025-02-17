@@ -1,0 +1,29 @@
+<header
+  class="flex h-[80px] w-full items-center justify-between bg-white border-b px-4"
+>
+  <div class="flex justify-end items-center gap-2 w-full">
+    <button
+      (click)="toggleNotificationPanel()"
+      class="flex justify-center items-center w-12 h-12 rounded-xl border border-[#F0F0F0] cursor-pointer relative"
+    >
+      <svg-icon name="bell-notification" class="bell-icon" />
+      @if (showNotificationPanel()) {
+        <app-notification-popup (close)="toggleNotificationPanel($event)" />
+      }
+    </button>
+    <div
+      class="flex justify-center items-center bg-[#F5F5F5] h-12 rounded-xl gap-2 pl-2"
+    >
+      <img class="w-10" alt="" src="/assets/images/girl.png" />
+      <div>
+        <h1 class="text-xs text-[#000000] font-semibold font-plusJakarta">
+          Alexandra Parker
+        </h1>
+        <p class="text-[10px] text-[#595959] font-normal font-plusJakarta">
+          {{ "alex.parker@gmail.com" }}
+        </p>
+      </div>
+      <img class="cursor-pointer" alt="" src="/assets/images/down6.png" />
+    </div>
+  </div>
+</header>

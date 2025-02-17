@@ -1,0 +1,157 @@
+<div class="w-full flex items-center justify-center bg-lightGray">
+  <div
+    class="w-[90%] md:w-[420px] py-10 px-6 md:px-10 rounded-[16px] mt-10 z-10 relative md:relative md:mt-0 bg-white"
+  >
+    <h1
+      class="text-[32px] text-color font-medium font-plusJakarta leading-10 tracking-[-0.5px]"
+    >
+      Create account
+    </h1>
+    <form [formGroup]="signupForm">
+      <div class="flex flex-col gap-4 mt-8">
+        <app-input-field
+          type="text"
+          id="firstName"
+          formControlName="firstName"
+          label="First Name"
+          placeholder="Your First Name"
+          [errorMessage]="
+            formUtilityService.getFormError(
+              signupForm,
+              'firstName',
+              formSubmitted
+            )
+          "
+        ></app-input-field>
+
+        <app-input-field
+          type="text"
+          id="lastName"
+          formControlName="lastName"
+          label="Last Name"
+          placeholder="Your Last Name"
+          [errorMessage]="
+            formUtilityService.getFormError(
+              signupForm,
+              'lastName',
+              formSubmitted
+            )
+          "
+        ></app-input-field>
+
+        <app-input-field
+          type="email"
+          id="email"
+          formControlName="email"
+          label="Your Email"
+          placeholder="Your Email"
+          [errorMessage]="
+            formUtilityService.getFormError(signupForm, 'email', formSubmitted)
+          "
+        ></app-input-field>
+
+        <div>
+          <app-input-field
+            [type]="'password'"
+            id="password"
+            formControlName="password"
+            label="Password"
+            placeholder="At least 8 characters"
+            (typeEvent)="getPasswordValidationMessages()"
+            [errorMessage]="
+              formUtilityService.getFormError(
+                signupForm,
+                'password',
+                formSubmitted
+              )
+            "
+            [validationMessages]="passwordValidationMessages"
+          ></app-input-field>
+          @if (
+            formUtilityService.getFormError(
+              signupForm,
+              "password",
+              formSubmitted
+            ) === ""
+          ) {
+            <div class="flex items-center mt-2">
+              <span class="pi pi-info-circle text-secondary"></span>
+              <span
+                class="ms-2 text-xs font-normal text-grayBlack font-plusJakarta leading-[16px] tracking-[0%]"
+              >
+                Passwords must be at least 8 characters.</span
+              >
+            </div>
+          }
+        </div>
+
+        <app-input-field
+          [type]="'password'"
+          id="confirmPassword"
+          formControlName="confirmPassword"
+          label="Confirm password"
+          placeholder="********"
+          [errorMessage]="
+            formUtilityService.getFormError(
+              signupForm,
+              'confirmPassword',
+              formSubmitted
+            )
+          "
+        ></app-input-field>
+      </div>
+
+      <div class="mt-10">
+        <button
+          (click)="formSubmitted = true; signupForm.valid && submitSignupForm()"
+          [disabled]="submitLoading"
+          class="hover:shadow-md text-base text-white font-semibold font-plusJakarta w-full h-11 rounded-[10px] bg-gradient hover:bg-gradientHover leading-5"
+        >
+          <span *ngIf="submitLoading" class="pi pi-spin pi-spinner mr-2"></span>
+          Start selling
+        </button>
+        <div class="flex items-center justify-between gap-4 md:gap-0 mt-8">
+          <div class="w-full md:w-[139px] h-[2px] bg-grayBorder"></div>
+          <span
+            class="text-sm text-grayBlack font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
+            >Or</span
+          >
+          <div class="w-full md:w-[139px] h-[2px] bg-grayBorder"></div>
+        </div>
+      </div>
+    </form>
+
+    <div class="flex items-center justify-between mt-8 gap-2">
+      <div
+        class="hover:shadow-sm w-full md:w-[155.5px] h-[50px] border border-grayBorder rounded-xl cursor-pointer flex justify-center items-center gap-3"
+      >
+        <svg-icon name="google" />
+        <p
+          class="text-base text-color font-medium font-plusJakarta leading-[26px] tracking-[0px]"
+        >
+          Google
+        </p>
+      </div>
+      <div
+        class="hover:shadow-sm w-full md:w-[155.5px] h-[50px] border border-grayBorder rounded-xl cursor-pointer flex justify-center items-center gap-3"
+      >
+        <svg-icon name="apple" />
+        <p
+          class="text-base text-color font-medium font-plusJakarta leading-[26px] tracking-[-0.5px]"
+        >
+          Apple ID
+        </p>
+      </div>
+    </div>
+    <p
+      class="text-base text-grayBlack font-normal font-plusJakarta text-center leading-[26px] tracking-[-0.5px] pt-8"
+    >
+      Already have an account?<span
+        routerLink="/auth/signin"
+        class="text-base hover:underline text-secondary cursor-pointer font-medium font-plusJakarta leading-[26px] tracking-[0px]"
+      >
+        Sign in</span
+      >
+    </p>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+:host::ng-deep {
+  .p-inputotp {
+    justify-content: space-between;
+  }
+  .p-inputotp-input.p-inputtext-lg {
+    text-align: center;
+    width: 64px;
+    height: 58px;
+    border-radius: 12px;
+    border-color: #e9e9ea;
+  }
+
+  .p-inputtext:enabled:focus {
+    border-color: #a5a5ab;
+  }
+
+  .error:not(.p-filled) {
+    border-color: #ef4444;
+  }
+}

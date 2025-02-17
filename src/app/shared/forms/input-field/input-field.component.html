@@ -1,0 +1,62 @@
+<div class="relative">
+  <input
+    #input
+    [autocomplete]="type === 'password' ? 'new-password' : 'off'"
+    [type]="
+      (isPasswordVisible && type === 'password') || type !== 'password'
+        ? 'text'
+        : 'password'
+    "
+    [id]="id"
+    [value]="value"
+    [placeholder]="placeholder"
+    [disabled]="isDisabled"
+    (input)="writeValueFromEvent($event)"
+    (blur)="onTouched()"
+    [ngClass]="{ 'border-danger': errorMessage }"
+    class="block px-3 pb-2.5 pt-3 w-full text-sm font-medium font-plusJakarta text-color outline-none leading-[26px] tracking-[0px] bg-transparent rounded-xl placeholder:opacity-0 focus:placeholder:opacity-100 border border-grayBorder appearance-none focus:outline-none focus:ring-0 focus:border-[#A5A5AB] peer"
+  />
+  <label
+    [for]="id"
+    (click)="input.focus()"
+    class="absolute text-sm cursor-text text-[#A5A5AB] duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] bg-white dark:bg-gray-900 px-2.5 peer-focus:px-2 peer-focus:text-[#A5A5AB] peer-focus:dark:text-[#A5A5AB] peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-2"
+    >{{ label }}</label
+  >
+
+  @if (type === "password") {
+    <button
+      class="absolute cursor-pointer right-4 top-[16px]"
+      (click)="togglePasswordVisibility()"
+    >
+      <i
+        class="pi text-[#A5A5AB]"
+        style="font-size: 20px"
+        [ngClass]="isPasswordVisible ? 'pi-eye-slash' : 'pi-eye'"
+      ></i>
+    </button>
+  }
+
+  <!-- Show error message if exists -->
+</div>
+@if (validationMessages.length > 0) {
+  <div class="my-2 text-sm gap-x-4 flex justify-start flex-wrap">
+    @for (validation of validationMessages; track $index) {
+      <p
+        [ngClass]="{ 'text-danger text-xs': !validation.valid }"
+        class="flex items-center gap-1 min-w-[161px]"
+      >
+        <svg-icon
+          [name]="validation.valid ? 'tick-circle' : 'close-circle'"
+          class="validation-icon"
+        />
+        {{ validation.message }}
+      </p>
+    }
+  </div>
+}
+@if (errorMessage) {
+  <div class="flex gap-1 items-center">
+    <svg-icon name="close-circle" class="mt-1 validation-icon" />
+    <p class="text-danger text-xs mt-1">{{ errorMessage }}</p>
+  </div>
+}

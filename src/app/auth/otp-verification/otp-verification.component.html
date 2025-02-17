@@ -1,0 +1,65 @@
+<div class="w-full flex items-center justify-center bg-lightGray">
+  <div
+    class="w-[90%] md:w-[420px] py-10 px-6 md:px-10 rounded-[16px] mt-10 z-10 relative md:relative md:mt-0 bg-white"
+  >
+    <div class="space-y-3">
+      <h1
+        class="text-[32px] text-color font-medium font-plusJakarta leading-10 tracking-[-0.5px]"
+      >
+        Verification code!
+      </h1>
+      <p
+        class="text-base text-[#A5A5AB] font-normal font-plusJakarta leading-[26px] tracking-[-0.5px]"
+      >
+        We send you a verification code to your email
+        <span
+          class="text-base text-grayBlack font-normal font-plusJakarta leading-[26px] tracking-[-0.5px]"
+          >{{ email }}</span
+        >
+      </p>
+    </div>
+    <form [formGroup]="otpVerificationForm">
+      <div class="mt-8 flex flex-col gap-4">
+        <div>
+          <p-inputotp
+            formControlName="code"
+            size="large"
+            [styleClass]="
+              formUtilityService.getFormError(
+                otpVerificationForm,
+                'code',
+                formSubmitted
+              )
+                ? 'error'
+                : ''
+            "
+          />
+        </div>
+
+        <p
+          class="text-base text-secondary font-normal font-plusJakarta leading-[26px] tracking-[-0.5px]"
+        >
+          Resend:<span
+            class="text-base text-color font-plusJakarta] font-semibold leading-[26px] tracking-[0px]"
+          >
+            {{ countdown }}s</span
+          >
+        </p>
+      </div>
+
+      <div class="mt-10">
+        <button
+          (click)="
+            formSubmitted = true;
+            otpVerificationForm.valid && submitForgotPasswordForm()
+          "
+          [disabled]="submitLoading"
+          class="hover:shadow-md text-base text-white font-semibold font-plusJakarta w-full h-11 rounded-[10px] bg-gradient hover:bg-gradientHover leading-5"
+        >
+          <span *ngIf="submitLoading" class="pi pi-spin pi-spinner mr-2"></span>
+          Confirm
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

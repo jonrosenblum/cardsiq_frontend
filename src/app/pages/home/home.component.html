@@ -1,0 +1,571 @@
+<!-- Dashboard Sub Header -->
+<app-sub-header>
+  <span header-title>Overview</span>
+  <button
+    header-action
+    class="flex justify-center items-center w-[122px] h-11 rounded-xl bg-gradient hover:bg-gradientHover px-2 gap-2"
+  >
+    <svg-icon name="plus" />
+    <span class="text-sm text-white font-plusJakarta font-medium text-nowrap"
+      >New order</span
+    >
+  </button>
+</app-sub-header>
+
+<!-- Dashboard Body -->
+<div class="relative overflow-x-auto h-[calc(100vh-170px)] no-scrollbar">
+  <!-- Over Stats Cards -->
+  <div class="flex flex-wrap items-start justify-start  gap-6">
+    <app-stats-card
+      class="flex w-[276px] bg-white rounded-2xl"
+      title="Total Orders"
+      value="120"
+      percentage="+ 5.87%"
+      description="Overall total orders"
+    >
+    </app-stats-card>
+
+    <app-stats-card
+      class="flex w-[276px] bg-white rounded-2xl"
+      title="Total Earnings"
+      value="$2,060"
+      percentage="+ 23.87%"
+      description="Total Earnings"
+    >
+    </app-stats-card>
+
+    <app-stats-card
+      class="flex w-[276px] bg-white rounded-2xl"
+      title="Pending Payments"
+      value="$940"
+      percentage="+ 18.98%"
+      description="than last month"
+      badgeColor="#F9C80E"
+      badgeBg="bg-[#F9C80E]/25"
+    >
+    </app-stats-card>
+  </div>
+
+    <!--Recent Orders-->
+    <div class="flex flex-col  rounded-[20px] p-4 mt-4 bg-white relative overflow-hidden">
+      <!--Input and Seleter or date btn-->
+      <div
+        class="relative flex flex-col md:flex-row items-center justify-between w-full"
+      >
+        <h1 class="text-lg text-[#070707] font-bold font-plusJakarta">
+          Recent Orders
+        </h1>
+        <div
+          class="flex items-center justify-center w-full md:w-auto mt-4 md:mt-0 gap-2"
+        >
+          <button
+            class="flex items-center justify-center w-full md:w-[148px] h-12 gap-2 pl-2 rounded-xl border border-[#F0F0F0]"
+          >
+            <h1 class="text-sm text-[#000000] font-medium font-plusJakarta">
+              Select options
+            </h1>
+            <img src="/assets/images/down6.png" alt="" />
+          </button>
+          <button
+            class="flex items-center justify-center w-full md:w-[137px] h-12 gap-2 px-2 rounded-xl border border-[#F0F0F0]"
+          >
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 21 21"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g fill="none" fill-rule="evenodd" transform="translate(2 2)">
+                  <path
+                    d="m2.5.5h12c1.1045695 0 2 .8954305 2 2v11.9903615c0 1.1045695-.8954305 2-2 2h-12c-1.1045695 0-2-.8954305-2-2v-11.9903615c0-1.1045695.8954305-2 2-2z"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="m.659 4.5h15.841"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <g fill="#000000">
+                    <path
+                      d="m4.81640625 11.1552734v-1.0791015h.87890625c.66894531 0 1.12304688-.39550784 1.12304688-.97167971 0-.52734375-.41503907-.92773438-1.10351563-.92773438-.71289063 0-1.15234375.36621094-1.20117187.99609375h-1.36230469c.04882812-1.29882812 1.04980469-2.17285156 2.63671875-2.17285156 1.5625 0 2.43164062.86425781 2.42675781 1.89453125-.00488281.85449219-.54199219 1.41601565-1.29882813 1.60156255v.0927734c.98144532.1416016 1.57714844.7666016 1.57714844 1.7089844 0 1.2353515-1.16210937 2.109375-2.75390625 2.109375-1.59179687 0-2.67578125-.8691407-2.73925781-2.2021485h1.41113281c.04394531.5957031.55175781.9765625 1.30859375.9765625.74707032 0 1.26953125-.4052734 1.26953125-1.015625 0-.625-.48828125-1.0107422-1.27929687-1.0107422z"
+                    ></path>
+                    <path
+                      d="m11.516 14.227v-5.611h-.087l-1.729 1.192v-1.372l1.821-1.255h1.47v7.046z"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <h1 class="text-sm text-[#000000] font-medium font-plusJakarta">
+              August2024
+            </h1>
+          </button>
+        </div>
+      </div>
+
+      <div
+      class="relative overflow-x-auto mt-5 h-[340px] border border-[#E9E9EA] rounded-xl no-scrollbar"
+    >
+      <!--Table-->
+      <table
+        class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+      >
+        <thead
+          class="text-xs text-gray-700 uppercase bg-[#E9E9EA] dark:text-gray-400 sticky z-[1] top-0"
+        >
+          <tr class="">
+            <th scope="col" class="px-6 py-2 max-w-[150px] rounded-tl-xl">
+              <div class="flex items-center justify-start gap-3">
+                <p-checkbox value="Normal" [binary]="true"></p-checkbox>
+                <h4
+                  class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
+                >
+                  Order #
+                </h4>
+              </div>
+            </th>
+            <th scope="col" class="px-6 py-2 min-w-[200px]">
+              <h4
+                class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                Date
+              </h4>
+            </th>
+            <th scope="col" class="px-6 py-2 min-w-[200px]">
+              <h4
+                class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                Shopping Company
+              </h4>
+            </th>
+            <th scope="col" class="px-6 py-2 min-w-[200px]">
+              <h4
+                class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
+              >
+                Tracking Information
+              </h4>
+            </th>
+            <th scope="col" class="px-6 py-2">
+              <h4
+                class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
+              >
+                Vendor
+              </h4>
+            </th>
+            <th scope="col" class="px-6 py-2">
+              <h4
+                class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
+              >
+                Revenue
+              </h4>
+            </th>
+            <th scope="col" class="px-6 py-2 max-w-[150px]">
+              <h4
+                class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
+              >
+                Status
+              </h4>
+            </th>
+            <th scope="col" class="px-6 py-2 rounded-tr-xl"></th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (order of orders; track $index) {
+            <tr class="border-b border-[#E9E9EA]">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                <div class="flex justify-start items-center gap-4">
+                  <p-checkbox value="Normal" [binary]="true"></p-checkbox>
+                  <p
+                    class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-5 tracking-[-0.5px]"
+                  >
+                    {{ order.id }}
+                  </p>
+                </div>
+              </th>
+              <td
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta px-6 py-4 leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                {{ order.date }}
+              </td>
+              <td
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta px-6 py-4 leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                <img [src]="'/assets/images/'+order.company+'.png'" alt="" srcset="">
+
+              </td>
+              <td
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta px-6 py-4 leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                <a [href]="order.trackInfo" target="_blank" rel="noopener noreferrer" class="underline text-secondary">Track now</a>
+              </td>
+              <td
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                {{ order.vendor }}
+              </td>
+              <td
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                {{ order.amount }}
+              </td>
+              <td class="px-6 py-4">
+                <div
+                  class="flex justify-center items-center rounded-[4px] w-20 h-[28px] cursor-pointer"
+                  [ngStyle]="{ 'background-color': order.statusColor }"
+                >
+                  <p
+                    class="text-xs font-normal font-plusJakarta leading-5 tracking-[-0.5px]"
+                    [ngStyle]="{ color: order.textColor }"
+                  >
+                    {{ order.status }}
+                  </p>
+                </div>
+              </td>
+              <td
+                class="text-base text-[#464F60] font-medium tracking-wider px-4 py-2"
+              >
+                <div
+                  class="p-2 w-10 flex gap-2 justify-end relative items-center rounded-md cursor-pointer"
+                >
+                  <svg-icon name="edit" /> Edit
+                </div>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+    <div class="w-full bg-gradient-to-b from-white/60 to-white text-center absolute bottom-0 py-4 font-medium text-base text-secondary">Show All</div>
+    </div>
+
+  <!--Recent Transactions and Notifications-->
+  <div
+    class="flex flex-col lg:flex-row items-center justify-start  mt-4 gap-4"
+  >
+    <!--Recent Transactions Card-->
+    <div class="w-full relative overflow-hidden lg:w-[70%] h-[384px] bg-white rounded-[20px] px-4">
+      <div
+        class="flex flex-col md:flex-row items-center justify-between w-full pt-3 md:pt-0 h-[100px]"
+      >
+        <h1 class="text-lg text-[#070707] font-bold font-plusJakarta">
+          Recent Transactions
+        </h1>
+        <div
+          class="flex items-center justify-center w-full md:w-auto mt-4 md:mt-0 gap-2"
+        >
+          <button
+            class="flex items-center justify-center w-full md:w-[148px] h-12 gap-2 pl-2 rounded-xl border border-[#F0F0F0]"
+          >
+            <h1 class="text-sm text-[#000000] font-medium font-plusJakarta">
+              Select Status
+            </h1>
+            <img src="/assets/images/down6.png" alt="" />
+          </button>
+          <button
+            class="flex items-center justify-center w-full md:w-[137px] h-12 gap-2 px-2 rounded-xl border border-[#F0F0F0]"
+          >
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 21 21"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g fill="none" fill-rule="evenodd" transform="translate(2 2)">
+                  <path
+                    d="m2.5.5h12c1.1045695 0 2 .8954305 2 2v11.9903615c0 1.1045695-.8954305 2-2 2h-12c-1.1045695 0-2-.8954305-2-2v-11.9903615c0-1.1045695.8954305-2 2-2z"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="m.659 4.5h15.841"
+                    stroke="#000000"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <g fill="#000000">
+                    <path
+                      d="m4.81640625 11.1552734v-1.0791015h.87890625c.66894531 0 1.12304688-.39550784 1.12304688-.97167971 0-.52734375-.41503907-.92773438-1.10351563-.92773438-.71289063 0-1.15234375.36621094-1.20117187.99609375h-1.36230469c.04882812-1.29882812 1.04980469-2.17285156 2.63671875-2.17285156 1.5625 0 2.43164062.86425781 2.42675781 1.89453125-.00488281.85449219-.54199219 1.41601565-1.29882813 1.60156255v.0927734c.98144532.1416016 1.57714844.7666016 1.57714844 1.7089844 0 1.2353515-1.16210937 2.109375-2.75390625 2.109375-1.59179687 0-2.67578125-.8691407-2.73925781-2.2021485h1.41113281c.04394531.5957031.55175781.9765625 1.30859375.9765625.74707032 0 1.26953125-.4052734 1.26953125-1.015625 0-.625-.48828125-1.0107422-1.27929687-1.0107422z"
+                    ></path>
+                    <path
+                      d="m11.516 14.227v-5.611h-.087l-1.729 1.192v-1.372l1.821-1.255h1.47v7.046z"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <h1 class="text-sm text-[#000000] font-medium font-plusJakarta">
+              Export
+            </h1>
+          </button>
+        </div>
+      </div>
+      <!--Table Card 1-->
+      <div
+        class="relative overflow-x-auto h-[calc(100%-120px)] border border-[#E9E9EA] rounded-xl mt-6 md:mt-0 no-scrollbar"
+      >
+        <table class="w-full text-sm text-left rtl:text-right">
+          <thead class="uppercase bg-[#E9E9EA] sticky top-0">
+            <tr class="">
+              <th scope="col" class="px-6 py-2 rounded-tl-xl max-w-[150px]">
+                <h4
+                  class="text-sm text-[#1D1F2C] font-medium font-plusJakarta text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+                >
+                  Payment ID
+                </h4>
+              </th>
+              <th scope="col" class="px-6 py-2 max-w-[150px]">
+                <h4
+                  class="text-sm text-[#1D1F2C] font-medium font-plusJakarta text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+                >
+                  Date
+                </h4>
+              </th>
+              <th scope="col" class="px-6 py-2">
+                <h4 class="text-sm text-[#1D1F2C] font-medium font-plusJakarta">
+                  Amount
+                </h4>
+              </th>
+              <th scope="col" class="px-6 py-2 max-w-[150px]">
+                <h4
+                  class="text-sm text-[#1D1F2C] font-medium font-plusJakarta text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+                >
+                  Status
+                </h4>
+              </th>
+
+              <th scope="col" class="px-6 py-2 max-w-[150px]">
+                <h4
+                  class="text-sm text-[#1D1F2C] font-medium font-plusJakarta text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+                >
+                  Additional Notes
+                </h4>
+              </th>
+              <th scope="col" class="px-6 py-2 rounded-tr-xl"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-[#E9E9EA]">
+              <th scope="row" class="px-6 py-4">
+                <p
+                  class="block font-normal text-xs text-[#1D1F2C] font-plusJakarta"
+                >
+                  #202402
+                </p>
+              </th>
+              <td
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                August23,2024
+              </td>
+              <td
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta px-6 py-4"
+              >
+                120
+              </td>
+              <td
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta px-6 py-4"
+              >
+                <div
+                  class="flex justify-center items-center gap-2 rounded-md w-20 h-[28px] bg-[#FE4D4F]/10 cursor-pointer"
+                >
+                  <p
+                    class="text-[#FE4D4F] text-xs font-normal font-plusJakarta"
+                  >
+                    Rejected
+                  </p>
+                </div>
+              </td>
+              <td
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                Incorrect bank details
+              </td>
+            </tr>
+            <tr class="border-b border-[#E9E9EA]">
+              <th scope="row" class="px-6 py-4">
+                <p
+                  class="block font-normal text-xs text-[#1D1F2C] font-plusJakarta"
+                >
+                  #202402
+                </p>
+              </th>
+              <td
+                class="text-xs text-[#1D1F2C] font-normal px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                August23,2024
+              </td>
+              <td class="text-xs text-[#1D1F2C] font-normal px-6 py-4">120</td>
+              <td class="text-xs text-[#1D1F2C] font-normal px-6 py-4">
+                <div
+                  class="flex justify-center items-center gap-2 rounded-md w-20 h-[28px] bg-[#FE4D4F]/10 cursor-pointer"
+                >
+                  <p class="text-[#003DF6] text-xs font-normal">Pending</p>
+                </div>
+              </td>
+              <td
+                class="text-xs text-[#1D1F2C] font-normal px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                Processing by admin
+              </td>
+            </tr>
+            <tr class="border-b border-[#E9E9EA]">
+              <th scope="row" class="px-6 py-4">
+                <p
+                  class="block font-normal text-xs text-[#1D1F2C] font-plusJakarta"
+                >
+                  #202402
+                </p>
+              </th>
+              <td
+                class="text-xs text-[#1D1F2C] font-normal px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                August23,2024
+              </td>
+              <td class="text-xs text-[#1D1F2C] font-normal px-6 py-4">420</td>
+              <td class="text-xs text-[#1D1F2C] font-normal px-6 py-4">
+                <div
+                  class="flex justify-center items-center gap-2 rounded-md w-20 h-[28px] bg-[#53C31B]/10 cursor-pointer"
+                >
+                  <p class="text-xs text-[#53C31B] font-normal">Completed</p>
+                </div>
+              </td>
+              <td
+                class="text-xs text-[#1D1F2C] font-normal px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                Will clear within two(2) to five(4) business days of arrival.
+              </td>
+            </tr>
+            <tr class="border-b border-[#E9E9EA]">
+              <th scope="row" class="px-6 py-4">
+                <p
+                  class="block font-normal text-xs text-[#1D1F2C] font-plusJakarta"
+                >
+                  #202402
+                </p>
+              </th>
+              <td
+                class="text-xs text-[#1D1F2C] font-normal px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                August23,2024
+              </td>
+              <td class="text-xs text-[#1D1F2C] font-normal px-6 py-4">820</td>
+              <td class="text-xs text-[#1D1F2C] font-normal px-6 py-4">
+                <div
+                  class="flex justify-center items-center gap-2 rounded-md w-20 h-[28px] bg-[#53C31B]/10 cursor-pointer"
+                >
+                  <p class="text-xs text-[#53C31B] font-normal">Completed</p>
+                </div>
+              </td>
+              <td
+                class="text-xs text-[#1D1F2C] font-normal px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                Will clear within two(2) to five(4) business days of arrival.
+              </td>
+            </tr>
+            <tr class="border-b border-[#E9E9EA]">
+              <th scope="row" class="px-6 py-4">
+                <p
+                  class="block font-normal text-xs text-[#1D1F2C] font-plusJakarta"
+                >
+                  #202402
+                </p>
+              </th>
+              <td
+                class="text-xs text-[#1D1F2C] font-normal px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                August23,2024
+              </td>
+              <td class="text-xs text-[#1D1F2C] font-normal px-6 py-4">420</td>
+              <td class="text-xs text-[#1D1F2C] font-normal px-6 py-4">
+                <div
+                  class="flex justify-center items-center gap-2 rounded-md w-20 h-[28px] bg-[#53C31B]/10 cursor-pointer"
+                >
+                  <p class="text-xs text-[#53C31B] font-normal">Completed</p>
+                </div>
+              </td>
+              <td
+                class="text-xs text-[#1D1F2C] font-normal px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                Will clear within two(2) to five(4) business days of arrival.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="w-full bg-gradient-to-b from-white/60 to-white text-center absolute bottom-0 py-4 font-medium text-base text-secondary">Show All</div>
+    </div>
+    <div class="w-full lg:w-[30%] h-[384px] bg-white rounded-[20px] px-4">
+      <div class="flex items-center justify-between w-full h-[100px]">
+        <h1 class="text-lg text-[#070707] font-bold font-plusJakarta">
+          Notifications
+        </h1>
+        <p class="text-base text-[#7B66FF] font-medium font-plusJakarta">
+          Show All
+        </p>
+      </div>
+      <div class="space-y-2 border-b pb-3">
+        <p class="text-sm text-[#777980] font-normal font-plusJakarta">
+          Successfully upload a new order
+          <span class="text-sm text-[#070707] font-semibold font-plusJakarta">
+            Inventory ID #1234</span
+          >
+        </p>
+        <p class="text-sm text-[#777980] font-normal font-plusJakarta">
+          2 hours ago
+        </p>
+      </div>
+      <div class="space-y-2 border-b py-3">
+        <p class="text-sm text-[#777980] font-normal font-plusJakarta">
+          <span class="text-sm text-[#070707] font-semibold font-plusJakarta"
+            >Inventory ID #1234</span
+          >
+          is wating for your approval.
+        </p>
+        <p class="text-sm text-[#777980] font-normal font-plusJakarta">
+          2 hours ago
+        </p>
+      </div>
+      <div class="pt-3 flex flex-col gap-6 lg:gap-2 2xl:gap-6">
+        <h6 class="text-sm text-[#777980] font-normal font-plusJakarta">
+          Payment processed
+        </h6>
+        <div class="">
+          <p class="text-sm text-[#777980] font-normal font-plusJakarta">
+            Payment for
+            <span class="text-sm text-[#070707] font-semibold font-plusJakarta"
+              >Payment ID #1415</span
+            >
+            is now accepted.
+          </p>
+          <p class="text-sm text-[#777980] font-normal font-plusJakarta">
+            2 hours ago
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

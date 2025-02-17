@@ -1,0 +1,52 @@
+<app-sub-header>
+  <span header-title>Account settings</span>
+  <span header-subtitle
+    >Stay updated with the latest activities and alerts on the platform</span
+  >
+</app-sub-header>
+<div class="flex w-full items-center justify-center mt-4">
+  <div class="w-full flex flex-col items-center justify-start ">
+      <!--tabs section-->
+      <div class="border-b border-[#E4E6E8] w-full mb-6">
+          <!-- <ul class="flex w-full gap-12  -mb-px  text-start" id="default-tab"
+              data-tabs-toggle="#default-tab-content" role="tablist">
+              <li class="me-2  border-b-2  border-[#7B66FF]" role="presentation">
+                  <button
+                      class="inline-block py-2  text-sm font-medium text-[#7B66FF] leading-[18px] rounded-t-lg "
+                      id="profile-tab" data-tabs-target="#profile" type="button" role="tab"
+                      aria-controls="profile" aria-selected="false">Profile</button>
+              </li>
+              <li class="me-2 " role="presentation">
+                  <button
+                      class="inline-block py-2  text-sm  font-medium text-[#A5A5AB] leading-[18px] rounded-t-lg"
+                      id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab"
+                      aria-controls="dashboard" aria-selected="false">Security</button>
+              </li>
+              <li class="me-2 " role="presentation">
+                  <button
+                      class="inline-block py-2 text-sm font-medium text-[#A5A5AB] leading-[18px] rounded-t-lg "
+                      id="settings-tab" data-tabs-target="#settings" type="button" role="tab"
+                      aria-controls="settings" aria-selected="false">Profile preferences</button>
+              </li>
+          </ul> -->
+          <ul class="flex w-full gap-12 -mb-px text-start">
+            @for (tab of accountSettingTabs; track $index) {
+              <li class="me-2 border-b-2" [ngClass]="{'border-[#7B66FF]': tab.active}">
+                <button
+                  class="inline-block py-2 text-sm font-medium leading-[18px] rounded-t-lg"
+                  [ngClass]="{
+                    'text-[#7B66FF]': tab.active,
+                    'text-[#A5A5AB]': !tab.active
+                  }"
+                  (click)="onTabSection(tab)"
+                >
+                  {{ tab.label }}
+                </button>
+              </li>
+            }
+          </ul>
+
+      </div>
+      <router-outlet />
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="flex justify-between items-center pb-4">
+  <div class="flex flex-col justify-center items-start gap-2">
+    <!-- Dynamic Title -->
+    <h5 class="text-xl md:text-2xl text-[#070707] font-bold font-plusJakarta">
+      <ng-content select="[header-title]"></ng-content>
+    </h5>
+
+    <!-- Dynamic Subtitle -->
+    <p class="text-sm text-[#A5A5AB] font-normal font-plusJakarta">
+      <ng-content select="[header-subtitle]"></ng-content>
+    </p>
+  </div>
+
+  <!-- Dynamic Action Button -->
+  <div>
+    <ng-content select="[header-action]"></ng-content>
+  </div>
+</div>

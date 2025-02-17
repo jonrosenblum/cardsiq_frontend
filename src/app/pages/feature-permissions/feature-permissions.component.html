@@ -1,0 +1,19 @@
+<div class="container mx-auto p-6">
+  <h2 class="text-2xl font-bold mb-4">Feature Flags Management</h2>
+
+  <div
+    *ngFor="let flag of featureFlagService.flags()"
+    class="flex items-center justify-between p-4 bg-gray-200 rounded-lg shadow mb-2"
+  >
+    <span class="text-lg">{{ flag.name }}</span>
+
+    <label class="switch">
+      <input
+        type="checkbox"
+        [checked]="flag.enabled"
+        (change)="toggleFeature(flag.key)"
+      />
+      <span class="slider round"></span>
+    </label>
+  </div>
+</div>

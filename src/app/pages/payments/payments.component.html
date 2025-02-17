@@ -1,0 +1,449 @@
+<!-- Payments Sub Header -->
+<app-sub-header>
+  <span header-title>Payments</span>
+  <span header-subtitle>Keep track of your order history and payments</span>
+</app-sub-header>
+<div class="relative overflow-x-auto h-[calc(100vh-190px)]  no-scrollbar">
+
+  <div class="flex flex-wrap items-start justify-start  gap-6">
+    <app-stats-card
+      class="flex w-[276px] bg-white rounded-2xl"
+      title="Total Earnings"
+      value="$2,060"
+      percentage="+ 23.87%"
+      description="Total Earnings"
+    >
+    </app-stats-card>
+
+    <app-stats-card
+      class="flex w-[276px] bg-white rounded-2xl"
+      title="Pending Payments"
+      value="$940"
+      percentage="+ 18.98%"
+      description="than last month"
+      badgeColor="#F9C80E"
+      badgeBg="bg-[#F9C80E]/25"
+    >
+    </app-stats-card>
+  </div>
+  <div class="flex flex-col h-[568px] rounded-[20px]  px-4 mt-4 bg-white">
+    <div class="relative flex flex-col md:flex-row  items-center justify-between w-full my-5">
+        <input
+            class="w-full md:w-[260px] h-12 pl-10 pr-2 bg-[#E9E9EA] rounded-lg text-sm font-medium font-plusJakarta leading-5 tracking-[-0.5px] outline-none"
+            type="text" placeholder="Search payment id...">
+        <svg-icon name="search" class="absolute top-[14px] left-3" />
+        <div class="flex items-center justify-center  w-full md:w-auto mt-4 md:mt-0 gap-2">
+            <button
+                class="flex items-center justify-center w-full md:w-[148px] h-12 gap-2 pl-2 rounded-xl border border-[#F0F0F0]">
+                <h1 class="text-sm text-[#000000] font-medium font-plusJakarta leading-5 tracking-[-0.5px]">Select Status</h1>
+                <span
+              class="pi pi-angle-down text-blue-500"
+            ></span>
+            </button>
+            <button
+                class="flex items-center justify-center w-full md:w-[137px] h-12 gap-2 px-2 rounded-xl border border-[#F0F0F0]">
+                <svg width="20px" height="20px" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"
+                    fill="#000000">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <g fill="none" fill-rule="evenodd" transform="translate(2 2)">
+                            <path
+                                d="m2.5.5h12c1.1045695 0 2 .8954305 2 2v11.9903615c0 1.1045695-.8954305 2-2 2h-12c-1.1045695 0-2-.8954305-2-2v-11.9903615c0-1.1045695.8954305-2 2-2z"
+                                stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></path>
+                            <path d="m.659 4.5h15.841" stroke="#000000" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <g fill="#000000">
+                                <path
+                                    d="m4.81640625 11.1552734v-1.0791015h.87890625c.66894531 0 1.12304688-.39550784 1.12304688-.97167971 0-.52734375-.41503907-.92773438-1.10351563-.92773438-.71289063 0-1.15234375.36621094-1.20117187.99609375h-1.36230469c.04882812-1.29882812 1.04980469-2.17285156 2.63671875-2.17285156 1.5625 0 2.43164062.86425781 2.42675781 1.89453125-.00488281.85449219-.54199219 1.41601565-1.29882813 1.60156255v.0927734c.98144532.1416016 1.57714844.7666016 1.57714844 1.7089844 0 1.2353515-1.16210937 2.109375-2.75390625 2.109375-1.59179687 0-2.67578125-.8691407-2.73925781-2.2021485h1.41113281c.04394531.5957031.55175781.9765625 1.30859375.9765625.74707032 0 1.26953125-.4052734 1.26953125-1.015625 0-.625-.48828125-1.0107422-1.27929687-1.0107422z">
+                                </path>
+                                <path
+                                    d="m11.516 14.227v-5.611h-.087l-1.729 1.192v-1.372l1.821-1.255h1.47v7.046z">
+                                </path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <h1 class="text-sm text-[#000000] font-medium font-plusJakarta leading-5 tracking-[-0.5px]">Export</h1>
+            </button>
+        </div>
+    </div>
+
+    <!--Table-->
+    <div class="relative overflow-x-auto h-[calc(100%-120px)] border border-[#E9E9EA] rounded-xl no-scrollbar ">
+        <!--Table-->
+        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 ">
+            <thead class="text-xs text-gray-700  bg-[#E9E9EA] dark:text-gray-400 sticky top-0">
+                <tr class="">
+                    <th scope="col" class="px-6 py-2  rounded-tl-xl max-w-[150px]">
+                        <div class="flex items-center justify-start gap-4  ">
+                          <p-checkbox value="Normal" [binary]="true"></p-checkbox>
+                            <h4
+                                class="text-sm text-color font-medium font-plusJakarta leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
+                                Payment ID
+                            </h4>
+                        </div>
+                    </th>
+                    <th scope="col" class=" px-6 py-2 max-w-[150px] min-w-[300px]">
+                        <h4
+                            class="text-sm text-color font-medium font-plusJakarta leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
+                            Date
+                        </h4>
+                    </th>
+                    <th scope="col" class="px-6 py-2">
+                        <h4 class="text-sm text-color font-medium font-plusJakarta">Payment Method</h4>
+                    </th>
+                    <th scope="col" class="px-6 py-2">
+                        <h4 class="text-sm text-color font-medium font-plusJakarta leading-5 tracking-[-0.5px]">Amount</h4>
+                    </th>
+                    <th scope="col" class="px-6 py-2 max-w-[150px]">
+                        <h4 class="text-sm text-color font-medium font-plusJakarta leading-5 tracking-[-0.5px]">Status</h4>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b  border-[#E9E9EA]">
+                    <th scope="row"
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white ">
+                        <div class="flex justify-start items-center gap-4">
+                                            <p-checkbox value="Normal" [binary]="true"></p-checkbox>
+                            <p class="block font-normal text-xs text-color font-plusJakarta leading-5 tracking-[-0.5px]">#202402</p>
+                        </div>
+
+                    </th>
+                    <td
+                        class=" text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
+                        August23,2024
+                    </td>
+                    <td class="text-xs text-color font-normal font-plusJakarta px-6 py-4">
+                      <div class="flex gap-3 items-center">
+                        <img src="/assets/images/Visa.png" alt="" srcset="">
+                        <span class="text-[#1D1F2C] text-xs">*****6475</span>
+                      </div>
+                    </td>
+                    <td class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4">
+                        120
+                    </td>
+                    <td class="px-6 py-4">
+                        <div
+                            class="flex justify-center items-center  rounded-[4px] w-20 h-[28px] bg-[#FFEDED] cursor-pointer">
+                            <p class=" text-[#FE4D4F] text-xs font-normal font-plusJakarta leading-5 tracking-[-0.5px]">Rejected</p>
+                        </div>
+                    </td>
+
+
+                </tr>
+                <tr class="border-b border-[#E9E9EA]">
+                    <th scope="row"
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        <div class="flex justify-start items-center gap-4">
+                                            <p-checkbox value="Normal" [binary]="true"></p-checkbox>
+                            <p class="block font-normal text-xs text-color font-plusJakarta leading-5 tracking-[-0.5px]">#202403</p>
+                        </div>
+
+                    </th>
+                    <td
+                        class=" text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
+                        August23,2024
+                    </td>
+                    <td class="text-xs text-[#1D1F2C] font-normal font-plusJakarta px-6 py-4">
+                      <div class="flex gap-3 items-center">
+                        <img src="/assets/images/Visa.png" alt="" srcset="">
+                        <span class="text-[#1D1F2C] text-xs">*****6475</span>
+                      </div>
+                    </td>
+                    <td class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4">
+                        120
+                    </td>
+                    <td class="px-6 py-4">
+                        <div
+                            class="flex justify-center items-center  rounded-[4px] w-20 h-[28px] bg-[#E6ECFE] cursor-pointer">
+                            <p class=" text-[#003DF6] text-xs font-normal font-plusJakarta leading-5 tracking-[-0.5px]">Pending</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="border-b border-[#E9E9EA]">
+                    <th scope="row"
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        <div class="flex justify-start items-center gap-4">
+                                            <p-checkbox value="Normal" [binary]="true"></p-checkbox>
+                            <p class="block font-normal text-xs text-color font-plusJakarta leading-5 tracking-[-0.5px]">#202404</p>
+                        </div>
+
+                    </th>
+                    <td
+                        class=" text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
+                        August23,2024
+                    </td>
+                    <td class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4">
+                      <div class="flex gap-3 items-center">
+                        <img src="/assets/images/Stripe.png" alt="" srcset="">
+                        <span class="text-[#1D1F2C] text-xs">*****6475</span>
+                      </div>
+                    </td>
+                    <td class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4">
+                        420
+                    </td>
+                    <td class="px-6 py-4">
+                        <div
+                            class="flex justify-center items-center  rounded-[4px] w-20 h-[28px] bg-[#EEF9E8] cursor-pointer">
+                            <p class="text-xs text-[#53C31B]  font-normal font-plusJakarta leading-5 tracking-[-0.5px]">Completed
+                            </p>
+                        </div>
+                    </td>
+
+
+                </tr>
+                <tr class="border-b border-[#E9E9EA]">
+                    <th scope="row"
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        <div class="flex justify-start items-center gap-4">
+                                            <p-checkbox value="Normal" [binary]="true"></p-checkbox>
+                            <p class="block font-normal text-xs text-color font-plusJakarta leading-5 tracking-[-0.5px]">#202405</p>
+                        </div>
+
+                    </th>
+                    <td
+                        class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
+                        August23,2024
+                    </td>
+                    <td class="text-xs text-color font-normal font-plusJakarta px-6 py-4">
+                      <div class="flex gap-3 items-center">
+                        <img src="/assets/images/Mastercard.png" alt="" srcset="">
+                        <span class="text-[#1D1F2C] text-xs">*****6475</span>
+                      </div>
+                    </td>
+                    <td class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4">
+                        820
+                    </td>
+                    <td class="px-6 py-4">
+                        <div
+                            class="flex justify-center items-center  rounded-[4px] w-20 h-[28px] bg-[#EEF9E8] cursor-pointer">
+                            <p class="text-xs text-[#53C31B]  font-normal font-plusJakarta leading-5 tracking-[-0.5px]">Completed
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="border-b border-[#E9E9EA]">
+                    <th scope="row"
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        <div class="flex justify-start items-center gap-4">
+                                            <p-checkbox value="Normal" [binary]="true"></p-checkbox>
+                            <p class="block font-normal text-xs text-color font-plusJakarta leading-5 tracking-[-0.5px]">#202406</p>
+                        </div>
+
+                    </th>
+                    <td
+                        class=" text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
+                        August23,2024
+                    </td>
+                    <td class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4">
+                      <div class="flex gap-3 items-center">
+                        <img src="/assets/images/Mastercard.png" alt="" srcset="">
+                        <span class="text-[#1D1F2C] text-xs">*****6475</span>
+                      </div>
+                    </td>
+                    <td class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4">
+                        820
+                    </td>
+                    <td class="px-6 py-4">
+                        <div
+                            class="flex justify-center items-center  rounded-[4px] w-20 h-[28px] bg-[#E6ECFE] cursor-pointer">
+                            <p class=" text-[#003DF6] text-xs font-normal font-plusJakarta leading-5 tracking-[-0.5px]">Pending</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="border-b border-[#E9E9EA]">
+                    <th scope="row"
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        <div class="flex justify-start items-center gap-4">
+                                            <p-checkbox value="Normal" [binary]="true"></p-checkbox>
+                            <p class="block font-normal text-xs text-color font-plusJakarta leading-5 tracking-[-0.5px]">#202407</p>
+                        </div>
+
+                    </th>
+                    <td
+                        class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
+                        August23,2024
+                    </td>
+                    <td class="text-xs text-color font-normal font-plusJakarta px-6 py-4">
+                      <div class="flex gap-3 items-center">
+                        <img src="/assets/images/Mastercard.png" alt="" srcset="">
+                        <span class="text-[#1D1F2C] text-xs">*****6475</span>
+                      </div>
+                    </td>
+                    <td class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4">
+                        820
+                    </td>
+                    <td class="px-6 py-4">
+                        <div
+                            class="flex justify-center items-center  rounded-[4px] w-20 h-[28px] bg-[#EEF9E8] cursor-pointer">
+                            <p class="text-xs text-[#53C31B]  font-normal font-plusJakarta leading-5 tracking-[-0.5px]">Completed
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="">
+                    <th scope="row"
+                        class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white ">
+                        <div class="flex justify-start items-center gap-4">
+                                            <p-checkbox value="Normal" [binary]="true"></p-checkbox>
+                            <p class="block font-normal text-xs text-color font-plusJakarta leading-5 tracking-[-0.5px]">#202408</p>
+                        </div>
+
+                    </th>
+                    <td
+                        class=" text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
+                        August23,2024
+                    </td>
+                    <td class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4">
+                      <div class="flex gap-3 items-center">
+                        <img src="/assets/images/Mastercard.png" alt="" srcset="">
+                        <span class="text-[#1D1F2C] text-xs">*****6475</span>
+                      </div>
+                    </td>
+                    <td class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4">
+                        120
+                    </td>
+                    <td class="px-6 py-4">
+                        <div
+                            class="flex justify-center items-center rounded-[4px] w-20 h-[28px] bg-[#FFEDED] cursor-pointer">
+                            <p class=" text-[#FE4D4F] text-xs font-normal font-plusJakarta leading-5 tracking-[-0.5px]">Rejected</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+    <!--footer-->
+    <div class="flex flex-col md:flex-row justify-between items-center w-full gap-6 md:gap-0  py-4 ">
+        <div class="flex items-center justify-center md:justify-start w-full gap-4">
+            <p class="text-xs text-[#070707] font-medium font-plusJakarta leading-5 tracking-[-0.5px]">Show</p>
+            <div
+                class="flex items-center justify-center w-[70px] h-11 rounded-lg border border-[#E9E9EA] cursor-pointer gap-2">
+                <span class="text-xs text-[#070707] font-medium font-plusJakarta leading-5 tracking-[-0.5px]">10</span>
+                <img src="/Assets/images/down6.png" alt="">
+            </div>
+            <div class="flex items-center gap-4">
+                <p class="text-xs text-[#070707] font-medium font-plusJakarta leading-5 tracking-[-0.5px]">from</p>
+                <span class="text-xs text-[#070707] font-medium font-plusJakarta leading-5 tracking-[-0.5px]">12</span>
+            </div>
+        </div>
+        <div class="flex justify-center md:justify-end items-center w-full gap-4">
+            <ul class="flex items-center">
+                <li class="px-2 ">
+                    <button aria-disabled="true" disabled=""
+                        class="w-9 h-9 flex items-center justify-center rounded-md border disabled cursor-pointer">
+                        <span>
+                            <svg width="8" height="15" viewBox="0 0 8 15"
+                                class="fill-current stroke-current">
+                                <path
+                                    d="M7.12979 1.91389L7.1299 1.914L7.1344 1.90875C7.31476 1.69833 7.31528 1.36878 7.1047 1.15819C7.01062 1.06412 6.86296 1.00488 6.73613 1.00488C6.57736 1.00488 6.4537 1.07206 6.34569 1.18007L6.34564 1.18001L6.34229 1.18358L0.830207 7.06752C0.830152 7.06757 0.830098 7.06763 0.830043 7.06769C0.402311 7.52078 0.406126 8.26524 0.827473 8.73615L0.827439 8.73618L0.829982 8.73889L6.34248 14.6014L6.34243 14.6014L6.34569 14.6047C6.546 14.805 6.88221 14.8491 7.1047 14.6266C7.30447 14.4268 7.34883 14.0918 7.12833 13.8693L1.62078 8.01209C1.55579 7.93114 1.56859 7.82519 1.61408 7.7797L1.61413 7.77975L1.61729 7.77639L7.12979 1.91389Z"
+                                    stroke-width="0.3"></path>
+                            </svg>
+                        </span>
+                        <span>
+                            <svg width="8" height="15" viewBox="0 0 8 15"
+                                class="fill-current stroke-current">
+                                <path
+                                    d="M7.12979 1.91389L7.1299 1.914L7.1344 1.90875C7.31476 1.69833 7.31528 1.36878 7.1047 1.15819C7.01062 1.06412 6.86296 1.00488 6.73613 1.00488C6.57736 1.00488 6.4537 1.07206 6.34569 1.18007L6.34564 1.18001L6.34229 1.18358L0.830207 7.06752C0.830152 7.06757 0.830098 7.06763 0.830043 7.06769C0.402311 7.52078 0.406126 8.26524 0.827473 8.73615L0.827439 8.73618L0.829982 8.73889L6.34248 14.6014L6.34243 14.6014L6.34569 14.6047C6.546 14.805 6.88221 14.8491 7.1047 14.6266C7.30447 14.4268 7.34883 14.0918 7.12833 13.8693L1.62078 8.01209C1.55579 7.93114 1.56859 7.82519 1.61408 7.7797L1.61413 7.77975L1.61729 7.77639L7.12979 1.91389Z"
+                                    stroke-width="0.3"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </li>
+                <li class="px-2">
+                    <button aria-disabled="true" disabled=""
+                        class="w-9 h-9 flex items-center justify-center rounded-md border disabled cursor-pointer">
+                        <span>
+                            <svg width="8" height="15" viewBox="0 0 8 15"
+                                class="fill-current stroke-current">
+                                <path
+                                    d="M7.12979 1.91389L7.1299 1.914L7.1344 1.90875C7.31476 1.69833 7.31528 1.36878 7.1047 1.15819C7.01062 1.06412 6.86296 1.00488 6.73613 1.00488C6.57736 1.00488 6.4537 1.07206 6.34569 1.18007L6.34564 1.18001L6.34229 1.18358L0.830207 7.06752C0.830152 7.06757 0.830098 7.06763 0.830043 7.06769C0.402311 7.52078 0.406126 8.26524 0.827473 8.73615L0.827439 8.73618L0.829982 8.73889L6.34248 14.6014L6.34243 14.6014L6.34569 14.6047C6.546 14.805 6.88221 14.8491 7.1047 14.6266C7.30447 14.4268 7.34883 14.0918 7.12833 13.8693L1.62078 8.01209C1.55579 7.93114 1.56859 7.82519 1.61408 7.7797L1.61413 7.77975L1.61729 7.77639L7.12979 1.91389Z"
+                                    stroke-width="0.3"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </li>
+                <li class="px-2 hidden sm:block">
+                    <button
+                        class="w-9 h-9 text-xs font-medium font-plusJakarta rounded-md bg-[#7B66FF] border hover:border-cyan-500  text-white">1</button>
+                </li>
+                <li class="px-2 hidden sm:block">
+                    <button
+                        class="w-9 h-9 text-xs text-[#070707] font-medium font-plusJakarta rounded-md border hover:border-cyan-500 hover:text-indigo-500">2</button>
+                </li>
+                <li class="px-2 hidden sm:block">
+                    <button
+                        class="w-9 h-9 text-xs text-[#070707] font-medium font-plusJakarta rounded-md border hover:border-cyan-500 hover:text-indigo-500">3</button>
+                </li>
+                <li class="px-2 hidden sm:block">
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" transform="rotate(270)">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                        </g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6C12.5523 6 13 5.55228 13 5Z"
+                                stroke="#a5a5ab" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path
+                                d="M13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13C12.5523 13 13 12.5523 13 12Z"
+                                stroke="#a5a5ab" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path
+                                d="M13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20C12.5523 20 13 19.5523 13 19Z"
+                                stroke="#a5a5ab" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+                </li>
+                <li class="px-2 hidden sm:block">
+                    <button
+                        class="w-9 h-9 text-xs text-[#070707] font-medium font-plusJakarta rounded-md border hover:border-cyan-500 hover:text-indigo-500">10</button>
+                </li>
+                <li class="px-2">
+                    <button aria-disabled="false"
+                        class="w-9 h-9 flex items-center justify-center rounded-md border hover:text-indigo-500">
+                        <span>
+                            <svg width="8" height="15" viewBox="0 0 8 15"
+                                class="fill-current stroke-current">
+                                <path
+                                    d="M0.870212 13.0861L0.870097 13.086L0.865602 13.0912C0.685237 13.3017 0.684716 13.6312 0.895299 13.8418C0.989374 13.9359 1.13704 13.9951 1.26387 13.9951C1.42264 13.9951 1.5463 13.9279 1.65431 13.8199L1.65436 13.82L1.65771 13.8164L7.16979 7.93248C7.16985 7.93243 7.1699 7.93237 7.16996 7.93231C7.59769 7.47923 7.59387 6.73477 7.17253 6.26385L7.17256 6.26382L7.17002 6.26111L1.65752 0.398611L1.65757 0.398563L1.65431 0.395299C1.454 0.194997 1.11779 0.150934 0.895299 0.373424C0.695526 0.573197 0.651169 0.908167 0.871667 1.13067L6.37922 6.98791C6.4442 7.06886 6.43141 7.17481 6.38592 7.2203L6.38587 7.22025L6.38271 7.22361L0.870212 13.0861Z"
+                                    stroke-width="0.3"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </li>
+                <li class="px-2">
+                    <button aria-disabled="false"
+                        class="w-9 h-9 flex items-center justify-center rounded-md border hover:text-indigo-500">
+                        <span>
+                            <svg width="8" height="15" viewBox="0 0 8 15"
+                                class="fill-current stroke-current">
+                                <path
+                                    d="M0.870212 13.0861L0.870097 13.086L0.865602 13.0912C0.685237 13.3017 0.684716 13.6312 0.895299 13.8418C0.989374 13.9359 1.13704 13.9951 1.26387 13.9951C1.42264 13.9951 1.5463 13.9279 1.65431 13.8199L1.65436 13.82L1.65771 13.8164L7.16979 7.93248C7.16985 7.93243 7.1699 7.93237 7.16996 7.93231C7.59769 7.47923 7.59387 6.73477 7.17253 6.26385L7.17256 6.26382L7.17002 6.26111L1.65752 0.398611L1.65757 0.398563L1.65431 0.395299C1.454 0.194997 1.11779 0.150934 0.895299 0.373424C0.695526 0.573197 0.651169 0.908167 0.871667 1.13067L6.37922 6.98791C6.4442 7.06886 6.43141 7.17481 6.38592 7.2203L6.38587 7.22025L6.38271 7.22361L0.870212 13.0861Z"
+                                    stroke-width="0.3"></path>
+                            </svg>
+                        </span>
+                        <span>
+                            <svg width="8" height="15" viewBox="0 0 8 15"
+                                class="fill-current stroke-current">
+                                <path
+                                    d="M0.870212 13.0861L0.870097 13.086L0.865602 13.0912C0.685237 13.3017 0.684716 13.6312 0.895299 13.8418C0.989374 13.9359 1.13704 13.9951 1.26387 13.9951C1.42264 13.9951 1.5463 13.9279 1.65431 13.8199L1.65436 13.82L1.65771 13.8164L7.16979 7.93248C7.16985 7.93243 7.1699 7.93237 7.16996 7.93231C7.59769 7.47923 7.59387 6.73477 7.17253 6.26385L7.17256 6.26382L7.17002 6.26111L1.65752 0.398611L1.65757 0.398563L1.65431 0.395299C1.454 0.194997 1.11779 0.150934 0.895299 0.373424C0.695526 0.573197 0.651169 0.908167 0.871667 1.13067L6.37922 6.98791C6.4442 7.06886 6.43141 7.17481 6.38592 7.2203L6.38587 7.22025L6.38271 7.22361L0.870212 13.0861Z"
+                                    stroke-width="0.3"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </div>
+
+</div>

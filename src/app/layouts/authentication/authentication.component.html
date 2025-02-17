@@ -1,0 +1,18 @@
+<div class="flex md:h-screen w-full flex-col md:flex-row">
+  <!-- Sidebar -->
+  <app-side-panel class="flex-shrink-0" />
+
+  <!-- Main Content Wrapper -->
+  <div class="flex flex-col w-full bg-lightGray overflow-y-auto no-scrollbar">
+    <!-- Content Area (Scrollable) -->
+    <div class="flex-1 flex justify-center items-center">
+      <router-outlet />
+      <img src="/assets/svg/auth-bg.svg" alt="auth-bg" class="absolute" />
+    </div>
+
+    <!-- Fixed Footer -->
+    @if (isFooter()) {
+      <app-footer class="w-full flex-shrink-0" />
+    }
+  </div>
+</div>

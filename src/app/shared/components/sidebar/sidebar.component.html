@@ -1,0 +1,113 @@
+<!-- <div
+  class="flex justify-start flex-col max-w-[250px] bg-main-gradient h-screen relative"
+>
+  <div class="py-10 flex justify-center w-full mx-auto">
+    <img src="/assets/images/logo/company-logo.png" alt="company logo" />
+  </div>
+
+  <div class="h-[75%] overflow-y-auto">
+    @for (item of menuItems; track $index) {
+      <div
+        class="flex items-center justify-start px-4 py-3 gap-2 cursor-pointer"
+        [ngClass]="item.active ? 'bg-[#979797]/25' : 'hover:bg-[#979797]/10'"
+      >
+        <svg-icon [name]="item.icon" svgClass="w-6 h-6" />
+        <div class="flex items-center justify-between w-full">
+          <p class="font-semibold text-base text-white">{{ item.title }}</p>
+          @if (menuHasChildren(item)) {
+            <svg-icon name="chevron-down" svgClass="w-8 h-8 mt-1" />
+          }
+        </div>
+      </div>
+    }
+  </div>
+
+  <div
+    class="flex items-center w-full justify-center px-4 py-3 gap-2 absolute bottom-2 cursor-pointer"
+  >
+    <svg-icon name="collapse" svgClass="w-6 h-6" />
+    <p class="font-semibold text-base text-white">Collapse</p>
+  </div>
+</div> -->
+
+<div
+  [ngClass]="isSidebarOpen ? 'ml-0' : '-ml-60'"
+  class="transition-all duration-1000 ease-in-out hidden md:flex flex-col justify-start items-start px-4 bg-primary w-[236px] min-w-[236px] h-screen no-scrollbar relative"
+>
+  <button
+    (click)="toggleSidebar()"
+    class="flex shadow-lg items-center justify-center w-8 h-8 rounded-full cursor-pointer border border-[#F0F0F0] hover:border-secondary bg-white hover:bg-secondary absolute top-6 text-black -right-[15px] hover:text-white"
+  >
+    <span class="pi pi-angle-left"> </span>
+  </button>
+  <img
+    class="absolute bottom-0 left-0"
+    src="/assets/svg/bg-circla.svg.svg"
+    alt="circla.svg"
+  />
+  <img class=" " src="/assets/images/aquabox logo-01 3.png" alt="" />
+  <div class="flex flex-col h-screen items-start relative w-full py-4">
+    <div class="no-scrollbar w-full overflow-scroll max-h-[40vh] mb-4">
+      <div class="flex w-full flex-col items-start">
+        @for (item of menuItems; track $index) {
+          <div
+            [routerLink]="item.link"
+            [ngClass]="
+              item.active ? 'bg-[#1D1F2C]/70' : 'hover:bg-[#1D1F2C]/10'
+            "
+            class="flex justify-start items-center rounded-lg py-3 w-full px-3 group gap-2 hover:cursor-pointer"
+          >
+            <img
+              class="group-hover:rotate-6 cursor-pointer"
+              [src]="'/assets/svg/' + item.icon + '.svg'"
+              alt="Dashboard"
+            />
+            <h6
+              class="text-sm font-medium text-[#E9E9EA] font-plusJakarta group-hover:cursor-pointer"
+            >
+              {{ item.title }}
+            </h6>
+          </div>
+        }
+      </div>
+    </div>
+    <div class="space-y-3 w-full">
+      <p
+        class="text-xs text-grayBlack font-semibold font-plusJakarta uppercase"
+      >
+        tools
+      </p>
+      <div
+        class="space-y-3 no-scrollbar w-full overflow-scroll max-h-[40vh] mb-4"
+      >
+        <div routerLink="/settings/profile"
+        [ngClass]="
+              currentUrl.includes('settings')? 'bg-[#1D1F2C]/70' : 'hover:bg-[#1D1F2C]/10'
+            "
+          class="flex justify-start items-center w-full py-3 px-3 rounded-lg group gap-2 cursor-pointer"
+        >
+          <img
+            class="w-6 h-6 cursor-pointer group-hover:rotate-6"
+            src="/assets/svg/setting-2.svg"
+            alt=""
+          />
+          <h6
+            class="text-sm font-medium text-[#E9E9EA] font-plusJakarta group-hover:cursor-pointer"
+          >
+            Settings
+          </h6>
+        </div>
+      </div>
+    </div>
+    <div class="flex w-full flex-col items-center pb-4 absolute bottom-0">
+      <div
+        class="flex justify-start items-center py-3 px-3 w-full gap-4 cursor-pointer"
+      >
+        <img class="" alt="" src="/assets/svg/logout.svg" />
+        <h6 class="text-sm font-medium text-[#E9E9EA] font-plusJakarta">
+          Logout
+        </h6>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,77 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "primeicons/primeicons.css";
+
+:root {
+  --primary: #7b66ff;
+  --secondary: #070707;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("./assets/fonts/PlusJakartaSans-Regular.ttf");
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.p-checkbox {
+  display: flex;
+  width: 18px;
+  height: 18px;
+  .p-checkbox-box {
+    border-color: #dadada !important;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ced4da;
+    color: #495057;
+    border-radius: 3px;
+  }
+  .p-checkbox-box:hover {
+    border-color: var(--primary) !important;
+  }
+}
+
+.p-checkbox-checked {
+  .p-checkbox-box {
+    border: 2px solid var(--primary) !important;
+    background: var(--primary) !important;
+    color: #fff !important;
+    border-radius: 3px;
+    outline: none !important;
+    transition:
+      background-color 0.2s,
+      color 0.2s,
+      border-color 0.2s,
+      box-shadow 0.2s;
+  }
+  .p-checkbox-icon {
+    width: 13px;
+    height: 13px;
+    color: #fff;
+    font-size: 14px;
+    transition-duration: 0.2s;
+    stroke-width: 0.7px !important;
+    stroke: #fff !important;
+  }
+}
+
+.validation-icon svg {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+router-outlet + * {
+  display: block;
+  width: 100%;
+}

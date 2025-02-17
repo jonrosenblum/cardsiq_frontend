@@ -1,0 +1,65 @@
+<!-- Notification Sub Header -->
+<app-sub-header>
+  <span header-title>Notifications</span>
+  <span header-subtitle
+    >Stay updated with the latest activities and alerts on the platform</span
+  >
+</app-sub-header>
+
+  <div
+    class="flex flex-col mt-2"
+    *ngFor="let date of commonUtils.getObjectKeys(notifications)"
+  >
+    <div class="flex items-center justify-between my-4">
+      <span class="font-semibold text-sm text-start text-grayBlack">
+        {{
+          date === "Today" || date === "Yesterday"
+            ? "New inventory uploaded"
+            : "Payment processed"
+        }}
+      </span>
+      <span class="font-normal text-sm text-start text-[#272835]">
+        {{ date }}
+      </span>
+    </div>
+
+    <div class="flex flex-col gap-3">
+      <div
+        class="flex flex-col gap-2 sm:flex-row justify-between min-h-[72px] rounded-xl bg-white p-4"
+        *ngFor="let notification of notifications[date]"
+      >
+        <div class="flex gap-3 items-start">
+          <img
+            [src]="notification.avatar"
+            alt="avatar"
+            class="rounded-full w-9 h-9 object-cover"
+          />
+          <div class="flex flex-col">
+            <div
+              class="font-normal text-sm text-start text-[#777980]"
+              [innerHTML]="notification.message"
+            ></div>
+            <span class="font-normal text-sm text-start text-[#777980]">
+              {{ formatTime(notification.timestamp) }}
+            </span>
+          </div>
+        </div>
+
+        <div
+          class="flex w-full sm:w-auto justify-end gap-2 items-center"
+          *ngIf="notification.actionButtons"
+        >
+          <button
+            class="min-w-[65px] px-3 h-6 border border-secondary rounded-lg flex items-center justify-center text-secondary hover:shadow-md"
+          >
+            Decline
+          </button>
+          <button
+            class="min-w-[65px] px-3 h-6 hover:shadow-md border border-secondary bg-secondary rounded-lg flex items-center justify-center text-white"
+          >
+            Approve
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
