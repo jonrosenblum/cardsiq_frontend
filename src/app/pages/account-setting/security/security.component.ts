@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-security',
   imports: [],
   templateUrl: './security.component.html',
-  styleUrl: './security.component.scss'
+  styleUrl: './security.component.scss',
 })
-export class SecurityComponent {
-
-}
+export class SecurityComponent {}

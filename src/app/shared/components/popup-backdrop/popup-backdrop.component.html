@@ -1,0 +1,6 @@
+<div
+  [class]="isOpen ? 'opacity-100 animate-fade-in' : 'opacity-0 animate-fade-out'"
+  class="fixed inset-0 z-[10000] bg-black/60 grid place-content-center transition-opacity duration-500 ease-out"
+>
+  <ng-content></ng-content>
+</div>

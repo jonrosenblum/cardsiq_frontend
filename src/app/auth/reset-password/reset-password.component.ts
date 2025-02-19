@@ -6,7 +6,6 @@ import { FormUtilityService } from '../../core/services/form-utils.service';
 import { AuthService } from '../../core/services/auth.service';
 import { ToastService } from '../../core/services/toast.service';
 import { Router } from '@angular/router';
-import { redirectTo } from '../../shared/common-utils';
 import { InputFieldComponent } from '../../shared/forms/input-field/input-field.component';
 import { ValidationMessages } from '../../shared/enums/validation-messages.enum';
 
@@ -20,6 +19,7 @@ import { ValidationMessages } from '../../shared/enums/validation-messages.enum'
 export class ResetPasswordComponent {
   formSubmitted: boolean = false;
   submitLoading: boolean = false;
+  resetPasswordSuccess:boolean = false;
   resetPasswordForm: FormGroup = ResetPasswordForm;
   passwordValidationMessages: { message: string; valid: boolean }[] = [];
 
@@ -61,8 +61,9 @@ export class ResetPasswordComponent {
     this.submitLoading = true;
     setTimeout(() => {
       this.submitLoading = false;
-      this.toastService.success('Your password has been updated successfully');
-      redirectTo(this.router, '/auth/signin');
+      this.resetPasswordSuccess = true;
+      // this.toastService.success('Your password has been updated successfully');
+      // redirectTo(this.router, '/auth/signin');
     }, 2000);
   }
 }

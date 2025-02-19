@@ -30,6 +30,13 @@ export const dashboardRoutes: Routes = [
           ),
       },
       {
+        path: 'inventory',
+        loadComponent: () =>
+          import('./../../pages/inventory/inventory.component').then(
+            (m) => m.InventoryComponent,
+          ),
+      },
+      {
         path: 'notifications',
         loadComponent: () =>
           import('./../../pages/notifications/notifications.component').then(

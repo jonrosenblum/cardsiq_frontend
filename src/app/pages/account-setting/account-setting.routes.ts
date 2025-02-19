@@ -9,21 +9,19 @@ export const accountSettingRoutes: Routes = [
   {
     path: 'settings',
     loadComponent: () =>
-      import('./account-setting.component').then((m) => m.AccountSettingComponent),
+      import('./account-setting.component').then(
+        (m) => m.AccountSettingComponent,
+      ),
     children: [
       {
         path: 'profile',
         loadComponent: () =>
-          import('./profile/profile.component').then(
-            (m) => m.ProfileComponent,
-          ),
+          import('./profile/profile.component').then((m) => m.ProfileComponent),
       },
       {
         path: 'billing',
         loadComponent: () =>
-          import('./billing/billing.component').then(
-            (m) => m.BillingComponent,
-          ),
+          import('./billing/billing.component').then((m) => m.BillingComponent),
       },
       {
         path: 'security',

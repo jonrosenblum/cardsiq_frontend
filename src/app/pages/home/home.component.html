@@ -13,9 +13,9 @@
 </app-sub-header>
 
 <!-- Dashboard Body -->
-<div class="relative overflow-x-auto h-[calc(100vh-170px)] no-scrollbar">
+<div class="relative overflow-x-auto h-[calc(100vh-172px)] no-scrollbar">
   <!-- Over Stats Cards -->
-  <div class="flex flex-wrap items-start justify-start  gap-6">
+  <div class="flex flex-wrap items-start justify-start gap-6">
     <app-stats-card
       class="flex w-[276px] bg-white rounded-2xl"
       title="Total Orders"
@@ -46,75 +46,77 @@
     </app-stats-card>
   </div>
 
-    <!--Recent Orders-->
-    <div class="flex flex-col  rounded-[20px] p-4 mt-4 bg-white relative overflow-hidden">
-      <!--Input and Seleter or date btn-->
+  <!--Recent Orders-->
+  <div
+    class="flex flex-col rounded-[20px] p-4 mt-4 bg-white relative overflow-hidden"
+  >
+    <!--Input and Seleter or date btn-->
+    <div
+      class="relative flex flex-col md:flex-row items-center justify-between w-full"
+    >
+      <h1 class="text-lg text-[#070707] font-bold font-plusJakarta">
+        Recent Orders
+      </h1>
       <div
-        class="relative flex flex-col md:flex-row items-center justify-between w-full"
+        class="flex items-center justify-center w-full md:w-auto mt-4 md:mt-0 gap-2"
       >
-        <h1 class="text-lg text-[#070707] font-bold font-plusJakarta">
-          Recent Orders
-        </h1>
-        <div
-          class="flex items-center justify-center w-full md:w-auto mt-4 md:mt-0 gap-2"
+        <button
+          class="flex items-center justify-center w-full md:w-[148px] h-12 gap-2 pl-2 rounded-xl border border-[#F0F0F0]"
         >
-          <button
-            class="flex items-center justify-center w-full md:w-[148px] h-12 gap-2 pl-2 rounded-xl border border-[#F0F0F0]"
+          <h1 class="text-sm text-[#000000] font-medium font-plusJakarta">
+            Select options
+          </h1>
+          <img src="/assets/images/down6.png" alt="" />
+        </button>
+        <button
+          class="flex items-center justify-center w-full md:w-[137px] h-12 gap-2 px-2 rounded-xl border border-[#F0F0F0]"
+        >
+          <svg
+            width="20px"
+            height="20px"
+            viewBox="0 0 21 21"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#000000"
           >
-            <h1 class="text-sm text-[#000000] font-medium font-plusJakarta">
-              Select options
-            </h1>
-            <img src="/assets/images/down6.png" alt="" />
-          </button>
-          <button
-            class="flex items-center justify-center w-full md:w-[137px] h-12 gap-2 px-2 rounded-xl border border-[#F0F0F0]"
-          >
-            <svg
-              width="20px"
-              height="20px"
-              viewBox="0 0 21 21"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="#000000"
-            >
-              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-              <g
-                id="SVGRepo_tracerCarrier"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></g>
-              <g id="SVGRepo_iconCarrier">
-                <g fill="none" fill-rule="evenodd" transform="translate(2 2)">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <g fill="none" fill-rule="evenodd" transform="translate(2 2)">
+                <path
+                  d="m2.5.5h12c1.1045695 0 2 .8954305 2 2v11.9903615c0 1.1045695-.8954305 2-2 2h-12c-1.1045695 0-2-.8954305-2-2v-11.9903615c0-1.1045695.8954305-2 2-2z"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="m.659 4.5h15.841"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <g fill="#000000">
                   <path
-                    d="m2.5.5h12c1.1045695 0 2 .8954305 2 2v11.9903615c0 1.1045695-.8954305 2-2 2h-12c-1.1045695 0-2-.8954305-2-2v-11.9903615c0-1.1045695.8954305-2 2-2z"
-                    stroke="#000000"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    d="m4.81640625 11.1552734v-1.0791015h.87890625c.66894531 0 1.12304688-.39550784 1.12304688-.97167971 0-.52734375-.41503907-.92773438-1.10351563-.92773438-.71289063 0-1.15234375.36621094-1.20117187.99609375h-1.36230469c.04882812-1.29882812 1.04980469-2.17285156 2.63671875-2.17285156 1.5625 0 2.43164062.86425781 2.42675781 1.89453125-.00488281.85449219-.54199219 1.41601565-1.29882813 1.60156255v.0927734c.98144532.1416016 1.57714844.7666016 1.57714844 1.7089844 0 1.2353515-1.16210937 2.109375-2.75390625 2.109375-1.59179687 0-2.67578125-.8691407-2.73925781-2.2021485h1.41113281c.04394531.5957031.55175781.9765625 1.30859375.9765625.74707032 0 1.26953125-.4052734 1.26953125-1.015625 0-.625-.48828125-1.0107422-1.27929687-1.0107422z"
                   ></path>
                   <path
-                    d="m.659 4.5h15.841"
-                    stroke="#000000"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    d="m11.516 14.227v-5.611h-.087l-1.729 1.192v-1.372l1.821-1.255h1.47v7.046z"
                   ></path>
-                  <g fill="#000000">
-                    <path
-                      d="m4.81640625 11.1552734v-1.0791015h.87890625c.66894531 0 1.12304688-.39550784 1.12304688-.97167971 0-.52734375-.41503907-.92773438-1.10351563-.92773438-.71289063 0-1.15234375.36621094-1.20117187.99609375h-1.36230469c.04882812-1.29882812 1.04980469-2.17285156 2.63671875-2.17285156 1.5625 0 2.43164062.86425781 2.42675781 1.89453125-.00488281.85449219-.54199219 1.41601565-1.29882813 1.60156255v.0927734c.98144532.1416016 1.57714844.7666016 1.57714844 1.7089844 0 1.2353515-1.16210937 2.109375-2.75390625 2.109375-1.59179687 0-2.67578125-.8691407-2.73925781-2.2021485h1.41113281c.04394531.5957031.55175781.9765625 1.30859375.9765625.74707032 0 1.26953125-.4052734 1.26953125-1.015625 0-.625-.48828125-1.0107422-1.27929687-1.0107422z"
-                    ></path>
-                    <path
-                      d="m11.516 14.227v-5.611h-.087l-1.729 1.192v-1.372l1.821-1.255h1.47v7.046z"
-                    ></path>
-                  </g>
                 </g>
               </g>
-            </svg>
-            <h1 class="text-sm text-[#000000] font-medium font-plusJakarta">
-              August2024
-            </h1>
-          </button>
-        </div>
+            </g>
+          </svg>
+          <h1 class="text-sm text-[#000000] font-medium font-plusJakarta">
+            August2024
+          </h1>
+        </button>
       </div>
+    </div>
 
-      <div
+    <div
       class="relative overflow-x-auto mt-5 h-[340px] border border-[#E9E9EA] rounded-xl no-scrollbar"
     >
       <!--Table-->
@@ -204,13 +206,22 @@
               <td
                 class="text-xs text-[#1D1F2C] font-normal font-plusJakarta px-6 py-4 leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
               >
-                <img [src]="'/assets/images/'+order.company+'.png'" alt="" srcset="">
-
+                <img
+                  [src]="'/assets/images/' + order.company + '.png'"
+                  alt=""
+                  srcset=""
+                />
               </td>
               <td
                 class="text-xs text-[#1D1F2C] font-normal font-plusJakarta px-6 py-4 leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
               >
-                <a [href]="order.trackInfo" target="_blank" rel="noopener noreferrer" class="underline text-secondary">Track now</a>
+                <a
+                  [href]="order.trackInfo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="underline text-secondary"
+                  >Track now</a
+                >
               </td>
               <td
                 class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
@@ -249,15 +260,19 @@
         </tbody>
       </table>
     </div>
-    <div class="w-full bg-gradient-to-b from-white/60 to-white text-center absolute bottom-0 py-4 font-medium text-base text-secondary">Show All</div>
+    <div
+      class="w-full bg-gradient-to-b from-white/60 to-white text-center absolute bottom-0 py-4 font-medium text-base text-secondary"
+    >
+      Show All
     </div>
+  </div>
 
   <!--Recent Transactions and Notifications-->
-  <div
-    class="flex flex-col lg:flex-row items-center justify-start  mt-4 gap-4"
-  >
+  <div class="flex flex-col lg:flex-row items-center justify-start mt-4 gap-4">
     <!--Recent Transactions Card-->
-    <div class="w-full relative overflow-hidden lg:w-[70%] h-[384px] bg-white rounded-[20px] px-4">
+    <div
+      class="w-full relative overflow-hidden lg:w-[70%] h-[384px] bg-white rounded-[20px] px-4"
+    >
       <div
         class="flex flex-col md:flex-row items-center justify-between w-full pt-3 md:pt-0 h-[100px]"
       >
@@ -515,7 +530,11 @@
           </tbody>
         </table>
       </div>
-      <div class="w-full bg-gradient-to-b from-white/60 to-white text-center absolute bottom-0 py-4 font-medium text-base text-secondary">Show All</div>
+      <div
+        class="w-full bg-gradient-to-b from-white/60 to-white text-center absolute bottom-0 py-4 font-medium text-base text-secondary"
+      >
+        Show All
+      </div>
     </div>
     <div class="w-full lg:w-[30%] h-[384px] bg-white rounded-[20px] px-4">
       <div class="flex items-center justify-between w-full h-[100px]">
@@ -567,5 +586,4 @@
       </div>
     </div>
   </div>
-
 </div>

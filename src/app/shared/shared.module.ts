@@ -8,6 +8,8 @@ import { ButtonModule } from 'primeng/button';
 import { InputOtpModule } from 'primeng/inputotp';
 import { ToastService } from '../core/services/toast.service';
 import { AuthService } from '../core/services/auth.service';
+import { TableModule } from 'primeng/table';
+import { InputText } from 'primeng/inputtext';
 
 const shared = [
   CommonModule,
@@ -17,7 +19,7 @@ const shared = [
   AngularSvgIconModule,
 ];
 
-const primeNg = [CheckboxModule, ButtonModule, InputOtpModule];
+const primeNg = [CheckboxModule, ButtonModule, InputOtpModule, TableModule , InputText];
 
 @NgModule({
   declarations: [],

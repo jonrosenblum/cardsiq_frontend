@@ -50,6 +50,17 @@ const MenuItems: MenuItem[] = [
     },
   },
   {
+    title: 'Inventory',
+    subTitle: '',
+    icon: 'user-square',
+    link: '/inventory',
+    active: false,
+    badge: {
+      value: 1,
+      color: 'accent',
+    },
+  },
+  {
     title: 'Notifications',
     subTitle: '',
     icon: 'bell-notification',
@@ -68,7 +79,7 @@ const MenuItems: MenuItem[] = [
 export class SidebarService {
   // Define Variables
   menuItems: MenuItem[] = MenuItems;
-  currentUrl:string = '';
+  currentUrl: string = '';
   // Inject the services
   router: Router = inject(Router);
 
@@ -83,7 +94,7 @@ export class SidebarService {
 
   // Set the active state of the menu items based on the current route
   private setActiveMenuItem() {
-    const currentRoute = this.currentUrl = this.router.url;
+    const currentRoute = (this.currentUrl = this.router.url);
     console.log('currentRoute', currentRoute);
 
     // Reset the active state for all menu items

@@ -25,13 +25,20 @@ export const orderRoutes: Routes = [
       //       (m) => m.LeadsFormComponent,
       //     ),
       // },
-      // {
-      //   path: 'details',
-      //   loadComponent: () =>
-      //     import('./leads-detail/leads-detail.component').then(
-      //       (m) => m.LeadsDetailComponent,
-      //     ),
-      // },
+      {
+        path: ':key/details',
+        loadComponent: () =>
+          import('./order-detail/order-detail.component').then(
+            (m) => m.OrderDetailComponent,
+          ),
+      },
+      {
+        path: ':key/track-order',
+        loadComponent: () =>
+          import('./track-order/track-order.component').then(
+            (m) => m.TrackOrderComponent,
+          ),
+      },
     ],
   },
 ];

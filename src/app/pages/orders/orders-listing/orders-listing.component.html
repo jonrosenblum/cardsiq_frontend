@@ -224,13 +224,22 @@
               <td
                 class="text-xs text-[#1D1F2C] font-normal font-plusJakarta px-6 py-4 leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
               >
-                <img [src]="'/assets/images/'+order.company+'.png'" alt="" srcset="">
-
+                <img
+                  [src]="'/assets/images/' + order.company + '.png'"
+                  alt=""
+                  srcset=""
+                />
               </td>
               <td
                 class="text-xs text-[#1D1F2C] font-normal font-plusJakarta px-6 py-4 leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
               >
-                <a [href]="order.trackInfo" target="_blank" rel="noopener noreferrer" class="underline text-secondary">Track now</a>
+                <a
+                  [href]="order.trackInfo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="underline text-secondary"
+                  >Track now</a
+                >
               </td>
               <td
                 class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
@@ -266,7 +275,7 @@
                     <div
                       class="w-[160px] border border-[#E9E9EA] bg-white z-[1] rounded-xl py-2 absolute top-10 right-0"
                     >
-                      <div
+                      <div (click)="isEditOrder = true"
                         class="flex items-center gap-2 py-1.5 px-2.5 hover:bg-slate-50"
                       >
                         <svg-icon name="edit-pencil" />
@@ -277,6 +286,7 @@
                         </p>
                       </div>
                       <div
+                      routerLink="/orders/{{ order.id }}/details"
                         class="flex items-center gap-2 py-1.5 px-2.5 hover:bg-slate-50"
                       >
                         <svg-icon name="eye" />

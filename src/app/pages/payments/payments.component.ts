@@ -7,8 +7,6 @@ import { StatsCardComponent } from '../../shared/components/dashboard/stats-card
   selector: 'app-payments',
   imports: [SharedModule, SubHeaderComponent, StatsCardComponent],
   templateUrl: './payments.component.html',
-  styleUrl: './payments.component.scss'
+  styleUrl: './payments.component.scss',
 })
-export class PaymentsComponent {
-
-}
+export class PaymentsComponent {}

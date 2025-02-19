@@ -80,10 +80,13 @@
       <div
         class="space-y-3 no-scrollbar w-full overflow-scroll max-h-[40vh] mb-4"
       >
-        <div routerLink="/settings/profile"
-        [ngClass]="
-              currentUrl.includes('settings')? 'bg-[#1D1F2C]/70' : 'hover:bg-[#1D1F2C]/10'
-            "
+        <div
+          routerLink="/settings/profile"
+          [ngClass]="
+            currentUrl.includes('settings')
+              ? 'bg-[#1D1F2C]/70'
+              : 'hover:bg-[#1D1F2C]/10'
+          "
           class="flex justify-start items-center w-full py-3 px-3 rounded-lg group gap-2 cursor-pointer"
         >
           <img

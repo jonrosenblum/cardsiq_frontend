@@ -12,10 +12,15 @@ import { SharedModule } from '../../shared.module';
 export class SidebarComponent extends SidebarService {
   active: boolean = true;
   isSidebarOpen: boolean = true;
-
+  isFullyOpened: boolean = true;
   toggleSidebar() {
     this.isSidebarOpen = !this.isSidebarOpen;
+    if(this.isSidebarOpen){
+      setTimeout(() => {
+        this.isFullyOpened = true;
+      }, 1000);
+    }else{
+        this.isFullyOpened = false;
+    }
   }
-
-
 }

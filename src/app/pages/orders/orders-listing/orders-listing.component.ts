@@ -23,9 +23,8 @@ export class OrdersListingComponent {
       statusColor: '#FFEDED',
       textColor: '#FE4D4F',
       company: 'fedex',
-      trackInfo:'#',
-      vendor:'CardNation'
-
+      trackInfo: '#',
+      vendor: 'CardNation',
     },
     {
       id: 'ORD002',
@@ -35,9 +34,8 @@ export class OrdersListingComponent {
       statusColor: '#E6ECFE',
       textColor: '#003DF6',
       company: 'fedex',
-      trackInfo:'#',
-      vendor:'CardNation'
-
+      trackInfo: '#',
+      vendor: 'CardNation',
     },
     {
       id: 'ORD003',
@@ -47,9 +45,8 @@ export class OrdersListingComponent {
       statusColor: '#FFEDED',
       textColor: '#FE4D4F',
       company: 'fedex',
-      trackInfo:'#',
-      vendor:'CardNation'
-
+      trackInfo: '#',
+      vendor: 'CardNation',
     },
     {
       id: 'ORD004',
@@ -59,9 +56,8 @@ export class OrdersListingComponent {
       statusColor: '#E6ECFE',
       textColor: '#003DF6',
       company: 'fedex',
-      trackInfo:'#',
-      vendor:'CardNation'
-
+      trackInfo: '#',
+      vendor: 'CardNation',
     },
     {
       id: 'ORD005',
@@ -71,9 +67,8 @@ export class OrdersListingComponent {
       statusColor: '#EEF9E8',
       textColor: '#53C31B',
       company: 'fedex',
-      trackInfo:'#',
-      vendor:'CardNation'
-
+      trackInfo: '#',
+      vendor: 'CardNation',
     },
     {
       id: 'ORD006',
@@ -83,8 +78,8 @@ export class OrdersListingComponent {
       statusColor: '#EEF9E8',
       textColor: '#53C31B',
       company: 'fedex',
-      trackInfo:'#',
-      vendor:'CardNation'
+      trackInfo: '#',
+      vendor: 'CardNation',
     },
     {
       id: 'ORD007',
@@ -94,8 +89,8 @@ export class OrdersListingComponent {
       statusColor: '#EEF9E8',
       textColor: '#53C31B',
       company: 'fedex',
-      trackInfo:'#',
-      vendor:'CardNation'
+      trackInfo: '#',
+      vendor: 'CardNation',
     },
     {
       id: 'ORD003',
@@ -105,9 +100,8 @@ export class OrdersListingComponent {
       statusColor: '#FFEDED',
       textColor: '#FE4D4F',
       company: 'fedex',
-      trackInfo:'#',
-      vendor:'TradeHub'
-
+      trackInfo: '#',
+      vendor: 'TradeHub',
     },
     {
       id: 'ORD001',
@@ -117,8 +111,8 @@ export class OrdersListingComponent {
       statusColor: '#FFEDED',
       textColor: '#FE4D4F',
       company: 'fedex',
-      trackInfo:'#',
-      vendor:'DeckMasters'
+      trackInfo: '#',
+      vendor: 'DeckMasters',
     },
     {
       id: 'ORD001',
@@ -128,8 +122,8 @@ export class OrdersListingComponent {
       statusColor: '#FFEDED',
       textColor: '#FE4D4F',
       company: 'fedex',
-      trackInfo:'#',
-      vendor:'EliteDecks'
+      trackInfo: '#',
+      vendor: 'EliteDecks',
     },
   ];
 

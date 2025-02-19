@@ -52,5 +52,34 @@ export const ACCOUNT_SETTING_TABS: IAccountSettingTab[] = [
   { label: 'Profile', active: true },
   { label: 'Security', active: false },
   { label: 'Billing', active: false },
-  { label: 'Profile preferences', active: false }
+  { label: 'Profile preferences', active: false },
+];
+
+
+export const PAYMENT_METHODS = [
+  {
+    name: 'PayPal Balance',
+    balance: '$15.00',
+    logo: '/assets/images/Mastercard.png',
+    isDefault: true,
+    isSelected: true,
+  },
+  {
+    name: 'Jpmorgan Chase Bank',
+    balance: '$15.00',
+    logo: '/assets/images/jpmorgan-chase.png',
+    isSelected: false,
+  },
+  {
+    name: 'Jpmorgan Chase Bank',
+    balance: '$15.00',
+    logo: '/assets/images/jpmorgan-chase.png',
+    isSelected: false,
+  },
+  {
+    name: 'Goldman Sachs Bank USA',
+    balance: '$15.00',
+    logo: '/assets/images/jpmorgan.png',
+    isSelected: false,
+  }
 ];

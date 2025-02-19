@@ -20,9 +20,8 @@ export class HomeComponent {
       statusColor: '#FFEDED',
       textColor: '#FE4D4F',
       company: 'fedex',
-      trackInfo:'#',
-      vendor:'CardNation'
-
+      trackInfo: '#',
+      vendor: 'CardNation',
     },
     {
       id: 'ORD002',
@@ -32,9 +31,8 @@ export class HomeComponent {
       statusColor: '#E6ECFE',
       textColor: '#003DF6',
       company: 'fedex',
-      trackInfo:'#',
-      vendor:'CardNation'
-
+      trackInfo: '#',
+      vendor: 'CardNation',
     },
     {
       id: 'ORD003',
@@ -44,9 +42,8 @@ export class HomeComponent {
       statusColor: '#FFEDED',
       textColor: '#FE4D4F',
       company: 'fedex',
-      trackInfo:'#',
-      vendor:'CardNation'
-
+      trackInfo: '#',
+      vendor: 'CardNation',
     },
     {
       id: 'ORD004',
@@ -56,9 +53,8 @@ export class HomeComponent {
       statusColor: '#E6ECFE',
       textColor: '#003DF6',
       company: 'fedex',
-      trackInfo:'#',
-      vendor:'CardNation'
-
+      trackInfo: '#',
+      vendor: 'CardNation',
     },
     {
       id: 'ORD005',
@@ -68,9 +64,8 @@ export class HomeComponent {
       statusColor: '#EEF9E8',
       textColor: '#53C31B',
       company: 'fedex',
-      trackInfo:'#',
-      vendor:'CardNation'
-
-    }
+      trackInfo: '#',
+      vendor: 'CardNation',
+    },
   ];
 }

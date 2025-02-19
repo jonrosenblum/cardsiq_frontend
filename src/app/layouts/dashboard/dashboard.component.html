@@ -1,14 +1,14 @@
 <div class="flex h-screen">
   <!-- Sidebar -->
-  <app-sidebar />
+  <app-sidebar #sidebar />
 
   <!-- Main Content Area -->
-  <div class="flex-1 flex flex-col">
+  <div class="flex-1 flex flex-col w-full transition-all duration-1000 ease-in-out" [ngClass]="sidebar.isFullyOpened?'md:max-w-[calc(100%-236px)]':''" >
     <!-- Header -->
-    <app-header class="w-full" />
+    <app-header class="w-full " />
 
     <!-- Main Content -->
-    <div class="flex-1 bg-[#f7f7fc] overflow-auto p-4">
+    <div class="flex-1 bg-[#f7f7fc] overflow-auto p-4 ">
       <router-outlet></router-outlet>
     </div>
 

@@ -102,7 +102,6 @@ export class CommonUtils {
 
     return past.toLocaleDateString(); // Fallback to date if older than a week
   }
-
 }
 
 export function getQueryParam(
@@ -124,9 +123,9 @@ export function redirectTo(
   params?: Record<string, unknown>,
   queryParams?: Record<string, unknown>,
 ) {
-  if(!params && !queryParams){
-    router.navigate([path])
-    return
+  if (!params && !queryParams) {
+    router.navigate([path]);
+    return;
   }
   const pathSegments = [path, ...Object.values(params || {})];
   router.navigate([path, pathSegments], { queryParams: queryParams });

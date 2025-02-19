@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-profile-preference',
   imports: [],
   templateUrl: './profile-preference.component.html',
-  styleUrl: './profile-preference.component.scss'
+  styleUrl: './profile-preference.component.scss',
 })
-export class ProfilePreferenceComponent {
-
-}
+export class ProfilePreferenceComponent {}

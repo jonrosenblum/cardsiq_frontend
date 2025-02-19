@@ -6,6 +6,11 @@ const ICONS = [
   { src: 'assets/svg/google.svg', name: 'google' },
   { src: 'assets/svg/dashboard.svg', name: 'dashboard' },
   { src: 'assets/svg/logout.svg', name: 'logout' },
+  { src: 'assets/svg/check.svg', name: 'check' },
+  { src: 'assets/svg/popup-success.svg', name: 'popup-success' },
+  { src: 'assets/svg/popup-failed.svg', name: 'popup-failed' },
+  { src: 'assets/svg/coin-convert.svg', name: 'coin-convert' },
+  { src: 'assets/svg/delivery-van.svg', name: 'delivery-van' },
 
   { src: 'assets/svg/search-normal.svg', name: 'search' },
   { src: 'assets/svg/user.svg', name: 'user' },
