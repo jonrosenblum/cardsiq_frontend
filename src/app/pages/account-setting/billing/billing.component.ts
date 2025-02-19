@@ -23,10 +23,9 @@ export class BillingComponent {
     this.paymentMethods.forEach((method) => {
       method.isDefault = false;
       method.isSelected = false;
-      if(method === paymentMethod){
+      if (method === paymentMethod) {
         method.isDefault = true;
-
-      };
+      }
     });
     paymentMethod.isSelected = true;
   }

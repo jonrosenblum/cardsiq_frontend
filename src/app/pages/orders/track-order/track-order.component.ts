@@ -6,8 +6,6 @@ import { SubHeaderComponent } from '../../../shared/components/dashboard/sub-hea
   selector: 'app-track-order',
   imports: [SharedModule, SubHeaderComponent],
   templateUrl: './track-order.component.html',
-  styleUrl: './track-order.component.scss'
+  styleUrl: './track-order.component.scss',
 })
-export class TrackOrderComponent {
-
-}
+export class TrackOrderComponent {}

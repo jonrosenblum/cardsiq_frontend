@@ -1,690 +1,932 @@
 <app-sub-header>
   <span header-title>Order Details</span>
-  <button header-action routerLink="/orders/123/track-order" class="flex items-center justify-center w-[140px] hover:shadow-sm h-12 gap-2 rounded-xl border border-[#F0F0F0]">
+  <button
+    header-action
+    routerLink="/orders/123/track-order"
+    class="flex items-center justify-center w-[140px] hover:shadow-sm h-12 gap-2 rounded-xl border border-[#F0F0F0]"
+  >
     <svg-icon name="delivery-van" />
-    <p class="text-sm text-[#000000] font-medium font-plusJakarta leading-5 tracking-[-2%]">Track Order</p>
-</button>
-  <button header-action class="flex items-center justify-center text-base text-secondary font-semibold font-plusJakarta leading-5 tracking-[-1%] w-[86px] h-11 bg-[#ffffff] border border-secondary rounded-lg hover:text-white hover:bg-secondary">Edit</button>
+    <p
+      class="text-sm text-[#000000] font-medium font-plusJakarta leading-5 tracking-[-2%]"
+    >
+      Track Order
+    </p>
+  </button>
+  <button
+    header-action
+    class="flex items-center justify-center text-base text-secondary font-semibold font-plusJakarta leading-5 tracking-[-1%] w-[86px] h-11 bg-[#ffffff] border border-secondary rounded-lg hover:text-white hover:bg-secondary"
+  >
+    Edit
+  </button>
 </app-sub-header>
-<div class="relative overflow-x-auto h-[calc(100vh-210px)]  no-scrollbar">
-
-<div class="bg-white rounded-[20px] p-4">
-  <div class="space-y-1">
-    <p class="text-base text-[#777980] font-medium leading-5 tracking-[-0.5px]">Order ID</p>
-    <h2 class="text-lg text-[#070707] font-semibold font-plusJakarta leading-[28px] tracking-[0px]">#ORD002</h2>
-</div>
+<div class="relative overflow-x-auto h-[calc(100vh-210px)] no-scrollbar">
+  <div class="bg-white rounded-[20px] p-4">
+    <div class="space-y-1">
+      <p
+        class="text-base text-[#777980] font-medium leading-5 tracking-[-0.5px]"
+      >
+        Order ID
+      </p>
+      <h2
+        class="text-lg text-[#070707] font-semibold font-plusJakarta leading-[28px] tracking-[0px]"
+      >
+        #ORD002
+      </h2>
+    </div>
     <div class="flex items-center flex-wrap gap-6 md:gap-10 mt-6">
-        <div class="space-y-4 ">
-            <p class="text-sm text-[#A5A5AB] font-medium font-plusJakarta leading-[18px]">Vendor
-            </p>
-            <div
-                class="flex items-center justify-center bg-[#F8FAFB] text-xs text-[#4A4C56] font-medium font-plusJakarta rounded-lg w-[126px] h-8 leading-4 tracking-[-0.5px]">
-                TradeHub</div>
+      <div class="space-y-4">
+        <p
+          class="text-sm text-[#A5A5AB] font-medium font-plusJakarta leading-[18px]"
+        >
+          Vendor
+        </p>
+        <div
+          class="flex items-center justify-center bg-[#F8FAFB] text-xs text-[#4A4C56] font-medium font-plusJakarta rounded-lg w-[126px] h-8 leading-4 tracking-[-0.5px]"
+        >
+          TradeHub
         </div>
-        <div class="space-y-4">
-            <p class="text-sm text-[#A5A5AB] font-medium font-plusJakarta leading-[18px]">Order status</p>
-            <div
-                class="flex items-center justify-center bg-[#FFEDED] text-xs text-[#FE4D4F] font-medium font-plusJakarta rounded-lg w-[126px] h-8 leading-5 tracking-[-0.5px]">
-                In review</div>
+      </div>
+      <div class="space-y-4">
+        <p
+          class="text-sm text-[#A5A5AB] font-medium font-plusJakarta leading-[18px]"
+        >
+          Order status
+        </p>
+        <div
+          class="flex items-center justify-center bg-[#FFEDED] text-xs text-[#FE4D4F] font-medium font-plusJakarta rounded-lg w-[126px] h-8 leading-5 tracking-[-0.5px]"
+        >
+          In review
         </div>
-        <div class="space-y-4">
-            <p class="text-sm text-[#A5A5AB] font-medium font-plusJakarta leading-[18px]">Payment status</p>
-            <div
-                class="flex items-center justify-center bg-[#E6ECFE] text-xs text-[#003DF6] font-medium font-plusJakarta rounded-lg w-[126px] h-8 leading-5 tracking-[-0.5px]">
-                Pending</div>
+      </div>
+      <div class="space-y-4">
+        <p
+          class="text-sm text-[#A5A5AB] font-medium font-plusJakarta leading-[18px]"
+        >
+          Payment status
+        </p>
+        <div
+          class="flex items-center justify-center bg-[#E6ECFE] text-xs text-[#003DF6] font-medium font-plusJakarta rounded-lg w-[126px] h-8 leading-5 tracking-[-0.5px]"
+        >
+          Pending
         </div>
-        <div class="space-y-4">
-            <p class="text-sm text-[#A5A5AB] font-medium font-plusJakarta leading-[18px]">Last
-                Updated</p>
-            <div
-                class="flex items-center justify-center bg-[#F6F8FA]  rounded-lg w-[157px] h-8 gap-1">
-                <h3
-                    class="text-sm text-[#070707] font-medium font-plusJakarta leading-4 tracking-[-0.5px]">
-                    August 24, 2024</h3>
-                <span
-                    class="text-sm text-[#070707] font-semibold font-plusJakarta text-start  w-[2px] h-[2px] bg-[#070707]"></span>
-                <p
-                    class="text-sm text-[#070707] font-medium font-plusJakarta leading-4 tracking-[-0.5px]">
-                    14:15</p>
-            </div>
+      </div>
+      <div class="space-y-4">
+        <p
+          class="text-sm text-[#A5A5AB] font-medium font-plusJakarta leading-[18px]"
+        >
+          Last Updated
+        </p>
+        <div
+          class="flex items-center justify-center bg-[#F6F8FA] rounded-lg w-[157px] h-8 gap-1"
+        >
+          <h3
+            class="text-sm text-[#070707] font-medium font-plusJakarta leading-4 tracking-[-0.5px]"
+          >
+            August 24, 2024
+          </h3>
+          <span
+            class="text-sm text-[#070707] font-semibold font-plusJakarta text-start w-[2px] h-[2px] bg-[#070707]"
+          ></span>
+          <p
+            class="text-sm text-[#070707] font-medium font-plusJakarta leading-4 tracking-[-0.5px]"
+          >
+            14:15
+          </p>
         </div>
+      </div>
     </div>
 
+    <!--Table-->
+    <div
+      class="relative overflow-x-auto max-h-[calc(100vh-300px)] border border-[#E9E9EA] rounded-xl no-scrollbar mt-6"
+    >
       <!--Table-->
-      <div class="relative overflow-x-auto max-h-[calc(100vh-300px)] border border-[#E9E9EA] rounded-xl no-scrollbar mt-6">
-          <!--Table-->
-          <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 ">
-              <thead class=" bg-[#E9E9EA] dark:text-gray-400 sticky top-0">
-                  <tr class="">
-                      <th scope="col" class="px-6 py-2 max-w-[150px] rounded-tl-xl">
-                          <h4
-                              class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
-                              Grading Company</h4>
-                      </th>
-                      <th scope="col" class=" px-6 py-2 max-w-[150px]">
-                          <h4
-                              class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
-                              Cert #
-                          </h4>
-                      </th>
-                      <th scope="col" class="px-6 py-2">
-                          <h4
-                              class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px] ">
-                              Card Info</h4>
-                      </th>
-                      <th scope="col" class="px-6 py-2 max-w-[150px]">
-                          <h4
-                              class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px]  text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
-                              Grade</h4>
-                      </th>
-                      <th scope="col" class="px-6 py-2 max-w-[150px]">
-                          <h4
-                              class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
-                              Courtyard Offer</h4>
-                      </th>
-                      <th scope="col" class="px-6 py-2 max-w-[150px]">
-                          <h4
-                              class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px] ">
-                              Amount Paid</h4>
-                      </th>
-                      <th scope="col" class="px-6 py-2  rounded-tr-xl max-w-[150px]">
-                          <h4
-                              class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px]  text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
-                              Paid Amount
-                          </h4>
-                      </th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr class="border-b  border-[#E9E9EA]">
-                      <td
-                      class=" text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4 ">
-                      BGS
-                  </td>
-                      <th scope="row" class="px-6 py-4  max-w-[150px]">
-                          <p
-                              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
-                              0013036083</p>
-                      </th>
+      <table
+        class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+      >
+        <thead class="bg-[#E9E9EA] dark:text-gray-400 sticky top-0">
+          <tr class="">
+            <th scope="col" class="px-6 py-2 max-w-[150px] rounded-tl-xl">
+              <h4
+                class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                Grading Company
+              </h4>
+            </th>
+            <th scope="col" class="px-6 py-2 max-w-[150px]">
+              <h4
+                class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                Cert #
+              </h4>
+            </th>
+            <th scope="col" class="px-6 py-2">
+              <h4
+                class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
+              >
+                Card Info
+              </h4>
+            </th>
+            <th scope="col" class="px-6 py-2 max-w-[150px]">
+              <h4
+                class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                Grade
+              </h4>
+            </th>
+            <th scope="col" class="px-6 py-2 max-w-[150px]">
+              <h4
+                class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                Courtyard Offer
+              </h4>
+            </th>
+            <th scope="col" class="px-6 py-2 max-w-[150px]">
+              <h4
+                class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
+              >
+                Amount Paid
+              </h4>
+            </th>
+            <th scope="col" class="px-6 py-2 rounded-tr-xl max-w-[150px]">
+              <h4
+                class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                Paid Amount
+              </h4>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-[#E9E9EA]">
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              BGS
+            </td>
+            <th scope="row" class="px-6 py-4 max-w-[150px]">
+              <p
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                0013036083
+              </p>
+            </th>
 
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px]  text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4">
-                          2000 Fleer Showcase Tom Brady Base 136
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          g8_5
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          PASS
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          -
-                      </td>
-                      <td
-                      class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                      -
-                      </td>
-                  </tr>
-                  <tr class="border-b  border-[#E9E9EA]">
-                      <td
-                          class=" text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4 ">
-                          PAS
-                      </td>
-                      <th scope="row" class="px-6 py-4  max-w-[150px]">
-                          <p
-                              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
-                              0013036083</p>
-                      </th>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4">
-                          2022 Panini Contenders Optic Paolo Banchero Variation-Auto-Gold Wave 118
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          g10
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          PASS
-                      </td>
-                      <td
-                      class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                      -
-                  </td>
-                  <td
-                  class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                  -
-                  </td>
-                  </tr>
-                  <tr class="border-b  border-[#E9E9EA]">
-                      <td
-                      class=" text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4 ">
-                      SGC
-                      </td>
-                      <th scope="row" class="px-6 py-4  max-w-[150px]">
-                          <p
-                              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
-                              7391495</p>
-                      </th>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4"
+            >
+              2000 Fleer Showcase Tom Brady Base 136
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              g8_5
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PASS
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+          </tr>
+          <tr class="border-b border-[#E9E9EA]">
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PAS
+            </td>
+            <th scope="row" class="px-6 py-4 max-w-[150px]">
+              <p
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                0013036083
+              </p>
+            </th>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4"
+            >
+              2022 Panini Contenders Optic Paolo Banchero Variation-Auto-Gold
+              Wave 118
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              g10
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PASS
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+          </tr>
+          <tr class="border-b border-[#E9E9EA]">
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              SGC
+            </td>
+            <th scope="row" class="px-6 py-4 max-w-[150px]">
+              <p
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                7391495
+              </p>
+            </th>
 
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4">
-                          2020 Panini Flawless Breece Hall Rookie Showcase Mat. TS-BH
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          g9
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          PASS
-                      </td>
-                      <td
-                      class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                      -
-                  </td>
-                  <td
-                  class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                  -
-                  </td>
-                  </tr>
-                  <tr class="border-b  border-[#E9E9EA]">
-                      <td
-                          class=" text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4 ">
-                          PAS
-                      </td>
-                      <th scope="row" class="px-6 py-4  max-w-[150px]">
-                          <p
-                              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
-                              101328413</p>
-                      </th>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4">
-                          2023 Topps Chrome Ron Artest Gold Refractor 57
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          g9
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          PASS
-                      </td>
-                      <td
-                      class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                      $200.00
-                  </td>
-                  <td class="px-6 py-4">
-                      <div
-                          class="flex justify-center items-center  rounded-[4px] w-[80px] h-6 bg-[#1A9882] cursor-pointer">
-                          <p
-                              class=" text-[#D2D2D5] text-xs font-normal font-plusJakarta leading-4 tracking-[-0.5px]">
-                              Saved</p>
-                      </div>
-                  </td>
-                  </tr>
-                  <tr class="border-b  border-[#E9E9EA]">
-                      <td
-                          class=" text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4 ">
-                          PAS
-                      </td>
-                      <th scope="row" class="px-6 py-4  max-w-[150px]">
-                          <p
-                              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
-                              96218524</p>
-                      </th>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4">
-                          2024 Bowman 1955 Bowman Anime Jasson Dominguez  Orange Refractor BA15
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          g10
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          PASS
-                      </td>
-                      <td class="px-6 py-4 ">
-                          <input
-                              class="flex justify-center items-center  rounded-lg text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] w-[108px] h-6 border border-[#E9E9EA] outline-none cursor-pointer px-2 -ml-2" type="text">
-                      </td>
-                  <td class="px-6 py-4">
-                      <div
-                          class="flex justify-center items-center  rounded-[4px] w-[80px] h-6 border border-[#116557] cursor-pointer">
-                          <p
-                              class=" text-[#070707] text-xs font-normal font-plusJakarta leading-4 tracking-[-0.5px]">
-                              Saved</p>
-                      </div>
-                  </td>
-                  </tr>
-                  <tr class="border-b  border-[#E9E9EA]">
-                      <td
-                      class=" text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4 ">
-                      PAS
-                      </td>
-                      <th scope="row" class="px-6 py-4  max-w-[150px]">
-                          <p
-                              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
-                              93546938</p>
-                      </th>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4"
+            >
+              2020 Panini Flawless Breece Hall Rookie Showcase Mat. TS-BH
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              g9
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PASS
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+          </tr>
+          <tr class="border-b border-[#E9E9EA]">
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PAS
+            </td>
+            <th scope="row" class="px-6 py-4 max-w-[150px]">
+              <p
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                101328413
+              </p>
+            </th>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4"
+            >
+              2023 Topps Chrome Ron Artest Gold Refractor 57
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              g9
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PASS
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              $200.00
+            </td>
+            <td class="px-6 py-4">
+              <div
+                class="flex justify-center items-center rounded-[4px] w-[80px] h-6 bg-[#1A9882] cursor-pointer"
+              >
+                <p
+                  class="text-[#D2D2D5] text-xs font-normal font-plusJakarta leading-4 tracking-[-0.5px]"
+                >
+                  Saved
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr class="border-b border-[#E9E9EA]">
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PAS
+            </td>
+            <th scope="row" class="px-6 py-4 max-w-[150px]">
+              <p
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                96218524
+              </p>
+            </th>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4"
+            >
+              2024 Bowman 1955 Bowman Anime Jasson Dominguez Orange Refractor
+              BA15
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              g10
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PASS
+            </td>
+            <td class="px-6 py-4">
+              <input
+                class="flex justify-center items-center rounded-lg text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] w-[108px] h-6 border border-[#E9E9EA] outline-none cursor-pointer px-2 -ml-2"
+                type="text"
+              />
+            </td>
+            <td class="px-6 py-4">
+              <div
+                class="flex justify-center items-center rounded-[4px] w-[80px] h-6 border border-[#116557] cursor-pointer"
+              >
+                <p
+                  class="text-[#070707] text-xs font-normal font-plusJakarta leading-4 tracking-[-0.5px]"
+                >
+                  Saved
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr class="border-b border-[#E9E9EA]">
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PAS
+            </td>
+            <th scope="row" class="px-6 py-4 max-w-[150px]">
+              <p
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                93546938
+              </p>
+            </th>
 
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4">
-                          2023Panini Spectra Icons Autograph Dan Marino Neon Splatter IDM
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          g9
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          PASS
-                      </td>
-                      <td
-                      class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                      -
-                  </td>
-                  <td
-                  class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                  -
-                  </td>
-                  </tr>
-                  <tr class="border-b  border-[#E9E9EA]">
-                      <td
-                      class=" text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4 ">
-                      PAS
-                      </td>
-                      <th scope="row" class="px-6 py-4  max-w-[150px]">
-                          <p
-                              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
-                              95488478</p>
-                      </th>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4"
+            >
+              2023Panini Spectra Icons Autograph Dan Marino Neon Splatter IDM
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              g9
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PASS
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+          </tr>
+          <tr class="border-b border-[#E9E9EA]">
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PAS
+            </td>
+            <th scope="row" class="px-6 py-4 max-w-[150px]">
+              <p
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                95488478
+              </p>
+            </th>
 
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4">
-                          2024 Bowman Sapphire Edition Chrome Prospects Colin Houck Red BCP123
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4"
+            >
+              2024 Bowman Sapphire Edition Chrome Prospects Colin Houck Red
+              BCP123
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            ></td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PASS
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+          </tr>
+          <tr class="border-b border-[#E9E9EA]">
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PAS
+            </td>
+            <th scope="row" class="px-6 py-4 max-w-[150px]">
+              <p
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                86236282
+              </p>
+            </th>
 
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          PASS
-                      </td>
-                      <td
-                      class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                      -
-                  </td>
-                  <td
-                  class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                  -
-                  </td>
-                  </tr>
-                  <tr class="border-b  border-[#E9E9EA]">
-                      <td
-                      class=" text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4 ">
-                      PAS
-                      </td>
-                      <th scope="row" class="px-6 py-4  max-w-[150px]">
-                          <p
-                              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
-                              86236282</p>
-                      </th>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4"
+            >
+              2022 Panini Donruss Optic Downtown Rob Gronkowski Base DTRG
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            ></td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PASS
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+          </tr>
+          <tr class="border-b border-[#E9E9EA]">
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PAS
+            </td>
+            <th scope="row" class="px-6 py-4 max-w-[150px]">
+              <p
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                62388550
+              </p>
+            </th>
 
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4">
-                          2022 Panini Donruss Optic Downtown Rob Gronkowski Base DTRG
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4"
+            >
+              2022 Panini Donruss Optic Jalen Hurts Purple 164
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            ></td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PASS
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+          </tr>
+          <tr class="border-b border-[#E9E9EA]">
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PAS
+            </td>
+            <th scope="row" class="px-6 py-4 max-w-[150px]">
+              <p
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                76529355
+              </p>
+            </th>
 
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          PASS
-                      </td>
-                      <td
-                      class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                      -
-                  </td>
-                  <td
-                  class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                  -
-                  </td>
-                  </tr>
-                  <tr class="border-b  border-[#E9E9EA]">
-                      <td
-                      class=" text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4 ">
-                      PAS
-                      </td>
-                      <th scope="row" class="px-6 py-4  max-w-[150px]">
-                          <p
-                              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
-                              62388550</p>
-                      </th>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4"
+            >
+              2022 Panini Prizm Chris Olave Novy Camo 310
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              g10
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PASS
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+          </tr>
+          <tr class="border-b border-[#E9E9EA]">
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PAS
+            </td>
+            <th scope="row" class="px-6 py-4 max-w-[150px]">
+              <p
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                96356764
+              </p>
+            </th>
 
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4">
-                          2022 Panini Donruss Optic Jalen Hurts Purple 164
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4"
+            >
+              2021 Panini Mosaic Rookie Scripts Cade Cunningham Resccu
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              g10
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PASS
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+          </tr>
+          <tr class="border-b border-[#E9E9EA]">
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PAS
+            </td>
+            <th scope="row" class="px-6 py-4 max-w-[150px]">
+              <p
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                51412346
+              </p>
+            </th>
 
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          PASS
-                      </td>
-                      <td
-                      class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                      -
-                  </td>
-                  <td
-                  class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                  -
-                  </td>
-                  </tr>
-                  <tr class="border-b  border-[#E9E9EA]">
-                      <td
-                      class=" text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4 ">
-                      PAS
-                      </td>
-                      <th scope="row" class="px-6 py-4  max-w-[150px]">
-                          <p
-                              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
-                              76529355</p>
-                      </th>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4"
+            >
+              2018 Panini contenders Draft Picks Shai Gilgeous-Alexander
+              Autograph 64
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              g10
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PASS
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+          </tr>
+          <tr class="border-b border-[#E9E9EA]">
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PAS
+            </td>
+            <th scope="row" class="px-6 py-4 max-w-[150px]">
+              <p
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                79538813
+              </p>
+            </th>
 
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4">
-                          2022 Panini Prizm Chris Olave Novy Camo 310
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          g10
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          PASS
-                      </td>
-                      <td
-                      class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                      -
-                  </td>
-                  <td
-                  class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                  -
-                  </td>
-                  </tr>
-                  <tr class="border-b  border-[#E9E9EA]">
-                      <td
-                      class=" text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4 ">
-                      PAS
-                      </td>
-                      <th scope="row" class="px-6 py-4  max-w-[150px]">
-                          <p
-                              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
-                              96356764</p>
-                      </th>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4"
+            >
+              2020 Panini Prizm Jordan Love Black & White Checker 363
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              g10
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PASS
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+          </tr>
+          <tr class="border-b border-[#E9E9EA]">
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PAS
+            </td>
+            <th scope="row" class="px-6 py-4 max-w-[150px]">
+              <p
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                94960064
+              </p>
+            </th>
 
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4">
-                          2021 Panini Mosaic Rookie Scripts Cade Cunningham Resccu
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          g10
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          PASS
-                      </td>
-                      <td
-                      class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                      -
-                  </td>
-                  <td
-                  class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                  -
-                  </td>
-                  </tr>
-                  <tr class="border-b  border-[#E9E9EA]">
-                      <td
-                      class=" text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4 ">
-                      PAS
-                      </td>
-                      <th scope="row" class="px-6 py-4  max-w-[150px]">
-                          <p
-                              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
-                              51412346</p>
-                      </th>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4"
+            >
+              2023 Panini Absolute Kaboom! Horizontal Josh Jacobs 10
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              g10
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PASS
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+          </tr>
+          <tr class="border-b border-[#E9E9EA]">
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PAS
+            </td>
+            <th scope="row" class="px-6 py-4 max-w-[150px]">
+              <p
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                87410247
+              </p>
+            </th>
 
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4">
-                          2018 Panini contenders Draft Picks Shai Gilgeous-Alexander Autograph 64
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          g10
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          PASS
-                      </td>
-                      <td
-                      class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                      -
-                  </td>
-                  <td
-                  class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                  -
-                  </td>
-                  </tr>
-                  <tr class="border-b  border-[#E9E9EA]">
-                      <td
-                      class=" text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4 ">
-                      PAS
-                      </td>
-                      <th scope="row" class="px-6 py-4  max-w-[150px]">
-                          <p
-                              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
-                              79538813</p>
-                      </th>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4"
+            >
+              2020 Panini Black Sizeable Signatures Rookie Jersey Jalen Hurts
+              SSJHU
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              g10
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PASS
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              -
+            </td>
+          </tr>
+          <tr class="border-b border-[#E9E9EA]">
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PAS
+            </td>
+            <th scope="row" class="px-6 py-4 max-w-[150px]">
+              <p
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                96218524
+              </p>
+            </th>
 
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4">
-                          2020 Panini Prizm Jordan Love Black & White Checker 363
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          g10
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          PASS
-                      </td>
-                      <td
-                      class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                      -
-                  </td>
-                  <td
-                  class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                  -
-                  </td>
-                  </tr>
-                  <tr class="border-b  border-[#E9E9EA]">
-                      <td
-                      class=" text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4 ">
-                      PAS
-                      </td>
-                      <th scope="row" class="px-6 py-4  max-w-[150px]">
-                          <p
-                              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
-                              94960064</p>
-                      </th>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4"
+            >
+              2019 Panini Mosaic Stephen Curry Genesis 70
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              g9
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            ></td>
+            <td class="px-6 py-4">
+              <input
+                class="flex justify-center items-center rounded-lg text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] w-[108px] h-6 border border-[#E9E9EA] outline-none cursor-pointer px-2 -ml-2"
+                type="text"
+              />
+            </td>
+            <td class="px-6 py-4">
+              <input
+                class="flex justify-center items-center rounded-lg text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] w-[108px] h-6 border border-[#E9E9EA] outline-none cursor-pointer px-2 -ml-2"
+                type="text"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              PAS
+            </td>
+            <th scope="row" class="px-6 py-4 max-w-[150px]">
+              <p
+                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                96218524
+              </p>
+            </th>
 
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4">
-                          2023 Panini Absolute Kaboom! Horizontal Josh Jacobs 10
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          g10
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          PASS
-                      </td>
-                      <td
-                      class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                      -
-                  </td>
-                  <td
-                  class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                  -
-                  </td>
-                  </tr>
-                  <tr class="border-b  border-[#E9E9EA]">
-                      <td
-                      class=" text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4 ">
-                      PAS
-                      </td>
-                      <th scope="row" class="px-6 py-4  max-w-[150px]">
-                          <p
-                              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
-                              87410247</p>
-                      </th>
-
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4">
-                          2020 Panini Black Sizeable Signatures Rookie Jersey Jalen Hurts SSJHU
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          g10
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          PASS
-                      </td>
-                      <td
-                      class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                      -
-                  </td>
-                  <td
-                  class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                  -
-                  </td>
-                  </tr>
-                  <tr class="border-b  border-[#E9E9EA]">
-                      <td
-                      class=" text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4 ">
-                      PAS
-                      </td>
-                      <th scope="row" class="px-6 py-4  max-w-[150px]">
-                          <p
-                              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
-                              96218524</p>
-                      </th>
-
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4">
-                          2019 Panini Mosaic Stephen Curry Genesis 70
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          g9
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-
-                      </td>
-                      <td class="px-6 py-4 ">
-                          <input
-                              class="flex justify-center items-center  rounded-lg text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] w-[108px] h-6 border border-[#E9E9EA] outline-none cursor-pointer px-2 -ml-2" type="text">
-                      </td>
-                      <td class="px-6 py-4 ">
-                          <input
-                              class="flex justify-center items-center  rounded-lg text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] w-[108px] h-6 border border-[#E9E9EA] outline-none cursor-pointer px-2 -ml-2" type="text">
-                      </td>
-                  </tr>
-                  <tr>
-                      <td
-                      class=" text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4 ">
-                      PAS
-                      </td>
-                      <th scope="row" class="px-6 py-4  max-w-[150px]">
-                          <p
-                              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
-                              96218524</p>
-                      </th>
-
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4">
-                          2022 Panini Contenders Game Day Ticket Jerry Rice Autograp GDTJRI
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-                          g8
-                      </td>
-                      <td
-                          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4">
-
-                      </td>
-                      <td class="px-6 py-4 ">
-                          <input
-                              class="flex justify-center items-center  rounded-lg text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] w-[108px] h-6 border border-[#E9E9EA] outline-none cursor-pointer px-2 -ml-2" type="text">
-                      </td>
-                      <td class="px-6 py-4 ">
-                          <input
-                              class="flex justify-center items-center  rounded-lg text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] w-[108px] h-6 border border-[#E9E9EA] outline-none cursor-pointer px-2 -ml-2" type="text">
-                      </td>
-                  </tr>
-
-              </tbody>
-
-          </table>
-      </div>
-      <div class="mt-8 ">
-        <h1 class="text-base text-[#070707] font-semibold font-plusJakarta leading-[26px]">Transaction
-            History</h1>
-            <div class="flex flex-wrap flex-col md:flex-row items-start justify-start my-4  gap-6">
-                <div class=" flex items-center flex-grow flex-shrink w-full md:w-[281px] h-[116px] rounded-2xl px-4 bg-[#F7F7FC]">
-                    <div class="space-y-6 ">
-                        <p class="text-sm text-[#A5A5AB] font-medium font-plusJakarta leading-5 tracking-[-0.5px]">Total Courtyard Offer</p>
-                        <h1 class="text-xl md:text-[32px] text-[#070707] font-semibold font-plusJakarta leading-10 tracking-[-0.5px]">$0.00</h1>
-                    </div>
-                </div>
-
-                <div class=" flex items-center flex-grow flex-shrink w-full md:w-[281px] h-[116px] rounded-2xl px-4 bg-[#F7F7FC]">
-                    <div class="space-y-6">
-                        <p class="text-sm text-[#A5A5AB] font-medium font-plusJakarta leading-5 tracking-[-0.5px]">Amount Paid</p>
-                        <h1 class="text-xl md:text-[32px] text-[#070707] font-semibold font-plusJakarta leading-10 tracking-[-0.5px]">$1,500.00</h1>
-                    </div>
-                </div>
-
-                <div class=" flex items-center flex-grow flex-shrink w-full md:w-[281px] h-[116px] rounded-2xl px-4 bg-[#F7F7FC]">
-                    <div class="space-y-6">
-                        <p class="text-sm text-[#A5A5AB] font-medium font-plusJakarta leading-5 tracking-[-0.5px]">Total Profit</p>
-                        <h1 class="text-xl md:text-[32px] text-[#070707] font-semibold font-plusJakarta leading-10 tracking-[-0.5px]">$1,600.00</h1>
-                    </div>
-                </div>
-
-                <div class=" flex items-center flex-grow flex-shrink w-full md:w-[281px] h-[116px] rounded-2xl px-4 bg-[#F7F7FC]">
-                    <div class="space-y-6">
-                        <p class="text-sm text-[#A5A5AB] font-medium font-plusJakarta leading-5 tracking-[-0.5px]">Profit Split</p>
-                        <h1 class="text-xl md:text-[32px] text-[#070707] font-semibold font-plusJakarta leading-10 tracking-[-0.5px]">$2,700.00</h1>
-                    </div>
-                </div>
-
-            </div>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px] px-6 py-4"
+            >
+              2022 Panini Contenders Game Day Ticket Jerry Rice Autograp GDTJRI
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            >
+              g8
+            </td>
+            <td
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] px-6 py-4"
+            ></td>
+            <td class="px-6 py-4">
+              <input
+                class="flex justify-center items-center rounded-lg text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] w-[108px] h-6 border border-[#E9E9EA] outline-none cursor-pointer px-2 -ml-2"
+                type="text"
+              />
+            </td>
+            <td class="px-6 py-4">
+              <input
+                class="flex justify-center items-center rounded-lg text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4 tracking-[-0.5px] w-[108px] h-6 border border-[#E9E9EA] outline-none cursor-pointer px-2 -ml-2"
+                type="text"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="mt-8">
+      <h1
+        class="text-base text-[#070707] font-semibold font-plusJakarta leading-[26px]"
+      >
+        Transaction History
+      </h1>
+      <div
+        class="flex flex-wrap flex-col md:flex-row items-start justify-start my-4 gap-6"
+      >
+        <div
+          class="flex items-center flex-grow flex-shrink w-full md:w-[281px] h-[116px] rounded-2xl px-4 bg-[#F7F7FC]"
+        >
+          <div class="space-y-6">
+            <p
+              class="text-sm text-[#A5A5AB] font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
+            >
+              Total Courtyard Offer
+            </p>
+            <h1
+              class="text-xl md:text-[32px] text-[#070707] font-semibold font-plusJakarta leading-10 tracking-[-0.5px]"
+            >
+              $0.00
+            </h1>
           </div>
+        </div>
+
+        <div
+          class="flex items-center flex-grow flex-shrink w-full md:w-[281px] h-[116px] rounded-2xl px-4 bg-[#F7F7FC]"
+        >
+          <div class="space-y-6">
+            <p
+              class="text-sm text-[#A5A5AB] font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
+            >
+              Amount Paid
+            </p>
+            <h1
+              class="text-xl md:text-[32px] text-[#070707] font-semibold font-plusJakarta leading-10 tracking-[-0.5px]"
+            >
+              $1,500.00
+            </h1>
+          </div>
+        </div>
+
+        <div
+          class="flex items-center flex-grow flex-shrink w-full md:w-[281px] h-[116px] rounded-2xl px-4 bg-[#F7F7FC]"
+        >
+          <div class="space-y-6">
+            <p
+              class="text-sm text-[#A5A5AB] font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
+            >
+              Total Profit
+            </p>
+            <h1
+              class="text-xl md:text-[32px] text-[#070707] font-semibold font-plusJakarta leading-10 tracking-[-0.5px]"
+            >
+              $1,600.00
+            </h1>
+          </div>
+        </div>
+
+        <div
+          class="flex items-center flex-grow flex-shrink w-full md:w-[281px] h-[116px] rounded-2xl px-4 bg-[#F7F7FC]"
+        >
+          <div class="space-y-6">
+            <p
+              class="text-sm text-[#A5A5AB] font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
+            >
+              Profit Split
+            </p>
+            <h1
+              class="text-xl md:text-[32px] text-[#070707] font-semibold font-plusJakarta leading-10 tracking-[-0.5px]"
+            >
+              $2,700.00
+            </h1>
+          </div>
+        </div>
       </div>
-
-
+    </div>
+  </div>
 </div>

@@ -55,7 +55,6 @@ export const ACCOUNT_SETTING_TABS: IAccountSettingTab[] = [
   { label: 'Profile preferences', active: false },
 ];
 
-
 export const PAYMENT_METHODS = [
   {
     name: 'PayPal Balance',
@@ -81,5 +80,5 @@ export const PAYMENT_METHODS = [
     balance: '$15.00',
     logo: '/assets/images/jpmorgan.png',
     isSelected: false,
-  }
+  },
 ];

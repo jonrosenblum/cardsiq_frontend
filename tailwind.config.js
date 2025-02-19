@@ -20,17 +20,17 @@ module.exports = {
         gradientHover: "linear-gradient(to right, #887AFF, #887AFF, #887AFF)",
       },
       animation: {
-        'fade-in': 'fadeIn 0.3s ease-out forwards',
-        'fade-out': 'fadeOut 0.3s ease-in forwards',
+        "fade-in": "fadeIn 0.3s ease-out forwards",
+        "fade-out": "fadeOut 0.3s ease-in forwards",
       },
       keyframes: {
         fadeIn: {
-          '0%': { opacity: 0 },
-          '100%': { opacity: 1 },
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
         },
         fadeOut: {
-          '0%': { opacity: 1 },
-          '100%': { opacity: 0 },
+          "0%": { opacity: 1 },
+          "100%": { opacity: 0 },
         },
       },
     },
