@@ -15,10 +15,7 @@
       class="flex items-center rounded-3xl px-2 w-[90px] h-[26px] gap-1"
       [ngClass]="badgeBg"
     >
-      <div
-        class="w-4 h-4 border rounded"
-        [ngStyle]="{ borderColor: badgeColor }"
-      ></div>
+      <svg-icon [name]="icon" />
       <p
         class="text-xs font-semibold font-plusJakarta"
         [ngStyle]="{ color: badgeColor }"

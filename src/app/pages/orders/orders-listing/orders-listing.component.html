@@ -2,6 +2,15 @@
 <app-sub-header>
   <span header-title>Orders</span>
   <span header-subtitle>Keep track of your orders.</span>
+  <div header-action class="relative">
+    <input
+    (input)="searchInventory($event)"
+    class="w-full md:w-[260px] h-12 pl-10 pr-2 bg-[#E9E9EA] rounded-lg text-sm font-medium font-plusJakarta outline-none"
+    type="text"
+    placeholder="Quick Search"
+  />
+  <svg-icon name="search" class="absolute top-[14px] left-3" />
+  </div>
   <button
     header-action
     (click)="isEditOrder = true"
@@ -270,7 +279,8 @@
                 <div
                   class="p-2 w-10 flex justify-end relative items-center rounded-md cursor-pointer"
                 >
-                  <svg-icon name="menu-dots" (click)="toggleMenu($index)" />
+                  <span class="text-secondary underline cursor-pointer text-xs text-nowrap" (click)="openDetailPopup('order')">Review Order</span>
+                  <!-- <svg-icon name="menu-dots" (click)="toggleMenu($index)" />
                   @if (openedMenu === $index) {
                     <div
                       class="w-[160px] border border-[#E9E9EA] bg-white z-[1] rounded-xl py-2 absolute top-10 right-0"
@@ -308,7 +318,7 @@
                         </p>
                       </div>
                     </div>
-                  }
+                  } -->
                 </div>
               </td>
             </tr>
@@ -528,4 +538,18 @@
 
 @if (isEditOrder) {
   <app-edit-order (close)="isEditOrder = false" />
+}
+
+@if(showDetailPopup){
+  <app-popup-backdrop >
+    <app-order-detail-popup (close)="showDetailPopup = false; selectedOrder=''"></app-order-detail-popup>
+  </app-popup-backdrop>
+}
+
+@if(showInventoryDetail){
+  <app-popup-backdrop>
+    <div class="flex flex-col py-2 h-[600px] mx-4 rounded-[20px] px-6 bg-white">
+      <app-inventory-detail [inPopup]="true" (close)="showInventoryDetail = false"></app-inventory-detail>
+    </div>
+  </app-popup-backdrop>
 }

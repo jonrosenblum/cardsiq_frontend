@@ -2,17 +2,29 @@ import { Component } from '@angular/core';
 import { SharedModule } from '../../../shared/shared.module';
 import { SubHeaderComponent } from '../../../shared/components/dashboard/sub-header/sub-header.component';
 import { EditOrderComponent } from '../edit-order/edit-order.component';
+import { PopupBackdropComponent } from '../../../shared/components/popup-backdrop/popup-backdrop.component';
+import { OrderDetailPopupComponent } from '../order-detail-popup/order-detail-popup.component';
+import { InventoryDetailComponent } from '../../inventory/inventory-detail/inventory-detail.component';
 
 @Component({
   selector: 'app-orders-listing',
-  imports: [SharedModule, SubHeaderComponent, EditOrderComponent],
+  imports: [SharedModule, SubHeaderComponent, EditOrderComponent, PopupBackdropComponent, OrderDetailPopupComponent, InventoryDetailComponent],
   templateUrl: './orders-listing.component.html',
   styleUrl: './orders-listing.component.scss',
 })
 export class OrdersListingComponent {
+
+  showInventoryDetail: boolean = false;
+  showDetailPopup: boolean = false;
+  selectedOrder:any;
   tableOptionDropdown: boolean = false;
   openedMenu: number | undefined = undefined;
   isEditOrder: boolean = false;
+
+  openDetailPopup(order: any) {
+    this.selectedOrder = order;
+    this.showDetailPopup = true;
+  }
 
   orders: any[] = [
     {
@@ -129,5 +141,12 @@ export class OrdersListingComponent {
 
   toggleMenu(index: number) {
     this.openedMenu = this.openedMenu === index ? undefined : index;
+  }
+
+  searchInventory(event:any){
+    console.log(event.target.value);
+    setTimeout(() => {
+      this.showInventoryDetail = true;
+    }, 2000);
   }
 }

@@ -21,6 +21,7 @@
       title="Total Orders"
       value="120"
       percentage="+ 5.87%"
+      icon="trend-up"
       description="Overall total orders"
     >
     </app-stats-card>
@@ -30,6 +31,7 @@
       title="Total Earnings"
       value="$2,060"
       percentage="+ 23.87%"
+      icon="trend-up"
       description="Total Earnings"
     >
     </app-stats-card>
@@ -40,6 +42,7 @@
       value="$940"
       percentage="+ 18.98%"
       description="than last month"
+      icon="trend-down"
       badgeColor="#F9C80E"
       badgeBg="bg-[#F9C80E]/25"
     >
@@ -179,12 +182,12 @@
                 Status
               </h4>
             </th>
-            <th scope="col" class="px-6 py-2 rounded-tr-xl"></th>
+            <!-- <th scope="col" class="px-6 py-2 rounded-tr-xl"></th> -->
           </tr>
         </thead>
         <tbody>
           @for (order of orders; track $index) {
-            <tr class="border-b border-[#E9E9EA]">
+            <tr class="border-b border-[#E9E9EA] cursor-pointer hover:bg-gray-50" routerLink="/orders/123/details">
               <th
                 scope="row"
                 class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -246,7 +249,7 @@
                   </p>
                 </div>
               </td>
-              <td
+              <!-- <td
                 class="text-base text-[#464F60] font-medium tracking-wider px-4 py-2"
               >
                 <div
@@ -254,7 +257,7 @@
                 >
                   <svg-icon name="edit" /> Edit
                 </div>
-              </td>
+              </td> -->
             </tr>
           }
         </tbody>

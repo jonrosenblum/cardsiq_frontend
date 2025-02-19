@@ -11,6 +11,7 @@ import { StatsCardComponent } from '../../shared/components/dashboard/stats-card
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
+
   orders: any[] = [
     {
       id: 'ORD001',

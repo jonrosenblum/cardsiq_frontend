@@ -1,0 +1,83 @@
+@if(inPopup){
+  <div class=" flex   items-center justify-between w-full my-4">
+        <h1 class="text-2xl text-[#070707] font-semibold font-plusJakarta leading-9 tracking-[-0.5px]">
+            Quick Search Result</h1>
+            <button
+            (click)="close.emit()"
+            class="flex items-center justify-center w-6 h-6 rounded-md hover:border-[1.5px] cursor-pointer hover:border-[#070707]"
+          >
+            <svg-icon name="pop-close" />
+          </button>
+    </div>
+}
+
+@if(!inPopup){
+  <div class="px-4  mt-6">
+    <div class="flex items-center gap-4">
+        <div class="flex items-center gap-2">
+          <svg-icon name="user-square" class="user-square" />
+            <p class="text-sm text-[#777980] font-medium cursor-pointer font-plusJakarta leading-5 tracking-[-0.5px]" routerLink="/inventory">Inventory</p>
+        </div>
+        <div class="flex items-center gap-2">
+            <svg-icon name="arrow-left" />
+            <p  class="text-sm text-[#777980] font-semibold cursor-pointer font-plusJakarta leading-5 tracking-[-0.5px]">View details</p>
+        </div>
+    </div>
+  </div>
+}
+<div class="relative overflow-x-auto h-[calc(100vh-125px)]  no-scrollbar">
+<div class="flex flex-col xl:flex-row items-start justify-between w-full px-4 gap-8 mt-10">
+  <div class="w-full">
+      <div class="space-y-4">
+       <h1 class="text-2xl text-[#070707] font-bold font-plusJakarta leading-9 tracking-[-0.5px]">Team Information</h1>
+       <p class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-[18px] tracking-[0px]">According to the PSA database, the requested certification number is defined as following:</p>
+      </div>
+      <div class="w-full xl:max-w-[614px] min-w-[300px] h-[288px] bg-white rounded-xl border border-[#E9E9EA]  mt-2">
+       <div class="flex items-center border-b border-[#E9E9EA] h-8">
+          <h2 class="text-sm text-[#070707] font-medium font-plusJakarta min-w-[200px] sm:min-w-[300px] leading-5 tracking-[-0.5px] px-3">Certification Number</h2>
+          <p class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4  tracking-[-0.5px] px-3">65476193</p>
+       </div>
+       <div class="flex items-center border-b border-[#E9E9EA] h-8">
+          <h2 class="text-sm text-[#070707] font-medium font-plusJakarta min-w-[200px] sm:min-w-[300px] leading-5 tracking-[-0.5px] px-3">Estimate value</h2>
+          <p class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4  tracking-[-0.5px] px-3">$49</p>
+       </div>
+       <div class="flex items-center border-b border-[#E9E9EA] h-8">
+          <h2 class="text-sm text-[#070707] font-medium font-plusJakarta min-w-[200px] sm:min-w-[300px] leading-5 tracking-[-0.5px] px-3">Confidence</h2>
+          <p class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4  tracking-[-0.5px] px-3">5.00</p>
+       </div>
+       <div class="flex items-center border-b border-[#E9E9EA] h-8">
+          <h2 class="text-sm text-[#070707] font-medium font-plusJakarta min-w-[200px] sm:min-w-[300px] leading-5 tracking-[-0.5px] px-3">Year</h2>
+          <p class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4  tracking-[-0.5px] px-3 text-nowrap text-ellipsis overflow-hidden max-w-[200px]">2001 Upper Deck Golf Tiger Woods Base 1</p>
+       </div>
+       <div class="flex items-center border-b border-[#E9E9EA] h-8">
+          <h2 class="text-sm text-[#070707] font-medium font-plusJakarta min-w-[200px] sm:min-w-[300px] leading-5 tracking-[-0.5px] px-3">Brand</h2>
+          <p class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4  tracking-[-0.5px] px-3">Misc</p>
+       </div>
+       <div class="flex items-center border-b border-[#E9E9EA] h-8">
+          <h2 class="text-sm text-[#070707] font-medium font-plusJakarta min-w-[200px] sm:min-w-[300px] leading-5 tracking-[-0.5px] px-3">Sport</h2>
+          <p class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4  tracking-[-0.5px] px-3">Courtyard.oi</p>
+       </div>
+       <div class="flex items-center border-b border-[#E9E9EA] h-8">
+          <h2 class="text-sm text-[#070707] font-medium font-plusJakarta min-w-[200px] sm:min-w-[300px] leading-5 tracking-[-0.5px] px-3">Card Number</h2>
+          <p class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4  tracking-[-0.5px] px-3">1</p>
+       </div>
+       <div class="flex items-center border-b border-[#E9E9EA] h-8">
+          <h2 class="text-sm text-[#070707] font-medium font-plusJakarta min-w-[200px] sm:min-w-[300px] leading-5 tracking-[-0.5px] px-3">Player</h2>
+          <p class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4  tracking-[-0.5px] px-3">Courtyard.oi</p>
+       </div>
+       <div class="flex items-center  h-8">
+          <h2 class="text-sm text-[#070707] font-medium font-plusJakarta min-w-[200px] sm:min-w-[300px] leading-5 tracking-[-0.5px] px-3">Grade</h2>
+          <p class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-4  tracking-[-0.5px] px-3">g9</p>
+       </div>
+
+      </div>
+  </div>
+  <div class="w-full">
+     <div class="flex flex-col sm:flex-row items-center sm:items-start justify-center  w-full  gap-4">
+      <img class="w-full md:w-auto" src="/assets/images/inv-detail-1.png" alt="">
+      <img class="w-full md:w-auto" src="/assets/images/inv-detail-2.png" alt="">
+     </div>
+  </div>
+
+</div>
+</div>

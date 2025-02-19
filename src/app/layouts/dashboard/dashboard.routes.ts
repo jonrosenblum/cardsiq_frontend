@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { orderRoutes } from '../../pages/orders/orders.routes';
 import { accountSettingRoutes } from '../../pages/account-setting/account-setting.routes';
+import { inventoryRoutes } from '../../pages/inventory/inventory.routes';
 
 export const dashboardRoutes: Routes = [
   {
@@ -22,18 +23,12 @@ export const dashboardRoutes: Routes = [
       },
       ...orderRoutes,
       ...accountSettingRoutes,
+      ...inventoryRoutes,
       {
         path: 'payments',
         loadComponent: () =>
           import('./../../pages/payments/payments.component').then(
             (m) => m.PaymentsComponent,
-          ),
-      },
-      {
-        path: 'inventory',
-        loadComponent: () =>
-          import('./../../pages/inventory/inventory.component').then(
-            (m) => m.InventoryComponent,
           ),
       },
       {
