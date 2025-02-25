@@ -13,5 +13,4 @@ import { RouterOutlet } from '@angular/router';
 })
 export class DashboardComponent {
   @ViewChild('sidebar') sidebar!: SidebarComponent;
-
 }

@@ -1,5 +1,12 @@
 // DialogBoxService.service.ts
-import { Injectable, ComponentRef, Injector, ApplicationRef, ComponentFactoryResolver, Type } from '@angular/core';
+import {
+  Injectable,
+  ComponentRef,
+  Injector,
+  ApplicationRef,
+  ComponentFactoryResolver,
+  Type,
+} from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class DialogBoxService {
@@ -8,7 +15,7 @@ export class DialogBoxService {
   constructor(
     private resolver: ComponentFactoryResolver,
     private injector: Injector,
-    private appRef: ApplicationRef
+    private appRef: ApplicationRef,
   ) {}
 
   open<T>(component: Type<T>, data?: any): ComponentRef<T> {

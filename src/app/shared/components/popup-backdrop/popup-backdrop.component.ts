@@ -4,7 +4,7 @@ import { Component, OnDestroy } from '@angular/core';
   selector: 'app-popup-backdrop',
   imports: [],
   templateUrl: './popup-backdrop.component.html',
-  styleUrl: './popup-backdrop.component.scss'
+  styleUrl: './popup-backdrop.component.scss',
 })
 export class PopupBackdropComponent implements OnDestroy {
   isOpen: boolean = false;
