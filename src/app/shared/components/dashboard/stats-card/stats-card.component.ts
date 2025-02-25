@@ -4,7 +4,7 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
 
 @Component({
   selector: 'app-stats-card',
-  imports: [CommonModule,AngularSvgIconModule],
+  imports: [CommonModule, AngularSvgIconModule],
   templateUrl: './stats-card.component.html',
   styleUrl: './stats-card.component.scss',
 })

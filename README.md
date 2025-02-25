@@ -9,6 +9,7 @@ To install the dependency run:
 ```bash
 npm install
 ```
+
 ## Development server
 
 To start a local development server, run:

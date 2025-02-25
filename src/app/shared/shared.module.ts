@@ -19,7 +19,13 @@ const shared = [
   AngularSvgIconModule,
 ];
 
-const primeNg = [CheckboxModule, ButtonModule, InputOtpModule, TableModule , InputText];
+const primeNg = [
+  CheckboxModule,
+  ButtonModule,
+  InputOtpModule,
+  TableModule,
+  InputText,
+];
 
 @NgModule({
   declarations: [],

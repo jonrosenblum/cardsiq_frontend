@@ -19,7 +19,7 @@ import { ValidationMessages } from '../../shared/enums/validation-messages.enum'
 export class ResetPasswordComponent {
   formSubmitted: boolean = false;
   submitLoading: boolean = false;
-  resetPasswordSuccess:boolean = false;
+  resetPasswordSuccess: boolean = false;
   resetPasswordForm: FormGroup = ResetPasswordForm;
   passwordValidationMessages: { message: string; valid: boolean }[] = [];
 

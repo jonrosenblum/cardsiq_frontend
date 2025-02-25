@@ -1,58 +1,121 @@
-<div class="flex  flex-col xl:flex-row items-start justify-start w-full gap-16">
+<div class="flex flex-col xl:flex-row items-start justify-start w-full gap-16">
   <div class="w-full md:w-1/2 text-start flex flex-col gap-8">
-
     <div class="w-full">
-      <h1 class="text-lg text-[#070707] font-semibold font-plusJakarta leading-7 tracking-[0px]">Payment method</h1>
-      <p class="text-sm text-[#4A4C56] font-normal font-plusJakarta leading-[18px] tracking-[0px]">Update your billing details and address.</p>
+      <h1
+        class="text-lg text-[#070707] font-semibold font-plusJakarta leading-7 tracking-[0px]"
+      >
+        Payment method
+      </h1>
+      <p
+        class="text-sm text-[#4A4C56] font-normal font-plusJakarta leading-[18px] tracking-[0px]"
+      >
+        Update your billing details and address.
+      </p>
     </div>
     <div class="w-full flex flex-col items-start gap-2">
       @for (item of paymentMethods; track $index) {
-        <div (click)="selectPaymentMethod(item)" class="w-full lg:w-[360px] bg-white rounded-xl border-[1.5px] cursor-pointer" [class.border-secondary]="item.isSelected">
-                <div class="flex items-start justify-between p-4">
-                    <div class="flex items-start gap-4">
-                        <img [src]="item.logo" [alt]="item.name">
-                        <div class="flex flex-col gap-2">
-                            <h2 class="text-sm text-[#070707] font-semibold font-plusJakarta leading-[18px] tracking-[0px]">{{item.name}}</h2>
-                            @if(item.isSelected){
-                              <p class="text-sm text-[#4A4C56] font-normal font-plusJakarta leading-[18px] tracking-[0px]">{{item.balance}} Available</p>
-                            }
-                            <div class="flex items-center gap-5">
-                              @if(!item.isDefault){
-                                <h3 class="text-sm text-[#070707] font-medium font-plusJakarta leading-[18px] tracking-[0px]">Set as default</h3>
-                              }
-                                @if(item.isSelected){
-                                  <span class="text-sm text-secondary font-semibold font-plusJakarta leading-[18px] tracking-[0px]">Edit</span>
-                                }
-                            </div>
-                        </div>
-                    </div>
-                    @if(item.isSelected){
-                      <div class=" flex items-center justify-center w-4 h-4 border border-[#7F56D9] bg-[#7F56D9] rounded-full">
-                        <svg-icon name="check"  />
-                      </div>
-                    }@else{
-                      <div class=" flex items-center justify-center w-4 h-4 border border-[#D0D5DD] rounded-full"></div>
-                    }
+        <div
+          (click)="selectPaymentMethod(item)"
+          class="w-full lg:w-[360px] bg-white rounded-xl border-[1.5px] cursor-pointer"
+          [class.border-secondary]="item.isSelected"
+        >
+          <div class="flex items-start justify-between p-4">
+            <div class="flex items-start gap-4">
+              <img [src]="item.logo" [alt]="item.name" />
+              <div class="flex flex-col gap-2">
+                <h2
+                  class="text-sm text-[#070707] font-semibold font-plusJakarta leading-[18px] tracking-[0px]"
+                >
+                  {{ item.name }}
+                </h2>
+                @if (item.isSelected) {
+                  <p
+                    class="text-sm text-[#4A4C56] font-normal font-plusJakarta leading-[18px] tracking-[0px]"
+                  >
+                    {{ item.balance }} Available
+                  </p>
+                }
+                <div class="flex items-center gap-5">
+                  @if (!item.isDefault) {
+                    <h3
+                      class="text-sm text-[#070707] font-medium font-plusJakarta leading-[18px] tracking-[0px]"
+                    >
+                      Set as default
+                    </h3>
+                  }
+                  @if (item.isSelected) {
+                    <span
+                      class="text-sm text-secondary font-semibold font-plusJakarta leading-[18px] tracking-[0px]"
+                      >Edit</span
+                    >
+                  }
                 </div>
+              </div>
+            </div>
+            @if (item.isSelected) {
+              <div
+                class="flex items-center justify-center w-4 h-4 border border-[#7F56D9] bg-[#7F56D9] rounded-full"
+              >
+                <svg-icon name="check" />
+              </div>
+            } @else {
+              <div
+                class="flex items-center justify-center w-4 h-4 border border-[#D0D5DD] rounded-full"
+              ></div>
+            }
+          </div>
         </div>
       }
     </div>
   </div>
-  <div class="space-y-2 w-full  md:w-1/2 text-start mt-12">
-  <div class="flex flex-col items-center justify-center w-full  h-[300px] rounded-xl border border-[#E9E9EA] bg-white gap-8">
+  <div class="space-y-2 w-full md:w-1/2 text-start mt-12">
+    <div
+      class="flex flex-col items-center justify-center w-full h-[300px] rounded-xl border border-[#E9E9EA] bg-white gap-8"
+    >
       <div class="space-y-2 flex flex-col items-center justify-center">
-        <img class="w-[84px] h-[54px] rounded-lg" src="/assets/images/aquabox logo-01 3.png" alt="" srcset="">
-          <h2 class="text-sm text-[#070707] font-semibold font-plusJakarta leading-[18px] tracking-[0px]">Aquabox Balance</h2>
-          <h1 class="text-[32px] text-[#070707] font-semibold leading-10 tracking-[0px]">$15.00<span class="text-sm text-[#070707] font-normal font-plusJakarta leading-[18px] tracking-[-0.5px]">Available</span></h1>
+        <img
+          class="w-[84px] h-[54px] rounded-lg"
+          src="/assets/images/aquabox logo-01 3.png"
+          alt=""
+          srcset=""
+        />
+        <h2
+          class="text-sm text-[#070707] font-semibold font-plusJakarta leading-[18px] tracking-[0px]"
+        >
+          Aquabox Balance
+        </h2>
+        <h1
+          class="text-[32px] text-[#070707] font-semibold leading-10 tracking-[0px]"
+        >
+          $15.00<span
+            class="text-sm text-[#070707] font-normal font-plusJakarta leading-[18px] tracking-[-0.5px]"
+            >Available</span
+          >
+        </h1>
       </div>
-      <button class="flex items-center justify-center w-[190px] h-11 rounded-lg bg-gradient text-base text-white font-semibold font-plusJakarta leading-5 tracking-[-1%]">Transfer</button>
+      <button
+        class="flex items-center justify-center w-[190px] h-11 rounded-lg bg-gradient text-base text-white font-semibold font-plusJakarta leading-5 tracking-[-1%]"
+      >
+        Transfer
+      </button>
+    </div>
+    <div
+      class="flex items-center justify-between w-full h-[76px] px-4 rounded-xl border border-[#E9E9EA] bg-white"
+    >
+      <h2
+        class="text-sm text-[#070707] font-semibold font-plusJakarta leading-5 tracking-[-0.5px]"
+      >
+        Payment method
+      </h2>
+      <div
+        class="flex items-center justify-center w-[296px] h-9 rounded-lg border border-secondary text-secondary hover:text-white hover:bg-secondary cursor-pointer"
+      >
+        <p
+          class="text-base font-semibold font-plusJakarta leading-5 tracking-[-1%]"
+        >
+          Add bank account or Add debit card
+        </p>
+      </div>
+    </div>
   </div>
-  <div class="flex  items-center justify-between w-full h-[76px] px-4 rounded-xl border border-[#E9E9EA] bg-white">
-       <h2 class="text-sm text-[#070707] font-semibold font-plusJakarta leading-5 tracking-[-0.5px]">Payment method</h2>
-       <div class="flex items-center justify-center w-[296px] h-9 rounded-lg border border-secondary text-secondary hover:text-white hover:bg-secondary cursor-pointer">
-         <p class="text-base font-semibold font-plusJakarta leading-5 tracking-[-1%]">Add bank account or Add debit card</p>
-       </div>
-  </div>
-  </div>
-
 </div>

@@ -15,12 +15,12 @@ export class SidebarComponent extends SidebarService {
   isFullyOpened: boolean = true;
   toggleSidebar() {
     this.isSidebarOpen = !this.isSidebarOpen;
-    if(this.isSidebarOpen){
+    if (this.isSidebarOpen) {
       setTimeout(() => {
         this.isFullyOpened = true;
       }, 1000);
-    }else{
-        this.isFullyOpened = false;
+    } else {
+      this.isFullyOpened = false;
     }
   }
 }

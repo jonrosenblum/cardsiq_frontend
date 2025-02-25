@@ -1,0 +1,1506 @@
+[
+  {
+    "certNumber": "87368284",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "87368284",
+          "SpecID": 10070041,
+          "SpecNumber": "EMS9000002",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "2023",
+          "Brand": "PANINI DONRUSS DOWNTOWN!",
+          "Category": "FOOTBALL CARDS",
+          "CardNumber": "D2",
+          "Subject": "CJ STROUD",
+          "Variety": "DOWNTOWN!",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "GEM MT 10",
+          "CardGrade": "GEM MT 10",
+          "TotalPopulation": 432,
+          "TotalPopulationWithQualifier": 0,
+          "PopulationHigher": 0,
+          "certImages": [
+            {
+              "IsFrontImage": false,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/153906462/HNCY7P5wbkmm5j8CPFOfsg.jpg"
+            },
+            {
+              "IsFrontImage": true,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/153906462/X9JIaWmcekaZe3kyFD_r5Q.jpg"
+            }
+          ],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  },
+  {
+    "certNumber": "89500579",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "89500579",
+          "SpecID": 10369258,
+          "SpecNumber": "EKJ9006676",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "2023",
+          "Brand": "PANINI PRIZM",
+          "Category": "BASKETBALL CARDS",
+          "CardNumber": "150",
+          "Subject": "AMEN THOMPSON",
+          "Variety": "RED PRIZM",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "MINT 9",
+          "CardGrade": "MINT 9",
+          "TotalPopulation": 61,
+          "TotalPopulationWithQualifier": 0,
+          "PopulationHigher": 52,
+          "certImages": [
+            {
+              "IsFrontImage": false,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/156237924/stqV6fotN0OzF9Bko93lbA.jpg"
+            },
+            {
+              "IsFrontImage": true,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/156237924/kefaxlIq7kuLch8pKKk6QQ.jpg"
+            }
+          ],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  },
+  {
+    "certNumber": "49184230",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "49184230",
+          "SpecID": 299820,
+          "SpecNumber": "0303880170",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "1988",
+          "Brand": "FLEER",
+          "Category": "BASKETBALL CARDS",
+          "CardNumber": "17",
+          "Subject": "MICHAEL JORDAN",
+          "Variety": "",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "GEM MT 10",
+          "CardGrade": "GEM MT 10",
+          "TotalPopulation": 656,
+          "TotalPopulationWithQualifier": 0,
+          "PopulationHigher": 0,
+          "certImages": [
+            {
+              "IsFrontImage": true,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/106812520/350407222.tif?f=jpg"
+            },
+            {
+              "IsFrontImage": false,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/106812520/350407159.tif?f=jpg"
+            }
+          ],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  },
+  {
+    "certNumber": "52761699",
+    "data": {
+      "error": "Invalid API response",
+      "status1": 200,
+      "status2": 500,
+      "responseText1": "{\"PSACert\":{\"CertNumber\":\"52761699\",\"SpecID\":440230,\"SpecNumber\":\"3360970090\",\"LabelType\":\"LighthouseLabel\",\"ReverseBarCode\":true,\"Year\":\"1997\",\"Brand\":\"SKYBOX E-X2001\",\"Category\":\"BASKETBALL CARDS\",\"CardNumber\":\"9\",\"Subject\":\"MICHAEL JORDAN\",\"Variety\":\"\",\"IsPSADNA\":false,\"IsDualCert\":false,\"GradeDescription\":\"MINT 9\",\"CardGrade\":\"MINT 9\",\"TotalPopulation\":441,\"TotalPopulationWithQualifier\":0,\"PopulationHigher\":15}}",
+      "responseText2": "{\"Message\":\"An error occurred while processing your request.\"}"
+    }
+  },
+  {
+    "certNumber": "89977315",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "89977315",
+          "SpecID": 446435,
+          "SpecNumber": "3751990200",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "1999",
+          "Brand": "SPx SPXCITEMENT",
+          "Category": "BASKETBALL CARDS",
+          "CardNumber": "S20",
+          "Subject": "MICHAEL JORDAN",
+          "Variety": "",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "MINT 9",
+          "CardGrade": "MINT 9",
+          "TotalPopulation": 344,
+          "TotalPopulationWithQualifier": 0,
+          "PopulationHigher": 136,
+          "certImages": [
+            {
+              "IsFrontImage": true,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/156735433/JM1vU1K6ik6v6O_xwYNNCg.jpg"
+            },
+            {
+              "IsFrontImage": false,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/156735433/WJ2A05dgjUSVtk9Wjg6DXQ.jpg"
+            }
+          ],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  },
+  {
+    "certNumber": "88061084",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "88061084",
+          "SpecID": 6343453,
+          "SpecNumber": "GS42000014",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "2021",
+          "Brand": "PANINI PRIZM DRAFT PICKS ON CAMPUS",
+          "Category": "FOOTBALL CARDS",
+          "CardNumber": "OCPM",
+          "Subject": "PEYTON MANNING",
+          "Variety": "ON CAMPUS",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "GEM MT 10",
+          "CardGrade": "GEM MT 10",
+          "TotalPopulation": 56,
+          "TotalPopulationWithQualifier": 0,
+          "PopulationHigher": 0,
+          "certImages": [
+            {
+              "IsFrontImage": false,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/154991947/DrTvCrG1N0uZ1KxBgN5ybg.jpg"
+            },
+            {
+              "IsFrontImage": true,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/154991947/yd-hAewNxE2LVgNPKn35aQ.jpg"
+            }
+          ],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  },
+  {
+    "certNumber": "101689553",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "101689553",
+          "SpecID": 2451842,
+          "SpecNumber": "CD70000475",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "2016",
+          "Brand": "PANINI DONRUSS OPTIC",
+          "Category": "FOOTBALL CARDS",
+          "CardNumber": "165",
+          "Subject": "DERRICK HENRY",
+          "Variety": "PINK",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "GEM MT 10",
+          "CardGrade": "GEM MT 10",
+          "TotalPopulation": 43,
+          "TotalPopulationWithQualifier": 0,
+          "PopulationHigher": 0,
+          "certImages": [
+            {
+              "IsFrontImage": false,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/170258580/KUbMv_Yf2kSYx8MGnpj3tQ.jpg"
+            },
+            {
+              "IsFrontImage": true,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/170258580/J2LtNwfUxEOdq8Oywee03w.jpg"
+            }
+          ],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  },
+  {
+    "certNumber": "88752526",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "88752526",
+          "SpecID": 10370559,
+          "SpecNumber": "EKJ9007947",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "2023",
+          "Brand": "PANINI PRIZM",
+          "Category": "BASKETBALL CARDS",
+          "CardNumber": "179",
+          "Subject": "GG JACKSON II",
+          "Variety": "RED PRIZM",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "GEM MT 10",
+          "CardGrade": "GEM MT 10",
+          "TotalPopulation": 82,
+          "TotalPopulationWithQualifier": 0,
+          "PopulationHigher": 0,
+          "certImages": [
+            {
+              "IsFrontImage": false,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/155816611/Hzjb-EJ9nU6zChKP7jhJoA.jpg"
+            },
+            {
+              "IsFrontImage": true,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/155816611/e00YPPHnOEWWsTx3LNrRGQ.jpg"
+            }
+          ],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  },
+  {
+    "certNumber": "26136629",
+    "data": {
+      "error": "Invalid API response",
+      "status1": 200,
+      "status2": 500,
+      "responseText1": "{\"PSACert\":{\"CertNumber\":\"26136629\",\"SpecID\":299576,\"SpecNumber\":\"0303860570\",\"LabelType\":\"HologramLabel\",\"ReverseBarCode\":true,\"Year\":\"1986\",\"Brand\":\"FLEER\",\"Category\":\"BASKETBALL CARDS\",\"CardNumber\":\"57\",\"Subject\":\"MICHAEL JORDAN\",\"Variety\":\"\",\"IsPSADNA\":false,\"IsDualCert\":false,\"GradeDescription\":\"EX-MT 6\",\"CardGrade\":\"EX-MT 6\",\"TotalPopulation\":2836,\"TotalPopulationWithQualifier\":6,\"PopulationHigher\":19313}}",
+      "responseText2": "{\"Message\":\"An error occurred while processing your request.\"}"
+    }
+  },
+  {
+    "certNumber": "25561386",
+    "data": {
+      "error": "Invalid API response",
+      "status1": 200,
+      "status2": 500,
+      "responseText1": "{\"PSACert\":{\"CertNumber\":\"25561386\",\"SpecID\":1699202,\"SpecNumber\":\"W605000012\",\"LabelType\":\"HologramLabel\",\"ReverseBarCode\":true,\"Year\":\"2009\",\"Brand\":\"TOPPS\",\"Category\":\"BASKETBALL CARDS\",\"CardNumber\":\"321\",\"Subject\":\"STEPHEN CURRY\",\"Variety\":\"\",\"IsPSADNA\":false,\"IsDualCert\":false,\"GradeDescription\":\"MINT 9\",\"CardGrade\":\"MINT 9\",\"TotalPopulation\":1536,\"TotalPopulationWithQualifier\":1,\"PopulationHigher\":372}}",
+      "responseText2": "{\"Message\":\"An error occurred while processing your request.\"}"
+    }
+  },
+  {
+    "certNumber": "89677268",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "89677268",
+          "SpecID": 10070044,
+          "SpecNumber": "EMS9000005",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "2023",
+          "Brand": "PANINI DONRUSS DOWNTOWN!",
+          "Category": "FOOTBALL CARDS",
+          "CardNumber": "D5",
+          "Subject": "JALEN HURTS",
+          "Variety": "",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "MINT 9",
+          "CardGrade": "MINT 9",
+          "TotalPopulation": 227,
+          "TotalPopulationWithQualifier": 0,
+          "PopulationHigher": 256,
+          "certImages": [
+            {
+              "IsFrontImage": true,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/156620308/Tp5IRB9WQUa5fLU9RH-PWA.jpg"
+            },
+            {
+              "IsFrontImage": false,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/156620308/j7suNG8BzUWYpZyqL30HwQ.jpg"
+            }
+          ],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  },
+  {
+    "certNumber": "61077785",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "61077785",
+          "SpecID": 273423,
+          "SpecNumber": "0201812160",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "1981",
+          "Brand": "TOPPS",
+          "Category": "FOOTBALL CARDS",
+          "CardNumber": "216",
+          "Subject": "JOE MONTANA",
+          "Variety": "",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "NM 7",
+          "CardGrade": "NM 7",
+          "TotalPopulation": 7870,
+          "TotalPopulationWithQualifier": 183,
+          "PopulationHigher": 14227,
+          "certImages": [],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  },
+  {
+    "certNumber": "89653810",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "89653810",
+          "SpecID": 8925201,
+          "SpecNumber": "BQK3000024",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "2022",
+          "Brand": "LEAF WEEKLY WEB EXCLUSIVE CARDS",
+          "Category": "MULTI-SPORT CARDS",
+          "CardNumber": "BP1",
+          "Subject": "BROCK PURDY",
+          "Variety": "ROOKIE STANDOUT XRC-AUTO.",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "GEM MT 10",
+          "CardGrade": "GEM MT 10",
+          "TotalPopulation": 56,
+          "TotalPopulationWithQualifier": 0,
+          "PopulationHigher": 0,
+          "certImages": [
+            {
+              "IsFrontImage": false,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/156645790/EsRnlVGVy0ieo_Ig3vr7YA.jpg"
+            },
+            {
+              "IsFrontImage": true,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/156645790/fX9HvhWY1UiY5iFkAkMkcw.jpg"
+            }
+          ],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  },
+  {
+    "certNumber": "93791187",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "93791187",
+          "SpecID": 10233442,
+          "SpecNumber": "ERF2004872",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "2023",
+          "Brand": "PANINI PRIZM",
+          "Category": "FOOTBALL CARDS",
+          "CardNumber": "339",
+          "Subject": "CJ STROUD",
+          "Variety": "GREEN SPARKLE",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "GEM MT 10",
+          "CardGrade": "GEM MT 10",
+          "TotalPopulation": 3,
+          "TotalPopulationWithQualifier": 0,
+          "PopulationHigher": 0,
+          "certImages": [
+            {
+              "IsFrontImage": false,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/160576370/pN5pgrJzakuzXK6dH7Te_Q.jpg"
+            },
+            {
+              "IsFrontImage": true,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/160576370/1AUsRpgguU62umfhkAtD_w.jpg"
+            }
+          ],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  },
+  {
+    "certNumber": "101788511",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "101788511",
+          "SpecID": 12600711,
+          "SpecNumber": "GOO4016702",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "2023",
+          "Brand": "PANINI SELECT",
+          "Category": "FOOTBALL CARDS",
+          "CardNumber": "38",
+          "Subject": "JAYDEN REED",
+          "Variety": "DRAGON SCALE GOLD PRIZM",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "GEM MT 10",
+          "CardGrade": "GEM MT 10",
+          "TotalPopulation": 4,
+          "TotalPopulationWithQualifier": 0,
+          "PopulationHigher": 0,
+          "certImages": [
+            {
+              "IsFrontImage": false,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/170250312/HSqOKa0ODUmqhqfJRd6w3g.jpg"
+            },
+            {
+              "IsFrontImage": true,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/170250312/_6LZEXNxN0OdnIvbuYh8Gg.jpg"
+            }
+          ],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  },
+  {
+    "certNumber": "76893021",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "76893021",
+          "SpecID": 3627158,
+          "SpecNumber": "UT98004654",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "2020",
+          "Brand": "PANINI DONRUSS",
+          "Category": "FOOTBALL CARDS",
+          "CardNumber": "P304",
+          "Subject": "JORDAN LOVE",
+          "Variety": "OPTIC PREVIEW-HOLO",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "GEM MT 10",
+          "CardGrade": "GEM MT 10",
+          "TotalPopulation": 62,
+          "TotalPopulationWithQualifier": 0,
+          "PopulationHigher": 0,
+          "certImages": [
+            {
+              "IsFrontImage": true,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/143082342/F7l8mpiZP0KTZh8hN2LUGg.jpg"
+            },
+            {
+              "IsFrontImage": false,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/143082342/ZbJI3EJDR0Cupg2eXgONvg.jpg"
+            }
+          ],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  },
+  {
+    "certNumber": "89086084",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "89086084",
+          "SpecID": 4425006,
+          "SpecNumber": "VG07002454",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "2020",
+          "Brand": "PANINI DONRUSS OPTIC",
+          "Category": "FOOTBALL CARDS",
+          "CardNumber": "154",
+          "Subject": "JORDAN LOVE",
+          "Variety": "GREEN VELOCITY",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "GEM MT 10",
+          "CardGrade": "GEM MT 10",
+          "TotalPopulation": 551,
+          "TotalPopulationWithQualifier": 0,
+          "PopulationHigher": 0,
+          "certImages": [
+            {
+              "IsFrontImage": false,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/156021750/zG06M5MIfUmYAPM2QtWUQg.jpg"
+            },
+            {
+              "IsFrontImage": true,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/156021750/Ld_zPoDPDU2G4IhU__ZzMA.jpg"
+            }
+          ],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  },
+  {
+    "certNumber": "79399552",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "79399552",
+          "SpecID": 9056441,
+          "SpecNumber": "DDZ7003366",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "2022",
+          "Brand": "PANINI SELECT",
+          "Category": "BASKETBALL CARDS",
+          "CardNumber": "58",
+          "Subject": "JA MORANT",
+          "Variety": "GOLD",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "GEM MT 10",
+          "CardGrade": "GEM MT 10",
+          "TotalPopulation": 4,
+          "TotalPopulationWithQualifier": 0,
+          "PopulationHigher": 0,
+          "certImages": [
+            {
+              "IsFrontImage": false,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/145588404/N1-KibCFNEWLKJAfGyvH0g.jpg"
+            },
+            {
+              "IsFrontImage": true,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/145588404/h7khbjybGkCDe1TasTSnGA.jpg"
+            }
+          ],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  },
+  {
+    "certNumber": "102596433",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "102596433",
+          "SpecID": 11989742,
+          "SpecNumber": "GYP2000019",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "2024",
+          "Brand": "TOPPS CHROME COSMIC COSMIC CHROME AUTOGRAPHS",
+          "Category": "BASEBALL CARDS",
+          "CardNumber": "JH",
+          "Subject": "JACKSON HOLLIDAY",
+          "Variety": "",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "MINT 9",
+          "CardGrade": "MINT 9",
+          "TotalPopulation": 17,
+          "TotalPopulationWithQualifier": 0,
+          "PopulationHigher": 12,
+          "certImages": [
+            {
+              "IsFrontImage": false,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/171479025/g82_omiXfEaLt95zvexO0Q.jpg"
+            },
+            {
+              "IsFrontImage": true,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/171479025/bzGSs1qa9EeDa-aW_G11tw.jpg"
+            }
+          ],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  },
+  {
+    "certNumber": "91408672",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "91408672",
+          "SpecID": 3167649,
+          "SpecNumber": "XR68002014",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "2019",
+          "Brand": "BOWMAN DRAFT",
+          "Category": "BASEBALL CARDS",
+          "CardNumber": "BDC22",
+          "Subject": "GUNNAR HENDERSON",
+          "Variety": "CHROME",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "GEM MT 10",
+          "CardGrade": "GEM MT 10",
+          "TotalPopulation": 2202,
+          "TotalPopulationWithQualifier": 0,
+          "PopulationHigher": 0,
+          "certImages": [
+            {
+              "IsFrontImage": false,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/158241733/msJheT-bOkmrjhcP8FSRTA.jpg"
+            },
+            {
+              "IsFrontImage": true,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/158241733/LV0yMS6Yb0avTQGXolp2oQ.jpg"
+            }
+          ],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  },
+  {
+    "certNumber": "63235750",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "63235750",
+          "SpecID": 4768817,
+          "SpecNumber": "KK63000053",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "2020",
+          "Brand": "PANINI PRIZM SENSATIONAL SIGNATURES",
+          "Category": "BASKETBALL CARDS",
+          "CardNumber": "SSTHB",
+          "Subject": "TYRESE HALIBURTON",
+          "Variety": "SENSATIONAL SIGNATURES",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "GEM MT 10",
+          "CardGrade": "GEM MT 10",
+          "TotalPopulation": 65,
+          "TotalPopulationWithQualifier": 0,
+          "PopulationHigher": 0,
+          "certImages": [],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  },
+  {
+    "certNumber": "103333920",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "103333920",
+          "SpecID": 12410225,
+          "SpecNumber": "HQH5000001",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "2024",
+          "Brand": "PANINI ABSOLUTE KABOOM! HORIZONTAL",
+          "Category": "FOOTBALL CARDS",
+          "CardNumber": "7",
+          "Subject": "JAYDEN DANIELS",
+          "Variety": "",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "GEM MT 10",
+          "CardGrade": "GEM MT 10",
+          "TotalPopulation": 123,
+          "TotalPopulationWithQualifier": 0,
+          "PopulationHigher": 0,
+          "certImages": [
+            {
+              "IsFrontImage": false,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/171757213/nLsMHtd3h0WniNwic5-WIg_22ade.jpg"
+            },
+            {
+              "IsFrontImage": true,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/171757213/u4mW46PXvEWBwERXlblhnw_fce1d.jpg"
+            }
+          ],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  },
+  {
+    "certNumber": "102907093",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "102907093",
+          "SpecID": 12569297,
+          "SpecNumber": "HWP0000063",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "2024",
+          "Brand": "PANINI ABSOLUTE KABOOM! VERTICAL",
+          "Category": "FOOTBALL CARDS",
+          "CardNumber": "22",
+          "Subject": "LAIATU LATU",
+          "Variety": "KABOOM! VERTICAL-GOLD",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "GEM MT 10",
+          "CardGrade": "GEM MT 10",
+          "TotalPopulation": 1,
+          "TotalPopulationWithQualifier": 0,
+          "PopulationHigher": 0,
+          "certImages": [
+            {
+              "IsFrontImage": false,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/171008364/6mHit1vDFUaoGbAXRznklQ.jpg"
+            },
+            {
+              "IsFrontImage": true,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/171008364/rUq3Jq6HcUulTvEal0EHFA.jpg"
+            }
+          ],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  },
+  {
+    "certNumber": "48594959",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "48594959",
+          "SpecID": 2727220,
+          "SpecNumber": "UW05001244",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "2018",
+          "Brand": "PANINI PRIZM",
+          "Category": "BASKETBALL CARDS",
+          "CardNumber": "280",
+          "Subject": "LUKA DONCIC",
+          "Variety": "FAST BREAK PRIZM-PURPLE",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "GEM MT 10",
+          "CardGrade": "GEM MT 10",
+          "TotalPopulation": 31,
+          "TotalPopulationWithQualifier": 0,
+          "PopulationHigher": 0,
+          "certImages": [
+            {
+              "IsFrontImage": false,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/105930692/350319521.tif?f=jpg"
+            },
+            {
+              "IsFrontImage": true,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/105930692/350319440.tif?f=jpg"
+            }
+          ],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  },
+  {
+    "certNumber": "46059613",
+    "data": {
+      "error": "Invalid API response",
+      "status1": 200,
+      "status2": 500,
+      "responseText1": "{\"PSACert\":{\"CertNumber\":\"46059613\",\"SpecID\":2673471,\"SpecNumber\":\"UW05000001\",\"LabelType\":\"LighthouseLabel\",\"ReverseBarCode\":true,\"Year\":\"2018\",\"Brand\":\"PANINI PRIZM\",\"Category\":\"BASKETBALL CARDS\",\"CardNumber\":\"280\",\"Subject\":\"LUKA DONCIC\",\"Variety\":\"SILVER PRIZM\",\"IsPSADNA\":false,\"IsDualCert\":false,\"GradeDescription\":\"MINT 9\",\"CardGrade\":\"MINT 9\",\"TotalPopulation\":2782,\"TotalPopulationWithQualifier\":0,\"PopulationHigher\":2370}}",
+      "responseText2": "{\"Message\":\"An error occurred while processing your request.\"}"
+    }
+  },
+  {
+    "certNumber": "44146768",
+    "data": {
+      "error": "Invalid API response",
+      "status1": 200,
+      "status2": 500,
+      "responseText1": "{\"PSACert\":{\"CertNumber\":\"44146768\",\"SpecID\":2678489,\"SpecNumber\":\"UW05000012\",\"LabelType\":\"LighthouseLabel\",\"ReverseBarCode\":true,\"Year\":\"2018\",\"Brand\":\"PANINI PRIZM\",\"Category\":\"BASKETBALL CARDS\",\"CardNumber\":\"280\",\"Subject\":\"LUKA DONCIC\",\"Variety\":\"\",\"IsPSADNA\":false,\"IsDualCert\":false,\"GradeDescription\":\"GEM MT 10\",\"CardGrade\":\"GEM MT 10\",\"TotalPopulation\":20455,\"TotalPopulationWithQualifier\":0,\"PopulationHigher\":0}}",
+      "responseText2": "{\"Message\":\"An error occurred while processing your request.\"}"
+    }
+  },
+  {
+    "certNumber": "83158285",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "83158285",
+          "SpecID": 4437552,
+          "SpecNumber": "VG11000001",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "2020",
+          "Brand": "PANINI DONRUSS OPTIC DOWNTOWN",
+          "Category": "FOOTBALL CARDS",
+          "CardNumber": "DT1",
+          "Subject": "PAT TILLMAN",
+          "Variety": "DOWNTOWN",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "GEM MT 10",
+          "CardGrade": "GEM MT 10",
+          "TotalPopulation": 92,
+          "TotalPopulationWithQualifier": 0,
+          "PopulationHigher": 0,
+          "certImages": [
+            {
+              "IsFrontImage": true,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/149031926/kX-xPkslN0aTX3rQcE8VpQ.jpg"
+            },
+            {
+              "IsFrontImage": false,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/149031926/n6Unu3bSPEO-RdIU2XRiKw.jpg"
+            }
+          ],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  },
+  {
+    "certNumber": "63148139",
+    "data": {
+      "certDetails": {
+        "PSACert": {
+          "CertNumber": "63148139",
+          "SpecID": 2848689,
+          "SpecNumber": "XD61000007",
+          "LabelType": "LighthouseLabel",
+          "ReverseBarCode": true,
+          "Year": "2019",
+          "Brand": "PANINI ABSOLUTE KABOOM!",
+          "Category": "FOOTBALL CARDS",
+          "CardNumber": "K-KM",
+          "Subject": "KYLER MURRAY",
+          "Variety": "KABOOM",
+          "IsPSADNA": false,
+          "IsDualCert": false,
+          "GradeDescription": "GEM MT 10",
+          "CardGrade": "GEM MT 10",
+          "TotalPopulation": 23,
+          "TotalPopulationWithQualifier": 0,
+          "PopulationHigher": 0,
+          "certImages": [
+            {
+              "IsFrontImage": true,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/123856233/354164099.jpg"
+            },
+            {
+              "IsFrontImage": false,
+              "ImageURL": "https://d1htnxwo4o0jhw.cloudfront.net/cert/123856233/354164088.jpg"
+            }
+          ],
+          "estimatedValue": 11906,
+          "lastSaleDate": "2024-11-03T02:30:04.740Z",
+          "confidence": 2,
+          "grader": "psa",
+          "index": "LeBron James",
+          "indexId": "LeBron James",
+          "description": "2003 Topps Chrome LeBron James Xfractor 111",
+          "grade": "g8",
+          "twoWeekData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneMonthData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneQuarterData": {
+            "velocity": 0,
+            "averagePrice": 0
+          },
+          "oneYearData": {
+            "velocity": 1,
+            "averagePrice": 12817.32
+          },
+          "population": 24,
+          "isPlayerIndex": true,
+          "indexPercentChange": -0.0711
+        }
+      }
+    }
+  }
+]

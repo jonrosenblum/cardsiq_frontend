@@ -1,36 +1,65 @@
 <div class="flex items-center gap-4 mb-6 mt-4">
   <div class="flex items-center gap-2">
-      <svg-icon name="receipt-text" class="receipt-text" />
-      <p class="text-sm text-[#777980] font-medium font-plusJakarta leading-5 tracking-[-0.5px] cursor-pointer" (click)="location.back()">Order Details</p>
+    <svg-icon name="receipt-text" class="receipt-text" />
+    <p
+      class="text-sm text-[#777980] font-medium font-plusJakarta leading-5 tracking-[-0.5px] cursor-pointer"
+      (click)="location.back()"
+    >
+      Order Details
+    </p>
   </div>
   <div class="flex items-center gap-2">
-      <svg-icon name="arrow-left" />
-      <p  class="text-sm text-[#777980] font-plusJakarta leading-5 tracking-[-0.5px] font-semibold cursor-pointer">Order Tracker</p>
+    <svg-icon name="arrow-left" />
+    <p
+      class="text-sm text-[#777980] font-plusJakarta leading-5 tracking-[-0.5px] font-semibold cursor-pointer"
+    >
+      Order Tracker
+    </p>
   </div>
 </div>
 <app-sub-header>
   <span header-title>Order Track</span>
 </app-sub-header>
 
-
 <div class="flex items-center justify-center px-4 sm:px-0 mt-8">
-  <div class="w-[512px] h-[180px] rounded-[20px] bg-white space-y-6  p-6">
-      <div class="flex items-center w-full gap-4">
-          <form class="w-full mx-auto">
-              <label for="countries" class="block mb-2 text-xs font-medium font-plusJakarta text-[#777980]  leading-4 tracking-[-0.5px]">Carrier company</label>
-              <select id="countries" class="bg-white border outline-none border-[#E9E9EA]  text-xs text-[#070707] font-normal font-plusJakarta leading-4 tracking-[-0.5px] rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                <option selected>Select carrier company</option>
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
-              </select>
-            </form>
-          <div class="w-full">
-              <label for="first_name" class="block mb-2 text-xs font-medium font-plusJakarta text-[#777980]  leading-4 tracking-[-0.5px]">Tracking  number</label>
-              <input type="text" id="first_name" class="bg-white border border-[#E9E9EA] text-[#070707] text-xs font-normal font-plusJakarta rounded-xl leading-4 tracking-[-0.5px] outline-none focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your tracking number" required />
-          </div>
+  <div class="w-[512px] h-[180px] rounded-[20px] bg-white space-y-6 p-6">
+    <div class="flex items-center w-full gap-4">
+      <form class="w-full mx-auto">
+        <label
+          for="countries"
+          class="block mb-2 text-xs font-medium font-plusJakarta text-[#777980] leading-4 tracking-[-0.5px]"
+          >Carrier company</label
+        >
+        <select
+          id="countries"
+          class="bg-white border outline-none border-[#E9E9EA] text-xs text-[#070707] font-normal font-plusJakarta leading-4 tracking-[-0.5px] rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+        >
+          <option selected>Select carrier company</option>
+          <option value="US">United States</option>
+          <option value="CA">Canada</option>
+          <option value="FR">France</option>
+          <option value="DE">Germany</option>
+        </select>
+      </form>
+      <div class="w-full">
+        <label
+          for="first_name"
+          class="block mb-2 text-xs font-medium font-plusJakarta text-[#777980] leading-4 tracking-[-0.5px]"
+          >Tracking number</label
+        >
+        <input
+          type="text"
+          id="first_name"
+          class="bg-white border border-[#E9E9EA] text-[#070707] text-xs font-normal font-plusJakarta rounded-xl leading-4 tracking-[-0.5px] outline-none focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Enter your tracking number"
+          required
+        />
       </div>
-      <button class="flex items-center justify-center text-base text-[#A5A5AB] font-medium font-plusJakarta leading-5 tracking-[-0.5px] w-[220px] h-11 rounded-[10px] bg-[#E9E9EA]">Track Package</button>
+    </div>
+    <button
+      class="flex items-center justify-center text-base text-[#A5A5AB] font-medium font-plusJakarta leading-5 tracking-[-0.5px] w-[220px] h-11 rounded-[10px] bg-[#E9E9EA]"
+    >
+      Track Package
+    </button>
   </div>
 </div>

@@ -4,12 +4,12 @@
   <span header-subtitle>Keep track of your orders.</span>
   <div header-action class="relative">
     <input
-    (input)="searchInventory($event)"
-    class="w-full md:w-[260px] h-12 pl-10 pr-2 bg-[#E9E9EA] rounded-lg text-sm font-medium font-plusJakarta outline-none"
-    type="text"
-    placeholder="Quick Search"
-  />
-  <svg-icon name="search" class="absolute top-[14px] left-3" />
+      (input)="searchInventory($event)"
+      class="w-full md:w-[260px] h-12 pl-10 pr-2 bg-[#E9E9EA] rounded-lg text-sm font-medium font-plusJakarta outline-none"
+      type="text"
+      placeholder="Quick Search"
+    />
+    <svg-icon name="search" class="absolute top-[14px] left-3" />
   </div>
   <button
     header-action
@@ -279,7 +279,11 @@
                 <div
                   class="p-2 w-10 flex justify-end relative items-center rounded-md cursor-pointer"
                 >
-                  <span class="text-secondary underline cursor-pointer text-xs text-nowrap" (click)="openDetailPopup('order')">Review Order</span>
+                  <span
+                    class="text-secondary underline cursor-pointer text-xs text-nowrap"
+                    (click)="openDetailPopup('order')"
+                    >Review Order</span
+                  >
                   <!-- <svg-icon name="menu-dots" (click)="toggleMenu($index)" />
                   @if (openedMenu === $index) {
                     <div
@@ -540,16 +544,21 @@
   <app-edit-order (close)="isEditOrder = false" />
 }
 
-@if(showDetailPopup){
-  <app-popup-backdrop >
-    <app-order-detail-popup (close)="showDetailPopup = false; selectedOrder=''"></app-order-detail-popup>
+@if (showDetailPopup) {
+  <app-popup-backdrop>
+    <app-order-detail-popup
+      (close)="showDetailPopup = false; selectedOrder = ''"
+    ></app-order-detail-popup>
   </app-popup-backdrop>
 }
 
-@if(showInventoryDetail){
+@if (showInventoryDetail) {
   <app-popup-backdrop>
     <div class="flex flex-col py-2 h-[600px] mx-4 rounded-[20px] px-6 bg-white">
-      <app-inventory-detail [inPopup]="true" (close)="showInventoryDetail = false"></app-inventory-detail>
+      <app-inventory-detail
+        [inPopup]="true"
+        (close)="showInventoryDetail = false"
+      ></app-inventory-detail>
     </div>
   </app-popup-backdrop>
 }

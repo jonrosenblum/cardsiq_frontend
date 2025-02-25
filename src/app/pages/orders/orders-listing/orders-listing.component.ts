@@ -8,15 +8,21 @@ import { InventoryDetailComponent } from '../../inventory/inventory-detail/inven
 
 @Component({
   selector: 'app-orders-listing',
-  imports: [SharedModule, SubHeaderComponent, EditOrderComponent, PopupBackdropComponent, OrderDetailPopupComponent, InventoryDetailComponent],
+  imports: [
+    SharedModule,
+    SubHeaderComponent,
+    EditOrderComponent,
+    PopupBackdropComponent,
+    OrderDetailPopupComponent,
+    InventoryDetailComponent,
+  ],
   templateUrl: './orders-listing.component.html',
   styleUrl: './orders-listing.component.scss',
 })
 export class OrdersListingComponent {
-
   showInventoryDetail: boolean = false;
   showDetailPopup: boolean = false;
-  selectedOrder:any;
+  selectedOrder: any;
   tableOptionDropdown: boolean = false;
   openedMenu: number | undefined = undefined;
   isEditOrder: boolean = false;
@@ -143,7 +149,7 @@ export class OrdersListingComponent {
     this.openedMenu = this.openedMenu === index ? undefined : index;
   }
 
-  searchInventory(event:any){
+  searchInventory(event: any) {
     console.log(event.target.value);
     setTimeout(() => {
       this.showInventoryDetail = true;
