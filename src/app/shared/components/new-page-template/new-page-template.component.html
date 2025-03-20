@@ -1,0 +1,36 @@
+<div class="flex items-center justify-center min-h-screen overflow-hidden">
+  <div class="flex flex-col items-center justify-center">
+    <div
+      class="w-full bg-surface-0 dark:bg-surface-900 py-20 px-8 sm:px-20 flex flex-col items-center"
+      style="border-radius: 53px"
+    >
+      @if (content.code) {
+        <span class="text-primary font-bold text-3xl">{{ content.code }}</span>
+      }
+      <h1
+        class="text-surface-900 dark:text-surface-0 font-bold text-3xl lg:text-5xl mb-2"
+      >
+        {{ content.title }}
+      </h1>
+      <div class="text-surface-600 dark:text-surface-200 mb-8">
+        {{ content.description }}
+      </div>
+      @if (content.acceptButtonLabel) {
+        <button
+          (click)="acceptAction()"
+          class="hover:shadow-md w-72 text-base text-white font-semibold font-plusJakarta w-full h-11 rounded-[10px] bg-gradient hover:bg-gradientHover leading-5"
+        >
+          {{ content.acceptButtonLabel }}
+        </button>
+      }
+      @if (content.rejectButtonLabel) {
+        <button
+          (click)="content?.rejectButtonAction()"
+          class="hover:shadow-md w-72 text-base mt-4 text-primary font-semibold font-plusJakarta w-full h-11 rounded-[10px] bg-lightGray leading-5"
+        >
+          {{ content.rejectButtonLabel }}
+        </button>
+      }
+    </div>
+  </div>
+</div>

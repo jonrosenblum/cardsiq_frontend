@@ -14,13 +14,13 @@
     <div
       class="flex justify-center items-center bg-[#F5F5F5] h-12 rounded-xl gap-2 pl-2"
     >
-      <img class="w-10" alt="" src="/assets/images/girl.png" />
+      <img class="w-10" alt="" src="{{ currentUser()?.image }}" />
       <div>
         <h1 class="text-xs text-[#000000] font-semibold font-plusJakarta">
-          Alexandra Parker
+          {{ currentUser()?.name }}
         </h1>
         <p class="text-[10px] text-[#595959] font-normal font-plusJakarta">
-          {{ "alex.parker@gmail.com" }}
+          {{ currentUser()?.email }}
         </p>
       </div>
       <img class="cursor-pointer" alt="" src="/assets/images/down6.png" />

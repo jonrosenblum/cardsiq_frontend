@@ -1,6 +1,14 @@
-import { Component, signal, WritableSignal } from '@angular/core';
+import {
+  Component,
+  computed,
+  inject,
+  Signal,
+  signal,
+  WritableSignal,
+} from '@angular/core';
 import { SharedModule } from '../../shared.module';
 import { NotificationPopupComponent } from '../notification-popup/notification-popup.component';
+import { AuthService, IUser } from '../../../core/services/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +17,12 @@ import { NotificationPopupComponent } from '../notification-popup/notification-p
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
+  authService: AuthService = inject(AuthService);
+
   showNotificationPanel: WritableSignal<boolean> = signal(false);
+  currentUser: Signal<IUser | null> = computed(() =>
+    this.authService.getCurrentUser(),
+  );
 
   toggleNotificationPanel(isShow?: boolean) {
     this.showNotificationPanel.set(isShow ?? !this.showNotificationPanel());

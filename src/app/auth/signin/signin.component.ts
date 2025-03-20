@@ -6,6 +6,7 @@ import { FormUtilityService } from '../../core/services/form-utils.service';
 import { LoginForm } from '../../shared/forms.config';
 import { AuthService } from '../../core/services/auth.service';
 import { ToastService } from '../../core/services/toast.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signin',
@@ -23,6 +24,7 @@ export class SigninComponent {
   formUtilityService: FormUtilityService = inject(FormUtilityService);
   authService: AuthService = inject(AuthService);
   toastService: ToastService = inject(ToastService);
+  router: Router = inject(Router);
 
   submitLoginForm() {
     this.submitLoading = true;
@@ -31,13 +33,14 @@ export class SigninComponent {
     // Call login API
     this.authService.login(email, password).subscribe({
       next: (response) => {
+        this.router.navigate(['/dashboard']);
         this.toastService.success(
-          `Welcome, ${response.user.name}! Your token is: ${response.token}`,
+          `Hey, ${response.name}! Welcome back to our platform.`,
         );
         this.submitLoading = false;
       },
       error: (error) => {
-        this.toastService.error(`Login failed ${error}`);
+        this.toastService.error(`${error}`);
         this.submitLoading = false;
       },
     });

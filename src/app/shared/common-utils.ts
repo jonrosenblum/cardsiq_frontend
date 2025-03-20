@@ -1,6 +1,7 @@
-import { Injectable } from '@angular/core';
+import { Injectable, signal, WritableSignal } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
+import { IUser } from '../core/services/auth.service';
 
 @Injectable({
   providedIn: 'root',
@@ -130,3 +131,5 @@ export function redirectTo(
   const pathSegments = [path, ...Object.values(params || {})];
   router.navigate([path, pathSegments], { queryParams: queryParams });
 }
+
+export const currentUser: WritableSignal<IUser | null> = signal(null); // ✅ Global Signal

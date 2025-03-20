@@ -2,10 +2,12 @@ import { Routes } from '@angular/router';
 import { orderRoutes } from '../../pages/orders/orders.routes';
 import { accountSettingRoutes } from '../../pages/account-setting/account-setting.routes';
 import { inventoryRoutes } from '../../pages/inventory/inventory.routes';
+import { AuthGuard } from '../../core/guards/auth.guard';
 
 export const dashboardRoutes: Routes = [
   {
     path: '',
+    canActivate: [AuthGuard],
     loadComponent: () =>
       import('./dashboard.component').then((m) => m.DashboardComponent),
     children: [

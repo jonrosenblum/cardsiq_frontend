@@ -2,16 +2,26 @@ import { Component } from '@angular/core';
 import { SharedModule } from '../../shared/shared.module';
 import { SubHeaderComponent } from '../../shared/components/dashboard/sub-header/sub-header.component';
 import { StatsCardComponent } from '../../shared/components/dashboard/stats-card/stats-card.component';
+import { isAdmin, isVendor } from '../../core/services/auth.service';
+import { QuickSearchComponent } from '../../shared/components/quick-search/quick-search.component';
+import { OrdersTableComponent } from '../../shared/components/orders-table/orders-table.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [SharedModule, SubHeaderComponent, StatsCardComponent],
+  imports: [
+    SharedModule,
+    SubHeaderComponent,
+    StatsCardComponent,
+    QuickSearchComponent,
+    OrdersTableComponent,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-
+  isAdmin: boolean = isAdmin();
+  isVendor: boolean = isVendor();
   orders: any[] = [
     {
       id: 'ORD001',

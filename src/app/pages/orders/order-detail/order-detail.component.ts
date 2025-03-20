@@ -6,8 +6,6 @@ import { SubHeaderComponent } from '../../../shared/components/dashboard/sub-hea
   selector: 'app-order-detail',
   imports: [SharedModule, SubHeaderComponent],
   templateUrl: './order-detail.component.html',
-  styleUrl: './order-detail.component.scss'
+  styleUrl: './order-detail.component.scss',
 })
-export class OrderDetailComponent {
-
-}
+export class OrderDetailComponent {}

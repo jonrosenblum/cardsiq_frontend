@@ -1,0 +1,24 @@
+<div class="relative">
+  <input
+    (input)="searchLoading = true; onSearch($event)"
+    class="w-full md:w-[260px] h-12 pl-10 pr-2 bg-[#E9E9EA] rounded-lg text-sm font-medium font-plusJakarta outline-none"
+    type="text"
+    [placeholder]="placeholder"
+  />
+  @if (searchLoading) {
+    <span class="pi pi-spin pi-spinner mr-2 absolute top-4 right-3"></span>
+  }
+
+  <svg-icon name="search" class="absolute top-[14px] left-3" />
+</div>
+
+@if (showInventoryDetail) {
+  <app-popup-backdrop>
+    <div class="flex flex-col py-2 h-[600px] mx-4 rounded-[20px] px-6 bg-white">
+      <app-inventory-detail
+        [inPopup]="true"
+        (close)="showInventoryDetail = false"
+      ></app-inventory-detail>
+    </div>
+  </app-popup-backdrop>
+}

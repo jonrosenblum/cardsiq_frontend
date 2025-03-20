@@ -7,8 +7,8 @@ import { Location } from '@angular/common';
   selector: 'app-track-order',
   imports: [SharedModule, SubHeaderComponent],
   templateUrl: './track-order.component.html',
-  styleUrl: './track-order.component.scss'
+  styleUrl: './track-order.component.scss',
 })
 export class TrackOrderComponent {
-  constructor(public location:Location){}
+  constructor(public location: Location) {}
 }

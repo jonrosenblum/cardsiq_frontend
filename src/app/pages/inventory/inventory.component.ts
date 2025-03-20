@@ -11,9 +11,6 @@ export interface TableRow {
   selector: 'app-inventory',
   imports: [RouterOutlet],
   templateUrl: './inventory.component.html',
-  styleUrl: './inventory.component.scss'
+  styleUrl: './inventory.component.scss',
 })
-export class InventoryComponent {
-
-
-}
+export class InventoryComponent {}

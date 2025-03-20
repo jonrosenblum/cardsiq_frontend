@@ -5,10 +5,9 @@ import { SharedModule } from '../../../shared/shared.module';
   selector: 'app-inventory-detail',
   imports: [SharedModule],
   templateUrl: './inventory-detail.component.html',
-  styleUrl: './inventory-detail.component.scss'
+  styleUrl: './inventory-detail.component.scss',
 })
 export class InventoryDetailComponent {
   @Input() inPopup: boolean = false;
   @Output() close: EventEmitter<boolean> = new EventEmitter<boolean>(false);
-
 }

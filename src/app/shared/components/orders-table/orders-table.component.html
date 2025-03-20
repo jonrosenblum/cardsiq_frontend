@@ -1,0 +1,225 @@
+<table
+  class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+>
+  <thead
+    class="text-xs text-gray-700 uppercase bg-[#E9E9EA] dark:text-gray-400 sticky z-[1] top-0"
+  >
+    <tr class="">
+      <th scope="col" class="px-6 py-2 max-w-[150px] rounded-tl-xl">
+        <div class="flex items-center justify-start gap-3">
+          <p-checkbox
+            value="Normal"
+            [binary]="true"
+            [ngModel]="isAllSelected()"
+            (ngModelChange)="toggleSelectAll()"
+          ></p-checkbox>
+          <h4
+            class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
+          >
+            Order #
+          </h4>
+        </div>
+      </th>
+      <th scope="col" class="px-6 py-2 min-w-[200px]">
+        <h4
+          class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+        >
+          Date
+        </h4>
+      </th>
+      <th scope="col" class="px-6 py-2 min-w-[200px]">
+        <h4
+          class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+        >
+          Shopping Company
+        </h4>
+      </th>
+      <th scope="col" class="px-6 py-2 min-w-[200px]">
+        <h4
+          class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
+        >
+          Tracking Information
+        </h4>
+      </th>
+      <th scope="col" class="px-6 py-2">
+        <h4
+          class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
+        >
+          Vendor
+        </h4>
+      </th>
+      <th scope="col" class="px-6 py-2">
+        <h4
+          class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
+        >
+          Revenue
+        </h4>
+      </th>
+      <th scope="col" class="px-6 py-2 max-w-[150px]">
+        <h4
+          class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
+        >
+          Status
+        </h4>
+      </th>
+      <th scope="col" class="px-6 py-2 rounded-tr-xl"></th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (order of orders; track $index) {
+      <tr class="border-b border-[#E9E9EA]">
+        <th
+          scope="row"
+          class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+        >
+          <div class="flex justify-start items-center gap-4">
+            <p-checkbox
+              value="Normal"
+              [binary]="true"
+              [ngModel]="isSelected(order.id)"
+              (ngModelChange)="toggleSelection(order.id)"
+            ></p-checkbox>
+            <p
+              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-5 tracking-[-0.5px]"
+            >
+              {{ order.id }}
+            </p>
+          </div>
+        </th>
+        <td
+          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta px-6 py-4 leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+        >
+          {{ order.date }}
+        </td>
+        <td
+          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta px-6 py-4 leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+        >
+          <img
+            [src]="'/assets/images/' + order.company + '.png'"
+            alt=""
+            srcset=""
+          />
+        </td>
+        <td
+          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta px-6 py-4 leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+        >
+          <a
+            [href]="order.trackInfo"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="underline text-secondary"
+            >Track now</a
+          >
+        </td>
+        <td
+          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+        >
+          {{ order.vendor }}
+        </td>
+        <td
+          class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+        >
+          {{ order.amount }}
+        </td>
+        <td class="px-6 py-4">
+          <div
+            class="flex justify-center items-center rounded-[4px] w-20 h-[28px] cursor-pointer"
+            [ngStyle]="{ 'background-color': order.statusColor }"
+          >
+            <p
+              class="text-xs font-normal font-plusJakarta leading-5 tracking-[-0.5px]"
+              [ngStyle]="{ color: order.textColor }"
+            >
+              {{ order.status }}
+            </p>
+          </div>
+        </td>
+        <td
+          class="text-base text-[#464F60] font-medium tracking-wider px-4 py-2"
+        >
+          <div
+            [class.w-10]="isVendor"
+            class="p-2 w-10 flex justify-end relative items-center rounded-md cursor-pointer"
+          >
+            @if (isAdmin) {
+              <div
+                class="text-secondary underline cursor-pointer text-xs text-nowrap"
+                (click)="openDetailPopup(order)"
+              >
+                Review Order
+              </div>
+            }
+            <!-- @if(isAdmin){
+            <svg-icon name="menu-dots" (click)="toggleMenu($index)" />
+            @if (openedMenu === $index) {
+              <div
+                class="w-[160px] border border-[#E9E9EA] bg-white z-[1] rounded-xl py-2 absolute top-10 right-0"
+              >
+                <div (click)="isEditOrder = true"
+                  class="flex items-center gap-2 py-1.5 px-2.5 hover:bg-slate-50"
+                >
+                  <svg-icon name="edit-pencil" />
+                  <p
+                    class="text-sm text-primary font-medium font-plusJakarta leading-[14px] tracking-[-2%]"
+                  >
+                    Edit
+                  </p>
+                </div>
+                <div
+                routerLink="/orders/{{ order.id }}/details"
+                  class="flex items-center gap-2 py-1.5 px-2.5 hover:bg-slate-50"
+                >
+                  <svg-icon name="eye" />
+                  <p
+                    class="text-sm text-primary font-medium font-plusJakarta leading-[14px] tracking-[-2%]"
+                  >
+                    View
+                  </p>
+                </div>
+                <div
+                  class="flex items-center gap-2 py-1.5 px-2.5 hover:bg-slate-50"
+                >
+                  <svg-icon name="trash-black" />
+
+                  <p
+                    class="text-sm text-primary font-medium font-plusJakarta leading-[14px] tracking-[-2%]"
+                  >
+                    Delete
+                  </p>
+                </div>
+              </div>
+            }
+          } -->
+
+            @if (isVendor) {
+              <div
+                (click)="isEditOrder = true"
+                class="flex items-center gap-2 py-1.5 px-2.5 hover:bg-slate-50"
+              >
+                <svg-icon name="edit-pencil" />
+                <p
+                  class="text-sm text-primary font-medium font-plusJakarta leading-[14px] tracking-[-2%]"
+                >
+                  Edit
+                </p>
+              </div>
+            }
+          </div>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>
+
+
+@if (isEditOrder) {
+  <app-edit-order (close)="isEditOrder = false" />
+}
+
+@if (showDetailPopup) {
+  <app-popup-backdrop>
+    <app-order-detail-popup
+      (close)="showDetailPopup = false; selectedOrder = null"
+    ></app-order-detail-popup>
+  </app-popup-backdrop>
+}

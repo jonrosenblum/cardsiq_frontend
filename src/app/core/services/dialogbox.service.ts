@@ -1,39 +1,26 @@
 // DialogBoxService.service.ts
-import { Injectable, ComponentRef, Injector, ApplicationRef, ComponentFactoryResolver, Type } from '@angular/core';
+import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
+
+export interface PopupState {
+  component: any;
+  data?: any;
+}
 
 @Injectable({ providedIn: 'root' })
 export class DialogBoxService {
-  private popupRef?: ComponentRef<any>;
+  popupStateSubject: BehaviorSubject<PopupState | null> =
+    new BehaviorSubject<PopupState | null>(null); // ✅ BehaviorSubject for state tracking
 
-  constructor(
-    private resolver: ComponentFactoryResolver,
-    private injector: Injector,
-    private appRef: ApplicationRef
-  ) {}
-
-  open<T>(component: Type<T>, data?: any): ComponentRef<T> {
-    if (this.popupRef) {
-      this.close();
-    }
-
-    const factory = this.resolver.resolveComponentFactory(component);
-    this.popupRef = factory.create(this.injector);
-
-    if (data) {
-      Object.assign(this.popupRef.instance, data);
-    }
-
-    this.appRef.attachView(this.popupRef.hostView);
-    document.body.appendChild(this.popupRef.location.nativeElement);
-
-    return this.popupRef;
+  getPopupState() {
+    return this.popupStateSubject.asObservable(); // ✅ Expose as Observable
   }
 
-  close(): void {
-    if (this.popupRef) {
-      this.appRef.detachView(this.popupRef.hostView);
-      this.popupRef.destroy();
-      this.popupRef = undefined;
-    }
+  open(component: any, data?: any) {
+    this.popupStateSubject.next({ component, data }); // ✅ Update state
+  }
+
+  close() {
+    this.popupStateSubject.next(null); // ✅ Reset state
   }
 }

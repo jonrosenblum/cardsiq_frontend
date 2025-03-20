@@ -1,6 +1,11 @@
 <!-- Dashboard Sub Header -->
 <app-sub-header>
   <span header-title>Overview</span>
+  <span header-subtitle>Keep track of whole things on dashboard.</span>
+
+  @if (isVendor) {
+    <app-quick-search header-action></app-quick-search>
+  }
   <button
     header-action
     class="flex justify-center items-center w-[122px] h-11 rounded-xl bg-gradient hover:bg-gradientHover px-2 gap-2"
@@ -123,150 +128,17 @@
       class="relative overflow-x-auto mt-5 h-[340px] border border-[#E9E9EA] rounded-xl no-scrollbar"
     >
       <!--Table-->
-      <table
-        class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
-      >
-        <thead
-          class="text-xs text-gray-700 uppercase bg-[#E9E9EA] dark:text-gray-400 sticky z-[1] top-0"
-        >
-          <tr class="">
-            <th scope="col" class="px-6 py-2 max-w-[150px] rounded-tl-xl">
-              <div class="flex items-center justify-start gap-3">
-                <p-checkbox value="Normal" [binary]="true"></p-checkbox>
-                <h4
-                  class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
-                >
-                  Order #
-                </h4>
-              </div>
-            </th>
-            <th scope="col" class="px-6 py-2 min-w-[200px]">
-              <h4
-                class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
-              >
-                Date
-              </h4>
-            </th>
-            <th scope="col" class="px-6 py-2 min-w-[200px]">
-              <h4
-                class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
-              >
-                Shopping Company
-              </h4>
-            </th>
-            <th scope="col" class="px-6 py-2 min-w-[200px]">
-              <h4
-                class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
-              >
-                Tracking Information
-              </h4>
-            </th>
-            <th scope="col" class="px-6 py-2">
-              <h4
-                class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
-              >
-                Vendor
-              </h4>
-            </th>
-            <th scope="col" class="px-6 py-2">
-              <h4
-                class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
-              >
-                Revenue
-              </h4>
-            </th>
-            <th scope="col" class="px-6 py-2 max-w-[150px]">
-              <h4
-                class="text-sm text-[#1D1F2C] font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
-              >
-                Status
-              </h4>
-            </th>
-            <!-- <th scope="col" class="px-6 py-2 rounded-tr-xl"></th> -->
-          </tr>
-        </thead>
-        <tbody>
-          @for (order of orders; track $index) {
-            <tr class="border-b border-[#E9E9EA] cursor-pointer hover:bg-gray-50" routerLink="/orders/123/details">
-              <th
-                scope="row"
-                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-              >
-                <div class="flex justify-start items-center gap-4">
-                  <p-checkbox value="Normal" [binary]="true"></p-checkbox>
-                  <p
-                    class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-5 tracking-[-0.5px]"
-                  >
-                    {{ order.id }}
-                  </p>
-                </div>
-              </th>
-              <td
-                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta px-6 py-4 leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
-              >
-                {{ order.date }}
-              </td>
-              <td
-                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta px-6 py-4 leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
-              >
-                <img
-                  [src]="'/assets/images/' + order.company + '.png'"
-                  alt=""
-                  srcset=""
-                />
-              </td>
-              <td
-                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta px-6 py-4 leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
-              >
-                <a
-                  [href]="order.trackInfo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="underline text-secondary"
-                  >Track now</a
-                >
-              </td>
-              <td
-                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
-              >
-                {{ order.vendor }}
-              </td>
-              <td
-                class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
-              >
-                {{ order.amount }}
-              </td>
-              <td class="px-6 py-4">
-                <div
-                  class="flex justify-center items-center rounded-[4px] w-20 h-[28px] cursor-pointer"
-                  [ngStyle]="{ 'background-color': order.statusColor }"
-                >
-                  <p
-                    class="text-xs font-normal font-plusJakarta leading-5 tracking-[-0.5px]"
-                    [ngStyle]="{ color: order.textColor }"
-                  >
-                    {{ order.status }}
-                  </p>
-                </div>
-              </td>
-              <!-- <td
-                class="text-base text-[#464F60] font-medium tracking-wider px-4 py-2"
-              >
-                <div
-                  class="p-2 w-10 flex gap-2 justify-end relative items-center rounded-md cursor-pointer"
-                >
-                  <svg-icon name="edit" /> Edit
-                </div>
-              </td> -->
-            </tr>
-          }
-        </tbody>
-      </table>
+      <app-orders-table [orders]="orders" />
     </div>
     <div
       class="w-full bg-gradient-to-b from-white/60 to-white text-center absolute bottom-0 py-4 font-medium text-base text-secondary"
     >
-      Show All
+      <span
+        class="cursor-pointer hover:border-b border-secondary"
+        routerLink="/orders"
+      >
+        Show All
+      </span>
     </div>
   </div>
 

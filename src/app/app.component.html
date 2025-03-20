@@ -1,2 +1,12 @@
 <router-outlet></router-outlet>
 <p-toast key="br" [position]="'bottom-right'" />
+<!-- @if (popupState) {
+  <app-popup-backdrop>
+    <ng-container
+      *ngComponentOutlet="
+        popupState?.component;
+        injector: createInjector(popupState?.data)
+      "
+    ></ng-container>
+  </app-popup-backdrop>
+} -->

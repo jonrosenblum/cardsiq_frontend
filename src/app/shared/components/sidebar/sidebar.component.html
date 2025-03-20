@@ -50,24 +50,26 @@
     <div class="no-scrollbar w-full overflow-scroll max-h-[40vh] mb-4">
       <div class="flex w-full flex-col items-start">
         @for (item of menuItems; track $index) {
-          <div
-            [routerLink]="item.link"
-            [ngClass]="
-              item.active ? 'bg-[#1D1F2C]/70' : 'hover:bg-[#1D1F2C]/10'
-            "
-            class="flex justify-start items-center rounded-lg py-3 w-full px-3 group gap-2 hover:cursor-pointer"
-          >
-            <img
-              class="group-hover:rotate-6 cursor-pointer"
-              [src]="'/assets/svg/' + item.icon + '.svg'"
-              alt="Dashboard"
-            />
-            <h6
-              class="text-sm font-medium text-[#E9E9EA] font-plusJakarta group-hover:cursor-pointer"
+          @if(item.access.includes(currentUserRole)){
+            <div
+              [routerLink]="item.link"
+              [ngClass]="
+                item.active ? 'bg-[#1D1F2C]/70' : 'hover:bg-[#1D1F2C]/10'
+              "
+              class="flex justify-start items-center rounded-lg py-3 w-full px-3 group gap-2 hover:cursor-pointer"
             >
-              {{ item.title }}
-            </h6>
-          </div>
+              <img
+                class="group-hover:rotate-6 cursor-pointer"
+                [src]="'/assets/svg/' + item.icon + '.svg'"
+                alt="Dashboard"
+              />
+              <h6
+                class="text-sm font-medium text-[#E9E9EA] font-plusJakarta group-hover:cursor-pointer"
+              >
+                {{ item.title }}
+              </h6>
+            </div>
+          }
         }
       </div>
     </div>
@@ -104,6 +106,7 @@
     </div>
     <div class="flex w-full flex-col items-center pb-4 absolute bottom-0">
       <div
+        (click)="logoutConfirmation = true"
         class="flex justify-start items-center py-3 px-3 w-full gap-4 cursor-pointer"
       >
         <img class="" alt="" src="/assets/svg/logout.svg" />
@@ -114,3 +117,17 @@
     </div>
   </div>
 </div>
+
+@if (logoutConfirmation) {
+  <app-popup-backdrop>
+    <app-quick-message-popup
+      title="Are You Sure?"
+      icon="logout-icon"
+      message="Logging out will end your current session and sign you out of your account."
+      acceptButtonText="Logout"
+      rejectButtonText="Cancel"
+      (acceptClick)="authservice.logout()"
+      (rejectClick)="logoutConfirmation = false"
+    />
+  </app-popup-backdrop>
+}
