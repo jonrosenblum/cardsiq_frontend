@@ -122,11 +122,18 @@
                 </h4>
               </div>
             </th>
-            <th scope="col" class="px-6 py-2 max-w-[150px] min-w-[300px]">
+            <th scope="col" class="px-6 py-2 max-w-[150px] min-w-[150px]">
               <h4
                 class="text-sm text-color font-medium font-plusJakarta leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
               >
                 Date
+              </h4>
+            </th>
+            <th scope="col" class="px-6 py-2 max-w-[150px] min-w-[150px]">
+              <h4
+                class="text-sm text-color font-medium font-plusJakarta leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                Vendor
               </h4>
             </th>
             <th scope="col" class="px-6 py-2">
@@ -148,317 +155,92 @@
                 Status
               </h4>
             </th>
+            @if(isAdmin){
+              <th scope="col" class="px-6 py-2 max-w-[150px]">
+                <h4
+                  class="text-sm text-color font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
+                >
+                  Action
+                </h4>
+              </th>
+            }
           </tr>
         </thead>
         <tbody>
-          <tr class="border-b border-[#E9E9EA]">
-            <th
-              scope="row"
-              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-            >
-              <div class="flex justify-start items-center gap-4">
-                <p-checkbox value="Normal" [binary]="true"></p-checkbox>
-                <p
-                  class="block font-normal text-xs text-color font-plusJakarta leading-5 tracking-[-0.5px]"
-                >
-                  #202402
-                </p>
-              </div>
-            </th>
-            <td
+          @for (payment of payments; track $index) {
+            <tr class="border-b border-[#E9E9EA]">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+              >
+                <div class="flex justify-start items-center gap-4">
+                  <p-checkbox value="Normal" [binary]="true"></p-checkbox>
+                  <p
+                    class="block font-normal text-xs text-color font-plusJakarta leading-5 tracking-[-0.5px]"
+                  >
+                    {{payment.id}}
+                  </p>
+                </div>
+              </th>
+              <td
+                class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                {{payment.date}}
+              </td>
+              <td
               class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
             >
-              August23,2024
+              {{payment.vendor}}
             </td>
-            <td
-              class="text-xs text-color font-normal font-plusJakarta px-6 py-4"
-            >
-              <div class="flex gap-3 items-center">
-                <img src="/assets/images/Visa.png" alt="" srcset="" />
-                <span class="text-[#1D1F2C] text-xs">*****6475</span>
-              </div>
-            </td>
-            <td
-              class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4"
-            >
-              120
-            </td>
-            <td class="px-6 py-4">
-              <div
-                class="flex justify-center items-center rounded-[4px] w-20 h-[28px] bg-[#FFEDED] cursor-pointer"
+              <td
+                class="text-xs text-color font-normal font-plusJakarta px-6 py-4"
               >
-                <p
-                  class="text-[#FE4D4F] text-xs font-normal font-plusJakarta leading-5 tracking-[-0.5px]"
-                >
-                  Rejected
-                </p>
-              </div>
-            </td>
-          </tr>
-          <tr class="border-b border-[#E9E9EA]">
-            <th
-              scope="row"
-              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-            >
-              <div class="flex justify-start items-center gap-4">
-                <p-checkbox value="Normal" [binary]="true"></p-checkbox>
-                <p
-                  class="block font-normal text-xs text-color font-plusJakarta leading-5 tracking-[-0.5px]"
-                >
-                  #202403
-                </p>
-              </div>
-            </th>
-            <td
-              class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
-            >
-              August23,2024
-            </td>
-            <td
-              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta px-6 py-4"
-            >
-              <div class="flex gap-3 items-center">
-                <img src="/assets/images/Visa.png" alt="" srcset="" />
-                <span class="text-[#1D1F2C] text-xs">*****6475</span>
-              </div>
-            </td>
-            <td
-              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4"
-            >
-              120
-            </td>
-            <td class="px-6 py-4">
-              <div
-                class="flex justify-center items-center rounded-[4px] w-20 h-[28px] bg-[#E6ECFE] cursor-pointer"
+                <div class="flex gap-3 items-center">
+                  <img [src]="'/assets/images/'+payment.cardType+'.png'" alt="" srcset="" />
+                  <span class="text-[#1D1F2C] text-xs">{{payment.cardNumber}}</span>
+                </div>
+              </td>
+              <td
+                class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4"
               >
-                <p
-                  class="text-[#003DF6] text-xs font-normal font-plusJakarta leading-5 tracking-[-0.5px]"
+                {{payment.amount}}
+              </td>
+              <td class="px-6 py-4">
+                <div
+                [ngClass]="{'bg-[#FFEDED]': payment.status === 'Rejected','bg-[#E6ECFE]': payment.status === 'Pending'
+                    ,'bg-[#EEF9E8]': payment.status === 'Completed'
+                  }"
+                  class="flex justify-center items-center rounded-[4px] w-20 h-[28px] cursor-pointer"
                 >
-                  Pending
-                </p>
-              </div>
-            </td>
-          </tr>
-          <tr class="border-b border-[#E9E9EA]">
-            <th
-              scope="row"
-              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-            >
-              <div class="flex justify-start items-center gap-4">
-                <p-checkbox value="Normal" [binary]="true"></p-checkbox>
-                <p
-                  class="block font-normal text-xs text-color font-plusJakarta leading-5 tracking-[-0.5px]"
-                >
-                  #202404
-                </p>
-              </div>
-            </th>
-            <td
-              class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
-            >
-              August23,2024
-            </td>
-            <td
-              class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4"
-            >
-              <div class="flex gap-3 items-center">
-                <img src="/assets/images/Stripe.png" alt="" srcset="" />
-                <span class="text-[#1D1F2C] text-xs">*****6475</span>
-              </div>
-            </td>
-            <td
-              class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4"
-            >
-              420
-            </td>
-            <td class="px-6 py-4">
-              <div
-                class="flex justify-center items-center rounded-[4px] w-20 h-[28px] bg-[#EEF9E8] cursor-pointer"
-              >
-                <p
-                  class="text-xs text-[#53C31B] font-normal font-plusJakarta leading-5 tracking-[-0.5px]"
-                >
-                  Completed
-                </p>
-              </div>
-            </td>
-          </tr>
-          <tr class="border-b border-[#E9E9EA]">
-            <th
-              scope="row"
-              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-            >
-              <div class="flex justify-start items-center gap-4">
-                <p-checkbox value="Normal" [binary]="true"></p-checkbox>
-                <p
-                  class="block font-normal text-xs text-color font-plusJakarta leading-5 tracking-[-0.5px]"
-                >
-                  #202405
-                </p>
-              </div>
-            </th>
-            <td
-              class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
-            >
-              August23,2024
-            </td>
-            <td
-              class="text-xs text-color font-normal font-plusJakarta px-6 py-4"
-            >
-              <div class="flex gap-3 items-center">
-                <img src="/assets/images/Mastercard.png" alt="" srcset="" />
-                <span class="text-[#1D1F2C] text-xs">*****6475</span>
-              </div>
-            </td>
-            <td
-              class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4"
-            >
-              820
-            </td>
-            <td class="px-6 py-4">
-              <div
-                class="flex justify-center items-center rounded-[4px] w-20 h-[28px] bg-[#EEF9E8] cursor-pointer"
-              >
-                <p
-                  class="text-xs text-[#53C31B] font-normal font-plusJakarta leading-5 tracking-[-0.5px]"
-                >
-                  Completed
-                </p>
-              </div>
-            </td>
-          </tr>
-          <tr class="border-b border-[#E9E9EA]">
-            <th
-              scope="row"
-              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-            >
-              <div class="flex justify-start items-center gap-4">
-                <p-checkbox value="Normal" [binary]="true"></p-checkbox>
-                <p
-                  class="block font-normal text-xs text-color font-plusJakarta leading-5 tracking-[-0.5px]"
-                >
-                  #202406
-                </p>
-              </div>
-            </th>
-            <td
-              class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
-            >
-              August23,2024
-            </td>
-            <td
-              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4"
-            >
-              <div class="flex gap-3 items-center">
-                <img src="/assets/images/Mastercard.png" alt="" srcset="" />
-                <span class="text-[#1D1F2C] text-xs">*****6475</span>
-              </div>
-            </td>
-            <td
-              class="text-xs text-[#1D1F2C] font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4"
-            >
-              820
-            </td>
-            <td class="px-6 py-4">
-              <div
-                class="flex justify-center items-center rounded-[4px] w-20 h-[28px] bg-[#E6ECFE] cursor-pointer"
-              >
-                <p
-                  class="text-[#003DF6] text-xs font-normal font-plusJakarta leading-5 tracking-[-0.5px]"
-                >
-                  Pending
-                </p>
-              </div>
-            </td>
-          </tr>
-          <tr class="border-b border-[#E9E9EA]">
-            <th
-              scope="row"
-              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-            >
-              <div class="flex justify-start items-center gap-4">
-                <p-checkbox value="Normal" [binary]="true"></p-checkbox>
-                <p
-                  class="block font-normal text-xs text-color font-plusJakarta leading-5 tracking-[-0.5px]"
-                >
-                  #202407
-                </p>
-              </div>
-            </th>
-            <td
-              class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
-            >
-              August23,2024
-            </td>
-            <td
-              class="text-xs text-color font-normal font-plusJakarta px-6 py-4"
-            >
-              <div class="flex gap-3 items-center">
-                <img src="/assets/images/Mastercard.png" alt="" srcset="" />
-                <span class="text-[#1D1F2C] text-xs">*****6475</span>
-              </div>
-            </td>
-            <td
-              class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4"
-            >
-              820
-            </td>
-            <td class="px-6 py-4">
-              <div
-                class="flex justify-center items-center rounded-[4px] w-20 h-[28px] bg-[#EEF9E8] cursor-pointer"
-              >
-                <p
-                  class="text-xs text-[#53C31B] font-normal font-plusJakarta leading-5 tracking-[-0.5px]"
-                >
-                  Completed
-                </p>
-              </div>
-            </td>
-          </tr>
-          <tr class="">
-            <th
-              scope="row"
-              class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-            >
-              <div class="flex justify-start items-center gap-4">
-                <p-checkbox value="Normal" [binary]="true"></p-checkbox>
-                <p
-                  class="block font-normal text-xs text-color font-plusJakarta leading-5 tracking-[-0.5px]"
-                >
-                  #202408
-                </p>
-              </div>
-            </th>
-            <td
-              class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
-            >
-              August23,2024
-            </td>
-            <td
-              class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4"
-            >
-              <div class="flex gap-3 items-center">
-                <img src="/assets/images/Mastercard.png" alt="" srcset="" />
-                <span class="text-[#1D1F2C] text-xs">*****6475</span>
-              </div>
-            </td>
-            <td
-              class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4"
-            >
-              120
-            </td>
-            <td class="px-6 py-4">
-              <div
-                class="flex justify-center items-center rounded-[4px] w-20 h-[28px] bg-[#FFEDED] cursor-pointer"
-              >
-                <p
-                  class="text-[#FE4D4F] text-xs font-normal font-plusJakarta leading-5 tracking-[-0.5px]"
-                >
-                  Rejected
-                </p>
-              </div>
-            </td>
-          </tr>
+                  <p [ngClass]="{'text-[#FE4D4F]': payment.status === 'Rejected','text-[#003DF6]': payment.status === 'Pending'
+                    ,'text-[#53C31B]': payment.status === 'Completed'
+                  }"
+                    class=" text-xs font-normal font-plusJakarta leading-5 tracking-[-0.5px]"
+                  >
+                    {{payment.status}}
+                  </p>
+                </div>
+              </td>
+              @if(isAdmin){
+                <td class="px-6 py-4">
+                  <button
+                    [ngClass]="{'border border-[#116557]': payment.adminStatus === 'Approve'
+                      ,'border-[#1A9882] bg-[#1A9882]': payment.adminStatus === 'Approved'
+                    }"
+                    class="flex justify-center items-center rounded-[4px] w-20 h-6 border cursor-pointer"
+                  >
+                    <p
+                    [ngClass]="{'text-black': payment.adminStatus === 'Approve','text-white': payment.adminStatus === 'Approved'}"
+                      class=" text-xs font-normal font-plusJakarta leading-5 tracking-[-0.5px]"
+                    >
+                      {{payment.adminStatus}}
+                    </p>
+                  </button>
+                </td>
+              }
+            </tr>
+          }
+
         </tbody>
       </table>
     </div>
