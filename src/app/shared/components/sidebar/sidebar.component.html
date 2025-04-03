@@ -50,7 +50,7 @@
     <div class="no-scrollbar w-full overflow-scroll max-h-[40vh] mb-4">
       <div class="flex w-full flex-col items-start">
         @for (item of menuItems; track $index) {
-          @if(item.access.includes(currentUserRole)){
+          @if (item.access.includes(currentUserRole)) {
             <div
               [routerLink]="item.link"
               [ngClass]="

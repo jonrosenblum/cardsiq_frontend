@@ -15,7 +15,7 @@ const MenuItems: MenuItem[] = [
       value: 1,
       color: 'accent',
     },
-    access:['admin','vendor']
+    access: ['admin', 'vendor'],
   },
   {
     title: 'Orders',
@@ -27,7 +27,7 @@ const MenuItems: MenuItem[] = [
       value: 1,
       color: 'accent',
     },
-    access:['admin','vendor']
+    access: ['admin', 'vendor'],
   },
   {
     title: 'Payments',
@@ -39,7 +39,7 @@ const MenuItems: MenuItem[] = [
       value: 1,
       color: 'accent',
     },
-    access:['admin','vendor']
+    access: ['admin', 'vendor'],
   },
   {
     title: 'Vendors',
@@ -51,7 +51,7 @@ const MenuItems: MenuItem[] = [
       value: 1,
       color: 'accent',
     },
-    access:['admin']
+    access: ['admin'],
   },
   {
     title: 'Inventory',
@@ -63,7 +63,7 @@ const MenuItems: MenuItem[] = [
       value: 1,
       color: 'accent',
     },
-    access:['admin']
+    access: ['admin'],
   },
   {
     title: 'Notifications',
@@ -75,7 +75,7 @@ const MenuItems: MenuItem[] = [
       value: 1,
       color: 'accent',
     },
-    access:['admin','vendor']
+    access: ['admin', 'vendor'],
   },
 ];
 

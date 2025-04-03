@@ -15,7 +15,12 @@ import { PopupBackdropComponent } from '../popup-backdrop/popup-backdrop.compone
 
 @Component({
   selector: 'app-orders-table',
-  imports: [SharedModule,EditOrderComponent,PopupBackdropComponent,OrderDetailPopupComponent],
+  imports: [
+    SharedModule,
+    EditOrderComponent,
+    PopupBackdropComponent,
+    OrderDetailPopupComponent,
+  ],
   templateUrl: './orders-table.component.html',
   styleUrl: './orders-table.component.scss',
 })

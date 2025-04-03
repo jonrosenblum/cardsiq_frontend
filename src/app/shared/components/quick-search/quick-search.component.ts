@@ -22,7 +22,7 @@ export class QuickSearchComponent {
   showInventoryDetail: boolean = false;
   inventoryDetailData: any;
   searchSubject: Subject<string> = new Subject<string>();
-  toastService:ToastService = inject(ToastService);
+  toastService: ToastService = inject(ToastService);
 
   constructor() {
     this.setupDebouncedSearch();
@@ -48,13 +48,17 @@ export class QuickSearchComponent {
     });
   }
 
-  async getInventoryDetail(searchQuery:string) {
-
+  async getInventoryDetail(searchQuery: string) {
     this.inventoryDetailData = QUICK_SEARCH_RESPONSE.find(
-      (item) => item.certNumber === searchQuery || item.certNumber.includes(searchQuery)
+      (item) =>
+        item.certNumber === searchQuery ||
+        item.certNumber.includes(searchQuery),
     );
-    if(this.inventoryDetailData === undefined) {
-      this.toastService.error('No inventory found again this search query', 'Error');
+    if (this.inventoryDetailData === undefined) {
+      this.toastService.error(
+        'No inventory found again this search query',
+        'Error',
+      );
       this.showInventoryDetail = false;
       this.searchLoading = false;
       return;

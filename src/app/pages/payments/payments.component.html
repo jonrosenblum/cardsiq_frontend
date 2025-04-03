@@ -155,7 +155,7 @@
                 Status
               </h4>
             </th>
-            @if(isAdmin){
+            @if (isAdmin) {
               <th scope="col" class="px-6 py-2 max-w-[150px]">
                 <h4
                   class="text-sm text-color font-medium font-plusJakarta leading-5 tracking-[-0.5px]"
@@ -178,69 +178,85 @@
                   <p
                     class="block font-normal text-xs text-color font-plusJakarta leading-5 tracking-[-0.5px]"
                   >
-                    {{payment.id}}
+                    {{ payment.id }}
                   </p>
                 </div>
               </th>
               <td
                 class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
               >
-                {{payment.date}}
+                {{ payment.date }}
               </td>
               <td
-              class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
-            >
-              {{payment.vendor}}
-            </td>
+                class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4 text-nowrap text-ellipsis overflow-hidden max-w-[150px]"
+              >
+                {{ payment.vendor }}
+              </td>
               <td
                 class="text-xs text-color font-normal font-plusJakarta px-6 py-4"
               >
                 <div class="flex gap-3 items-center">
-                  <img [src]="'/assets/images/'+payment.cardType+'.png'" alt="" srcset="" />
-                  <span class="text-[#1D1F2C] text-xs">{{payment.cardNumber}}</span>
+                  <img
+                    [src]="'/assets/images/' + payment.cardType + '.png'"
+                    alt=""
+                    srcset=""
+                  />
+                  <span class="text-[#1D1F2C] text-xs">{{
+                    payment.cardNumber
+                  }}</span>
                 </div>
               </td>
               <td
                 class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-4"
               >
-                {{payment.amount}}
+                {{ payment.amount }}
               </td>
               <td class="px-6 py-4">
                 <div
-                [ngClass]="{'bg-[#FFEDED]': payment.status === 'Rejected','bg-[#E6ECFE]': payment.status === 'Pending'
-                    ,'bg-[#EEF9E8]': payment.status === 'Completed'
+                  [ngClass]="{
+                    'bg-[#FFEDED]': payment.status === 'Rejected',
+                    'bg-[#E6ECFE]': payment.status === 'Pending',
+                    'bg-[#EEF9E8]': payment.status === 'Completed',
                   }"
                   class="flex justify-center items-center rounded-[4px] w-20 h-[28px] cursor-pointer"
                 >
-                  <p [ngClass]="{'text-[#FE4D4F]': payment.status === 'Rejected','text-[#003DF6]': payment.status === 'Pending'
-                    ,'text-[#53C31B]': payment.status === 'Completed'
-                  }"
-                    class=" text-xs font-normal font-plusJakarta leading-5 tracking-[-0.5px]"
+                  <p
+                    [ngClass]="{
+                      'text-[#FE4D4F]': payment.status === 'Rejected',
+                      'text-[#003DF6]': payment.status === 'Pending',
+                      'text-[#53C31B]': payment.status === 'Completed',
+                    }"
+                    class="text-xs font-normal font-plusJakarta leading-5 tracking-[-0.5px]"
                   >
-                    {{payment.status}}
+                    {{ payment.status }}
                   </p>
                 </div>
               </td>
-              @if(isAdmin){
+              @if (isAdmin) {
                 <td class="px-6 py-4">
                   <button
-                    [ngClass]="{'border border-[#116557]': payment.adminStatus === 'Approve'
-                      ,'border-[#1A9882] bg-[#1A9882]': payment.adminStatus === 'Approved'
+                    [ngClass]="{
+                      'border border-[#116557]':
+                        payment.adminStatus === 'Approve',
+                      'border-[#1A9882] bg-[#1A9882]':
+                        payment.adminStatus === 'Approved',
                     }"
                     class="flex justify-center items-center rounded-[4px] w-20 h-6 border cursor-pointer"
                   >
                     <p
-                    [ngClass]="{'text-black': payment.adminStatus === 'Approve','text-white': payment.adminStatus === 'Approved'}"
-                      class=" text-xs font-normal font-plusJakarta leading-5 tracking-[-0.5px]"
+                      [ngClass]="{
+                        'text-black': payment.adminStatus === 'Approve',
+                        'text-white': payment.adminStatus === 'Approved',
+                      }"
+                      class="text-xs font-normal font-plusJakarta leading-5 tracking-[-0.5px]"
                     >
-                      {{payment.adminStatus}}
+                      {{ payment.adminStatus }}
                     </p>
                   </button>
                 </td>
               }
             </tr>
           }
-
         </tbody>
       </table>
     </div>
