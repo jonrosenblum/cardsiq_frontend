@@ -27,6 +27,8 @@ const ICONS = [
   { src: 'assets/svg/call.svg', name: 'call' },
   { src: 'assets/svg/linkedin.svg', name: 'linkedin' },
   { src: 'assets/svg/edit.svg', name: 'edit' },
+  { src: 'assets/svg/back-icon.svg', name: 'back-ico' },
+
 
   { src: 'assets/svg/briefcase.svg', name: 'briefcase' },
 
