@@ -225,9 +225,13 @@
     </app-quick-message-popup>
 
     <!-- Processing Status Popup -->
-    <app-quick-message-popup *ngIf="showProcessingPopup" title="Building" icon="building-case"
-        message="Your case is currently being processed. If you wish to cancel it, click below"
-        acceptButtonText="Cancel" (acceptClick)="showSuccessPopup = false; showProcessingPopup = false">
+    <app-quick-message-popup *ngIf="showProcessingPopup" title="Building" icon="building-case" acceptButtonText=""
+        rejectButtonText="Cancel" (rejectClick)="showSuccessPopup = false; showProcessingPopup = false">
+
+        <div class="text-center text-sm text-[#1D1F2C] p-4">
+            Your case is currently being processed. If you wish to cancel it, click below
+        </div>
+
     </app-quick-message-popup>
 </app-popup-backdrop>
 }
