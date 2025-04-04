@@ -88,4 +88,34 @@ export class ProductsListingComponent {
   isAllSelected(): boolean {
     return this.selectedProducts().length === this.products.length && this.products.length > 0;
   }
+
+    // Add these new properties
+    caseOptions: { id: string; name: string }[] = [];
+    readonly baseCaseNumber: string = '001'; // Base prefix for case IDs
+  
+    // eslint-disable-next-line @angular-eslint/use-lifecycle-interface
+    ngOnInit() {
+      this.generateCaseOptions();
+    }
+  
+    private generateCaseOptions() {
+      // Generate 5 random case options
+      this.caseOptions = Array.from({ length: 5 }, (_, i) => ({
+        id: this.generateRandomCaseId(),
+        name: `Typhoon Case #${i + 1}`
+      }));
+      
+      // Add the original case as first option
+      this.caseOptions.unshift({
+        id: '00127740302',
+        name: 'Typhoon Case #1'
+      });
+    }
+  
+    private generateRandomCaseId(): string {
+      // Generate 8 random digits and combine with base
+      const randomDigits = Array.from({ length: 8 }, () => 
+        Math.floor(Math.random() * 10)).join('');
+      return `${this.baseCaseNumber}${randomDigits}`;
+    }
 }

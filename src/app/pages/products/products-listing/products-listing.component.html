@@ -199,16 +199,20 @@
         <!-- Build Case Form -->
         <app-quick-message-popup 
             *ngIf="!showProcessingPopup"
-            title="Build Case" 
+            title="Build Case"
             acceptButtonText="Build" 
             (acceptClick)="handleBuildCase()">
             <div class="space-y-4 w-full">
                 <div>
                     <label class="block text-sm text-[#1D1F2C] font-medium mb-2">
-                        Typhoon Case (00127740302)
-                        <input type="text" [(ngModel)]="caseNumber"
-                            class="w-full h-11 px-4 rounded-xl border border-[#E9E9EA] focus:border-secondary focus:ring-0"
-                            placeholder="Enter case number">
+                        
+                        <select [(ngModel)]="caseNumber" 
+                                class="w-full h-11 px-4 rounded-xl border border-[#E9E9EA] focus:border-secondary focus:ring-0">
+                            <option value="" disabled>Typhoon Case (00127740302)</option>
+                            @for (case of caseOptions; track case.id) {
+                            <option [value]="case.id">{{case.name}} ({{case.id}})</option>
+                            }
+                        </select>
                     </label>
                 </div>
 
