@@ -35,7 +35,7 @@
             <button (click)="showSuccessPopup = true"
                 class="flex justify-center items-center w-[120px] h-11 rounded-xl bg-gradient border-[0.25px] border-[#D2D2D5] px-2 gap-2">
                 <svg-icon name="plus" />
-                <span class="text-sm text-[#ffffff] font-plusJakarta font-medium text-nowrap">Bulid case</span>
+                <span class="text-sm text-[#ffffff] font-plusJakarta font-medium text-nowrap">Build case</span>
             </button>
         </div>
     </div>
@@ -194,40 +194,43 @@
     </div>
 </main>
 
-
 @if (showSuccessPopup) {
-<app-popup-backdrop>
-    <app-quick-message-popup title="Build Case" acceptButtonText="Build" (acceptClick)="handleBuildCase()">
-        <div class="space-y-4 w-full">
-            <div>
-                <label class="block text-sm text-[#1D1F2C] font-medium mb-2">
-                    Typhoon Case (00127740302)
-                    <input type="text" [(ngModel)]="caseNumber"
-                        class="w-full h-11 px-4 rounded-xl border border-[#E9E9EA] focus:border-secondary focus:ring-0"
-                        placeholder="Enter case number">
-                </label>
-            </div>
+    <app-popup-backdrop>
+        <!-- Build Case Form -->
+        <app-quick-message-popup 
+            *ngIf="!showProcessingPopup"
+            title="Build Case" 
+            acceptButtonText="Build" 
+            (acceptClick)="handleBuildCase()">
+            <div class="space-y-4 w-full">
+                <div>
+                    <label class="block text-sm text-[#1D1F2C] font-medium mb-2">
+                        Typhoon Case (00127740302)
+                        <input type="text" [(ngModel)]="caseNumber"
+                            class="w-full h-11 px-4 rounded-xl border border-[#E9E9EA] focus:border-secondary focus:ring-0"
+                            placeholder="Enter case number">
+                    </label>
+                </div>
 
-            <div>
-                <label class="block text-sm text-[#1D1F2C] font-medium mb-2">
-                    Number of cards (optional)
-                    <input type="number" [(ngModel)]="cardCount"
-                        class="w-full h-11 px-4 rounded-xl border border-[#E9E9EA] focus:border-secondary focus:ring-0"
-                        placeholder="Enter number of cards">
-                </label>
+                <div>
+                    <label class="block text-sm text-[#1D1F2C] font-medium mb-2">
+                        Number of cards (optional)
+                        <input type="number" [(ngModel)]="cardCount"
+                            class="w-full h-11 px-4 rounded-xl border border-[#E9E9EA] focus:border-secondary focus:ring-0"
+                            placeholder="Enter number of cards">
+                    </label>
+                </div>
             </div>
-        </div>
-    </app-quick-message-popup>
-</app-popup-backdrop>
-}
+        </app-quick-message-popup>
 
-<!-- Processing Status Popup -->
-@if (showProcessingPopup) {
-<app-popup-backdrop>
-    <app-quick-message-popup 
-        title="Building" 
-        icon="building-case"
-        message="Your case is currently being processed. If you wish to cancel it, click below"
-        acceptButtonText="Cancel" (acceptClick)="showProcessingPopup = false" />
-</app-popup-backdrop>
-}
+        <!-- Processing Status Popup -->
+        <app-quick-message-popup 
+            *ngIf="showProcessingPopup"
+            title="Building" 
+            icon="building-case"
+            message="Your case is currently being processed. If you wish to cancel it, click below"
+            acceptButtonText="Cancel" 
+            (acceptClick)="showSuccessPopup = false; showProcessingPopup = false">
+        </app-quick-message-popup>
+    </app-popup-backdrop>
+    }
