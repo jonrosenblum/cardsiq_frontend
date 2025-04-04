@@ -54,6 +54,18 @@ const MenuItems: MenuItem[] = [
     access: ['admin'],
   },
   {
+    title: 'Aquabox Products',
+    subTitle: '',
+    icon: 'user-square',
+    link: '/products',
+    active: false,
+    badge: {
+      value: 1,
+      color: 'accent',
+    },
+    access: ['admin'],
+  },
+  {
     title: 'Inventory',
     subTitle: '',
     icon: 'user-square',

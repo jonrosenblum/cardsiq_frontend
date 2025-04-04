@@ -16,6 +16,7 @@ const ICONS = [
   { src: 'assets/svg/popup-failed.svg', name: 'popup-failed' },
   { src: 'assets/svg/coin-convert.svg', name: 'coin-convert' },
   { src: 'assets/svg/delivery-van.svg', name: 'delivery-van' },
+  { src: 'assets/svg/building-popup.svg', name: 'building-case' },
 
   { src: 'assets/svg/search-normal.svg', name: 'search' },
   { src: 'assets/svg/user.svg', name: 'user' },

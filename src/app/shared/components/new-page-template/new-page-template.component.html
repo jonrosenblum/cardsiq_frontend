@@ -18,15 +18,15 @@
       @if (content.acceptButtonLabel) {
         <button
           (click)="acceptAction()"
-          class="hover:shadow-md w-72 text-base text-white font-semibold font-plusJakarta w-full h-11 rounded-[10px] bg-gradient hover:bg-gradientHover leading-5"
+          class="hover:shadow-md w-72 text-base text-white font-semibold font-plusJakarta h-11 rounded-[10px] bg-gradient hover:bg-gradientHover leading-5"
         >
           {{ content.acceptButtonLabel }}
         </button>
       }
       @if (content.rejectButtonLabel) {
         <button
-          (click)="content?.rejectButtonAction()"
-          class="hover:shadow-md w-72 text-base mt-4 text-primary font-semibold font-plusJakarta w-full h-11 rounded-[10px] bg-lightGray leading-5"
+        (click)="content.rejectButtonAction?.()"
+          class="hover:shadow-md w-72 text-base mt-4 text-primary font-semibold font-plusJakarta h-11 rounded-[10px] bg-lightGray leading-5"
         >
           {{ content.rejectButtonLabel }}
         </button>

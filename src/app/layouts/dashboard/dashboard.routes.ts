@@ -3,7 +3,7 @@ import { orderRoutes } from '../../pages/orders/orders.routes';
 import { accountSettingRoutes } from '../../pages/account-setting/account-setting.routes';
 import { inventoryRoutes } from '../../pages/inventory/inventory.routes';
 import { AuthGuard } from '../../core/guards/auth.guard';
-
+import { productsRoutes } from '../../pages/products/products.routes';
 export const dashboardRoutes: Routes = [
   {
     path: '',
@@ -23,6 +23,7 @@ export const dashboardRoutes: Routes = [
             (m) => m.HomeComponent,
           ),
       },
+      ...productsRoutes,
       ...orderRoutes,
       ...accountSettingRoutes,
       ...inventoryRoutes,

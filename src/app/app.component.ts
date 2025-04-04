@@ -6,7 +6,7 @@ import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { AuthGuard } from './core/guards/auth.guard';
 import { LoginGuard } from './core/guards/login.guard';
-import { PopupBackdropComponent } from './shared/components/popup-backdrop/popup-backdrop.component';
+
 // import {
 //   DialogBoxService,
 //   PopupState,
@@ -16,7 +16,7 @@ import { PopupBackdropComponent } from './shared/components/popup-backdrop/popup
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, SharedModule, ToastModule, PopupBackdropComponent],
+  imports: [RouterOutlet, SharedModule, ToastModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   providers: [MessageService, AuthGuard, LoginGuard],

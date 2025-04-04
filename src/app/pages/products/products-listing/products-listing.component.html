@@ -1,0 +1,233 @@
+<main class="w-full bg-[#f7f7fc] h-screen">
+    <!-- Second header -->
+    <div class="flex justify-between items-center py-4 px-4">
+        <h5 class="text-2xl text-[#070707] font-bold font-plusJakarta leading-9 tracking-[-0.5px]">Aquabox Products</h5>
+        <div class="flex items-center gap-2">
+            <!-- Sort by dropdown -->
+            <div class="relative">
+                <button (click)="sortByDropdown = !sortByDropdown"
+                    class="flex justify-center items-center w-[138px] h-11 rounded-xl bg-white border-[0.25px] border-[#F0F0F0] px-2 gap-2"
+                    [ngClass]="sortByDropdown ? 'border-secondary' : 'border-[#F0F0F0]'">
+                    <span class="text-sm text-[#000000] font-plusJakarta font-medium text-nowrap">Sort by items</span>
+                    <span class="pi" [ngClass]="sortByDropdown ? 'pi-angle-up' : 'pi-angle-down'"></span>
+                </button>
+                @if (sortByDropdown) {
+                <div class="w-[202px] border border-[#E9E9EA] bg-white rounded-xl py-2 z-10 absolute top-12 right-0">
+                    <div class="flex items-center cursor-pointer gap-2 px-3 py-2 hover:bg-slate-50">
+                        <p class="text-sm text-primary font-medium font-plusJakarta leading-[14px] tracking-[-2%]">
+                            By Date
+                        </p>
+                    </div>
+                    <div class="flex items-center cursor-pointer gap-2 px-3 py-2 hover:bg-slate-50">
+                        <p class="text-sm text-primary font-medium font-plusJakarta leading-[14px] tracking-[-2%]">
+                            By Name
+                        </p>
+                    </div>
+                    <div class="flex items-center cursor-pointer gap-2 px-3 py-2 hover:bg-slate-50">
+                        <p class="text-sm text-primary font-medium font-plusJakarta leading-[14px] tracking-[-2%]">
+                            By Status
+                        </p>
+                    </div>
+                </div>
+                }
+            </div>
+
+            <button (click)="showSuccessPopup = true"
+                class="flex justify-center items-center w-[120px] h-11 rounded-xl bg-gradient border-[0.25px] border-[#D2D2D5] px-2 gap-2">
+                <svg-icon name="plus" />
+                <span class="text-sm text-[#ffffff] font-plusJakarta font-medium text-nowrap">Bulid case</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Payment cards -->
+    <div class="relative overflow-x-auto h-[calc(100vh-190px)]  no-scrollbar">
+        <div class="flex flex-wrap items-start justify-start mx-4  gap-6">
+            <div class="flex-grow flex-shrink w-[377.33px] h-[116px] rounded-2xl px-4 bg-white">
+                <div class="space-y-4 mt-4">
+                    <p class="text-sm text-[#A5A5AB] font-medium font-plusJakarta leading-5 tracking-[-0.5px]">Number of
+                        Completed Cases</p>
+                    <h1
+                        class="text-xl md:text-[32px] text-[#070707] font-semibold font-plusJakarta leading-10 tracking-[-0.5px]">
+                        03</h1>
+                </div>
+            </div>
+
+            <div class="flex-grow flex-shrink w-[377.33px] h-[116px] rounded-2xl px-4 bg-white">
+                <div class="space-y-4 mt-4">
+                    <p class="text-sm text-[#A5A5AB] font-medium font-plusJakarta leading-5 tracking-[-0.5px]">Total
+                        Revenue</p>
+                    <h1
+                        class="text-xl md:text-[32px] text-[#070707] font-semibold font-plusJakarta leading-10 tracking-[-0.5px]">
+                        $900</h1>
+                </div>
+            </div>
+
+            <div class="flex-grow flex-shrink w-[377.33px] h-[116px] rounded-2xl px-4 bg-white">
+                <div class="space-y-4 mt-4">
+                    <p class="text-sm text-[#A5A5AB] font-medium font-plusJakarta leading-5 tracking-[-0.5px]">Total
+                        Profit</p>
+                    <h1
+                        class="text-xl md:text-[32px] text-[#070707] font-semibold font-plusJakarta leading-10 tracking-[-0.5px]">
+                        $800</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table section -->
+        <div class="flex flex-col h-[280px] mx-4 rounded-[20px] px-4 mt-4 bg-white">
+            <div
+                class="relative overflow-x-auto h-[calc(216-70px)] border border-[#E9E9EA] rounded-xl no-scrollbar my-4">
+                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 bg-[#E9E9EA] dark:text-gray-400 sticky top-0">
+                        <tr>
+                            <th scope="col" class="px-6 py-2 rounded-tl-xl max-w-[150px]">
+                                <div class="flex items-center justify-start gap-4">
+                                    <input type="checkbox" [checked]="isAllSelected()" (change)="toggleSelectAll()"
+                                        class="p-checkbox">
+                                    <h4
+                                        class="text-sm text-color font-medium font-plusJakarta leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
+                                        Date
+                                    </h4>
+                                </div>
+                            </th>
+                            <th scope="col" class="px-6 py-2 max-w-[150px]">
+                                <h4
+                                    class="text-sm text-color font-medium font-plusJakarta leading-5 tracking-[-0.5px] text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
+                                    Product
+                                </h4>
+                            </th>
+                            <th scope="col" class="px-6 py-2 max-w-[150px]">
+                                <h4 class="text-sm text-color font-medium font-plusJakarta leading-5 tracking-[-0.5px]">
+                                    Status
+                                </h4>
+                            </th>
+                            <th scope="col" class="px-6 py-2">
+                                <h4 class="text-sm text-color font-medium font-plusJakarta">Cost</h4>
+                            </th>
+                            <th scope="col" class="px-6 py-2">
+                                <h4 class="text-sm text-color font-medium font-plusJakarta">Profit</h4>
+                            </th>
+                            <th scope="col" class="px-6 py-2">
+                                <h4 class="text-sm text-color font-medium font-plusJakarta"> </h4>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (product of products; track product; let i = $index) {
+                        <tr class="border-b border-[#E9E9EA]" (click)="openProductDetails(product, i)">
+                            <th scope="row"
+                                class="px-6 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                <div class="flex justify-start items-center gap-4">
+                                    <input type="checkbox" [checked]="isSelected(i)" (change)="toggleSelection(i)"
+                                        class="p-checkbox">
+                                    <p
+                                        class="block font-normal text-xs text-color font-plusJakarta leading-5 tracking-[-0.5px]">
+                                        {{product.date}}
+                                    </p>
+                                </div>
+                            </th>
+                            <td
+                                class="text-xs text-color font-normal font-plusJakarta leading-5 tracking-[-0.5px] px-6 py-3 text-nowrap text-ellipsis overflow-hidden max-w-[150px]">
+                                {{product.name}}
+                            </td>
+                            <td class="px-6 py-3">
+                                <div class="flex justify-center items-center rounded-[4px] w-20 h-[28px] cursor-pointer"
+                                    [ngClass]="product.status === 'Delivered' ? 'bg-[#EEF9E8]' : 'bg-[#E6ECFE]'">
+                                    <p class="text-xs font-normal font-plusJakarta leading-5 tracking-[-0.5px]"
+                                        [ngClass]="product.status === 'Delivered' ? 'text-[#53C31B]' : 'text-[#003DF6]'">
+                                        {{product.status}}
+                                    </p>
+                                </div>
+                            </td>
+                            <td class="text-xs text-[#1D1F2C] font-normal font-plusJakarta px-6 py-3">
+                                {{product.cost}}
+                            </td>
+                            <td class="text-xs text-[#1D1F2C] font-normal font-plusJakarta px-6 py-3">
+                                {{product.profit}}
+                            </td>
+                            <td class="px-6 py-3" (click)="$event.stopPropagation()">
+                                <div class="relative" >
+                                    <button (click)="toggleDropdown(i)"
+                                        class="p-2 flex justify-center items-center rounded-md cursor-pointer hover:bg-gray-100">
+                                        <svg width="28px" height="28px" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7 12C7 13.1046 6.10457 14 5 14C3.89543 14 3 13.1046 3 12C3 10.8954 3.89543 10 5 10C6.10457 10 7 10.8954 7 12Z"
+                                                fill="#a5a5ab"></path>
+                                            <path
+                                                d="M14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12Z"
+                                                fill="#a5a5ab"></path>
+                                            <path
+                                                d="M21 12C21 13.1046 20.1046 14 19 14C17.8954 14 17 13.1046 17 12C17 10.8954 17.8954 10 19 10C20.1046 10 21 10.8954 21 12Z"
+                                                fill="#a5a5ab"></path>
+                                        </svg>
+                                    </button>
+
+                                    @if (selectedRow === i) {
+                                    <div (click)="$event.stopPropagation()"
+                                        class="w-[110px] border border-[#E9E9EA] bg-white shadow-lg rounded-xl py-2 absolute top-1 right-16 z-0">
+                                        <div class="flex items-center cursor-pointer gap-2 px-3 py-2 hover:bg-slate-50">
+                                            <svg-icon name="edit" class="text-primary"></svg-icon>
+                                            <p
+                                                class="text-sm text-primary font-medium font-plusJakarta leading-[14px] tracking-[-2%]">
+                                                Edit
+                                            </p>
+                                        </div>
+                                        <div class="flex items-center cursor-pointer gap-2 px-3 py-2 hover:bg-slate-50">
+                                            <svg-icon name="trash-black" class="text-[#FF0000]"></svg-icon>
+                                            <p
+                                                class="text-sm text-[#FF0000] font-medium font-plusJakarta leading-[14px] tracking-[-2%]">
+                                                Delete
+                                            </p>
+                                        </div>
+                                    </div>
+                                    }
+                                </div>
+                            </td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+@if (showSuccessPopup) {
+<app-popup-backdrop>
+    <app-quick-message-popup title="Build Case" acceptButtonText="Build" (acceptClick)="handleBuildCase()">
+        <div class="space-y-4 w-full">
+            <div>
+                <label class="block text-sm text-[#1D1F2C] font-medium mb-2">
+                    Typhoon Case (00127740302)
+                    <input type="text" [(ngModel)]="caseNumber"
+                        class="w-full h-11 px-4 rounded-xl border border-[#E9E9EA] focus:border-secondary focus:ring-0"
+                        placeholder="Enter case number">
+                </label>
+            </div>
+
+            <div>
+                <label class="block text-sm text-[#1D1F2C] font-medium mb-2">
+                    Number of cards (optional)
+                    <input type="number" [(ngModel)]="cardCount"
+                        class="w-full h-11 px-4 rounded-xl border border-[#E9E9EA] focus:border-secondary focus:ring-0"
+                        placeholder="Enter number of cards">
+                </label>
+            </div>
+        </div>
+    </app-quick-message-popup>
+</app-popup-backdrop>
+}
+
+<!-- Processing Status Popup -->
+@if (showProcessingPopup) {
+<app-popup-backdrop>
+    <app-quick-message-popup 
+        title="Building" 
+        icon="building-case"
+        message="Your case is currently being processed. If you wish to cancel it, click below"
+        acceptButtonText="Cancel" (acceptClick)="showProcessingPopup = false" />
+</app-popup-backdrop>
+}
