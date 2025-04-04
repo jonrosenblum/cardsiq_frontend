@@ -147,7 +147,7 @@
                                 {{product.profit}}
                             </td>
                             <td class="px-6 py-3" (click)="$event.stopPropagation()">
-                                <div class="relative" >
+                                <div class="relative">
                                     <button (click)="toggleDropdown(i)"
                                         class="p-2 flex justify-center items-center rounded-md cursor-pointer hover:bg-gray-100">
                                         <svg width="28px" height="28px" viewBox="0 0 24 24" fill="none"
@@ -195,46 +195,39 @@
 </main>
 
 @if (showSuccessPopup) {
-    <app-popup-backdrop>
-        <!-- Build Case Form -->
-        <app-quick-message-popup 
-            *ngIf="!showProcessingPopup"
-            title="Build Case"
-            acceptButtonText="Build" 
-            (acceptClick)="handleBuildCase()">
-            <div class="space-y-4 w-full">
-                <div>
-                    <label class="block text-sm text-[#1D1F2C] font-medium mb-2">
-                        
-                        <select [(ngModel)]="caseNumber" 
-                                class="w-full h-11 px-4 rounded-xl border border-[#E9E9EA] focus:border-secondary focus:ring-0">
-                            <option value="" disabled>Typhoon Case (00127740302)</option>
-                            @for (case of caseOptions; track case.id) {
-                            <option [value]="case.id">{{case.name}} ({{case.id}})</option>
-                            }
-                        </select>
-                    </label>
-                </div>
+<app-popup-backdrop>
+    <!-- Build Case Form -->
+    <app-quick-message-popup *ngIf="!showProcessingPopup" title="Build Case" acceptButtonText="Build"
+        rejectButtonText="Cancel" (acceptClick)="handleBuildCase()" (rejectClick)="showSuccessPopup = false">
+        <div class="space-y-4 w-full">
+            <div>
+                <label class="block text-sm text-[#1D1F2C] font-medium mb-2">
 
-                <div>
-                    <label class="block text-sm text-[#1D1F2C] font-medium mb-2">
-                        Number of cards (optional)
-                        <input type="number" [(ngModel)]="cardCount"
-                            class="w-full h-11 px-4 rounded-xl border border-[#E9E9EA] focus:border-secondary focus:ring-0"
-                            placeholder="Enter number of cards">
-                    </label>
-                </div>
+                    <select [(ngModel)]="caseNumber"
+                        class="w-full h-11 px-4 rounded-xl border border-[#E9E9EA] focus:border-secondary focus:ring-0">
+                        <option value="" disabled>Typhoon Case (00127740302)</option>
+                        @for (case of caseOptions; track case.id) {
+                        <option [value]="case.id">{{case.name}} ({{case.id}})</option>
+                        }
+                    </select>
+                </label>
             </div>
-        </app-quick-message-popup>
 
-        <!-- Processing Status Popup -->
-        <app-quick-message-popup 
-            *ngIf="showProcessingPopup"
-            title="Building" 
-            icon="building-case"
-            message="Your case is currently being processed. If you wish to cancel it, click below"
-            acceptButtonText="Cancel" 
-            (acceptClick)="showSuccessPopup = false; showProcessingPopup = false">
-        </app-quick-message-popup>
-    </app-popup-backdrop>
-    }
+            <div>
+                <label class="block text-sm text-[#1D1F2C] font-medium mb-2">
+                    Number of cards (optional)
+                    <input type="number" [(ngModel)]="cardCount"
+                        class="w-full h-11 px-4 rounded-xl border border-[#E9E9EA] focus:border-secondary focus:ring-0"
+                        placeholder="Enter number of cards">
+                </label>
+            </div>
+        </div>
+    </app-quick-message-popup>
+
+    <!-- Processing Status Popup -->
+    <app-quick-message-popup *ngIf="showProcessingPopup" title="Building" icon="building-case"
+        message="Your case is currently being processed. If you wish to cancel it, click below"
+        acceptButtonText="Cancel" (acceptClick)="showSuccessPopup = false; showProcessingPopup = false">
+    </app-quick-message-popup>
+</app-popup-backdrop>
+}
